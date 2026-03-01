@@ -43,6 +43,7 @@ export default function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
             title: 'Specific Repairs',
             icon: Wrench,
             links: [
+                { name: 'Transmission Remanufacturing', href: '/services/transmission-rebuild', isHighlight: true },
                 { name: 'Brake Pads & Rotors', href: '/services/brake-repair-rotors' },
                 { name: 'A/C Evac & Recharge', href: '/services/ac-repair-recharge' },
                 { name: 'Check Engine & Sensors', href: '/services/check-engine-diagnostics' },

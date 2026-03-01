@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Car, Wrench, Shield } from 'lucide-react';
+import { Car, Wrench, Shield, Cog } from 'lucide-react';
 
 export default function Brands() {
   const brands = [
@@ -21,6 +21,12 @@ export default function Brands() {
       description: 'Streamlined automotive acquisition and pre-owned vehicle sales under a trusted regional brand.',
       icon: <Car className="w-10 h-10 text-emerald-500" />,
       color: 'border-emerald-500/20 bg-emerald-500/5',
+    },
+    {
+      name: 'National Transmission',
+      description: 'Expert 1-3 day turnaround for remanufactured transmissions. We remanufacture to the highest of standards rather than simply rebuilding.',
+      icon: <Cog className="w-10 h-10 text-orange-500" />,
+      color: 'border-orange-500/20 bg-orange-500/5',
     }
   ];
 
@@ -37,7 +43,7 @@ export default function Brands() {
             Regional Powerhouse
           </motion.div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-8 tracking-tight">
-            Three Entities. <br />
+            Four Entities. <br />
             <span className="text-brand-red">One Strategic Hub.</span>
           </h2>
           <p className="text-lg text-slate-400 font-medium leading-relaxed">
@@ -45,7 +51,7 @@ export default function Brands() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {brands.map((brand, index) => (
             <motion.div
               key={brand.name}
