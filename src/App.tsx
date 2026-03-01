@@ -10,6 +10,12 @@ import SmoothScroll from './components/SmoothScroll';
 // Pages
 import Home from './pages/Home';
 import Services from './pages/Services';
+import TiresAlignment from './pages/TiresAlignment';
+import AutoRepair from './pages/AutoRepair';
+import GlassCalibration from './pages/GlassCalibration';
+import About from './pages/About';
+import Careers from './pages/Careers';
+import FAQPage from './pages/FAQPage';
 import CommercialFleet from './pages/CommercialFleet';
 import Contact from './pages/Contact';
 
@@ -31,6 +37,12 @@ export default function App() {
                   <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/services" element={<Services />} />
+                    <Route path="/services/tires-alignment" element={<TiresAlignment />} />
+                    <Route path="/services/advanced-auto-repair" element={<AutoRepair />} />
+                    <Route path="/services/glass-calibration" element={<GlassCalibration />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/careers" element={<Careers />} />
+                    <Route path="/faq" element={<FAQPage />} />
                     <Route path="/fleet" element={<CommercialFleet />} />
                     <Route path="/contact" element={<Contact />} />
                   </Routes>
