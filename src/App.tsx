@@ -19,6 +19,15 @@ import FAQPage from './pages/FAQPage';
 import CommercialFleet from './pages/CommercialFleet';
 import Contact from './pages/Contact';
 
+// Phase 3 Locations & Guides
+import Alexandria from './pages/locations/Alexandria';
+import Pineville from './pages/locations/Pineville';
+import Marksville from './pages/locations/Marksville';
+import Leesville from './pages/locations/Leesville';
+import AdasGuide from './pages/guides/AdasGuide';
+import FleetGuide from './pages/guides/FleetGuide';
+import RoadForceGuide from './pages/guides/RoadForceGuide';
+
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -45,6 +54,17 @@ export default function App() {
                     <Route path="/faq" element={<FAQPage />} />
                     <Route path="/fleet" element={<CommercialFleet />} />
                     <Route path="/contact" element={<Contact />} />
+
+                    {/* Hyper-Local Routes */}
+                    <Route path="/locations/alexandria" element={<Alexandria />} />
+                    <Route path="/locations/pineville" element={<Pineville />} />
+                    <Route path="/locations/marksville" element={<Marksville />} />
+                    <Route path="/locations/leesville" element={<Leesville />} />
+
+                    {/* Pillar Guide Routes */}
+                    <Route path="/guides/the-ultimate-guide-to-adas-calibration" element={<AdasGuide />} />
+                    <Route path="/guides/commercial-fleet-maintenance-checklist" element={<FleetGuide />} />
+                    <Route path="/guides/understanding-road-force-balancing" element={<RoadForceGuide />} />
                   </Routes>
                 </main>
                 <Footer />
