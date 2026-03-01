@@ -24,9 +24,20 @@ import Alexandria from './pages/locations/Alexandria';
 import Pineville from './pages/locations/Pineville';
 import Marksville from './pages/locations/Marksville';
 import Leesville from './pages/locations/Leesville';
+import Bunkie from './pages/locations/Bunkie';
+import Opelousas from './pages/locations/Opelousas';
 import AdasGuide from './pages/guides/AdasGuide';
 import FleetGuide from './pages/guides/FleetGuide';
 import RoadForceGuide from './pages/guides/RoadForceGuide';
+
+// Phase 4 Avalanche Imports
+import BrakeRepair from './pages/BrakeRepair';
+import AcRepair from './pages/AcRepair';
+import CheckEngine from './pages/CheckEngine';
+import Suspension from './pages/Suspension';
+import Service30k from './pages/maintenance/Service30k';
+import Service60k from './pages/maintenance/Service60k';
+import Service90k from './pages/maintenance/Service90k';
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -55,11 +66,23 @@ export default function App() {
                     <Route path="/fleet" element={<CommercialFleet />} />
                     <Route path="/contact" element={<Contact />} />
 
+                    {/* Phase 4 Content Avalanche Routes */}
+                    <Route path="/services/brake-repair-rotors" element={<BrakeRepair />} />
+                    <Route path="/services/ac-repair-recharge" element={<AcRepair />} />
+                    <Route path="/services/check-engine-diagnostics" element={<CheckEngine />} />
+                    <Route path="/services/suspension-shocks-struts" element={<Suspension />} />
+
+                    <Route path="/maintenance/30k-mile-service" element={<Service30k />} />
+                    <Route path="/maintenance/60k-mile-service" element={<Service60k />} />
+                    <Route path="/maintenance/90k-mile-service" element={<Service90k />} />
+
                     {/* Hyper-Local Routes */}
                     <Route path="/locations/alexandria" element={<Alexandria />} />
                     <Route path="/locations/pineville" element={<Pineville />} />
                     <Route path="/locations/marksville" element={<Marksville />} />
                     <Route path="/locations/leesville" element={<Leesville />} />
+                    <Route path="/locations/bunkie" element={<Bunkie />} />
+                    <Route path="/locations/opelousas" element={<Opelousas />} />
 
                     {/* Pillar Guide Routes */}
                     <Route path="/guides/the-ultimate-guide-to-adas-calibration" element={<AdasGuide />} />
