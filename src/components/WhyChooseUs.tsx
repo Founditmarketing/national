@@ -98,9 +98,33 @@ export default function WhyChooseUs() {
                   alt="National Tire & Auto Shop"
                   className="w-full h-80 object-cover rounded-[2.5rem] border border-white/10 shadow-2xl"
                 />
-                <div className="glass p-6 rounded-[2rem] border border-white/10">
-                  <p className="text-brand-red font-bold text-3xl mb-1">98%</p>
-                  <p className="text-slate-400 text-xs font-bold uppercase tracking-widest">Satisfaction rate</p>
+                <div className="glass p-6 rounded-[2rem] border border-white/10 relative overflow-hidden flex items-center gap-6 group">
+                  <div className="absolute inset-0 bg-gradient-to-r from-brand-red/0 via-brand-red/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+                  <div className="relative w-16 h-16 flex-shrink-0">
+                    <svg className="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
+                      <circle className="text-white/10 stroke-current" strokeWidth="8" cx="50" cy="50" r="40" fill="transparent"></circle>
+                      <motion.circle
+                        className="text-brand-red stroke-current drop-shadow-[0_0_8px_rgba(220,38,38,0.5)]"
+                        strokeWidth="8"
+                        strokeLinecap="round"
+                        cx="50"
+                        cy="50"
+                        r="40"
+                        fill="transparent"
+                        initial={{ strokeDasharray: 251.2, strokeDashoffset: 251.2 }}
+                        whileInView={{ strokeDashoffset: 251.2 - (251.2 * 0.98) }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1.5, ease: "easeOut", delay: 0.5 }}
+                      ></motion.circle>
+                    </svg>
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <span className="text-white font-bold text-sm">98<span className="text-[10px] text-brand-red">%</span></span>
+                    </div>
+                  </div>
+                  <div className="relative z-10">
+                    <p className="text-white font-bold text-lg leading-tight mb-1">Satisfaction</p>
+                    <p className="text-slate-400 text-[10px] font-bold uppercase tracking-widest">Client Score</p>
+                  </div>
                 </div>
               </div>
               <div className="space-y-6">
@@ -109,9 +133,33 @@ export default function WhyChooseUs() {
                   alt="Precision Service"
                   className="w-full h-[400px] object-cover rounded-[2.5rem] border border-white/10 shadow-2xl"
                 />
-                <div className="bg-brand-red p-6 rounded-[2rem] shadow-2xl shadow-brand-red/20">
-                  <p className="text-white font-bold text-3xl mb-1">20+</p>
-                  <p className="text-white/70 text-xs font-bold uppercase tracking-widest">Years Expertise</p>
+                <div className="bg-brand-red p-6 rounded-[2rem] shadow-2xl shadow-brand-red/20 relative overflow-hidden flex items-center gap-5 group">
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.2),transparent)]" />
+                  <div className="relative w-14 h-14 flex-shrink-0">
+                    <svg className="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
+                      <circle className="text-black/10 stroke-current" strokeWidth="8" cx="50" cy="50" r="40" fill="transparent"></circle>
+                      <motion.circle
+                        className="text-white stroke-current drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]"
+                        strokeWidth="8"
+                        strokeLinecap="round"
+                        cx="50"
+                        cy="50"
+                        r="40"
+                        fill="transparent"
+                        initial={{ strokeDasharray: 251.2, strokeDashoffset: 251.2 }}
+                        whileInView={{ strokeDashoffset: 251.2 - (251.2 * 1) }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1.5, ease: "easeOut", delay: 0.7 }}
+                      ></motion.circle>
+                    </svg>
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <span className="text-white font-bold text-sm">20+</span>
+                    </div>
+                  </div>
+                  <div className="relative z-10 space-y-0.5 mt-0.5">
+                    <p className="text-white font-bold text-lg leading-none">Years</p>
+                    <p className="text-white/70 text-[9px] font-bold uppercase tracking-[0.2em] leading-none">Expertise</p>
+                  </div>
                 </div>
               </div>
             </div>
