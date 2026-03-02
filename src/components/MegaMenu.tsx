@@ -44,16 +44,26 @@ export default function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
             icon: Wrench,
             links: [
                 { name: 'Transmission Remanufacturing', href: '/services/transmission-rebuild', isHighlight: true },
+                { name: 'Engine Repair & Rebuilds', href: '/services/engine-repair-rebuild' },
+                { name: 'Electrical & Diagnostics', href: '/services/electrical-diagnostics' },
                 { name: 'Brake Pads & Rotors', href: '/services/brake-repair-rotors' },
                 { name: 'A/C Evac & Recharge', href: '/services/ac-repair-recharge' },
                 { name: 'Check Engine & Sensors', href: '/services/check-engine-diagnostics' },
-                { name: 'Suspension & Shocks', href: '/services/suspension-shocks-struts' }
+                { name: 'Suspension & Shocks', href: '/services/suspension-shocks-struts' },
+                { name: 'European & Import Repair', href: '/services/european-import-repair' },
+                { name: 'Steering Rack & Pinion', href: '/services/steering-rack-pinion' },
+                { name: 'Exhaust & Catalytic', href: '/services/exhaust-muffler-repair' },
             ]
         },
         {
             title: 'Scheduled Maintenance',
             icon: Shield,
             links: [
+                { name: 'Synthetic Oil & Lube', href: '/services/oil-change-lube' },
+                { name: 'Preventative Maintenance', href: '/services/preventative-maintenance' },
+                { name: 'Wheel Alignment & Balance', href: '/services/wheel-alignment-balancing' },
+                { name: 'Battery & Alternator', href: '/services/battery-testing-replacement' },
+                { name: 'Transmission Fluid Flush', href: '/services/transmission-flush' },
                 { name: '30,000 Mile Service', href: '/maintenance/30k-mile-service' },
                 { name: '60,000 Mile Service', href: '/maintenance/60k-mile-service' },
                 { name: '90,000 Mile Service', href: '/maintenance/90k-mile-service' },
@@ -78,6 +88,11 @@ export default function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
         { name: 'Leesville', href: '/locations/leesville' },
         { name: 'Bunkie', href: '/locations/bunkie' },
         { name: 'Opelousas', href: '/locations/opelousas' },
+        { name: 'Natchitoches', href: '/locations/natchitoches' },
+        { name: 'Ville Platte', href: '/locations/ville-platte' },
+        { name: 'DeRidder', href: '/locations/deridder' },
+        { name: 'Oakdale', href: '/locations/oakdale' },
+        { name: 'Many', href: '/locations/many' },
     ];
 
     const guides = [

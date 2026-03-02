@@ -40,6 +40,24 @@ import Service60k from './pages/maintenance/Service60k';
 import Service90k from './pages/maintenance/Service90k';
 import TransmissionRebuild from './pages/TransmissionRebuild';
 
+// Phase 6 Massive Expansion Imports
+import OilChange from './pages/services/OilChange';
+import BatteryReplacement from './pages/services/BatteryReplacement';
+import PreventativeMaintenance from './pages/services/PreventativeMaintenance';
+import ElectricalDiagnostics from './pages/services/ElectricalDiagnostics';
+import EngineRepair from './pages/services/EngineRepair';
+import TransmissionFlush from './pages/services/TransmissionFlush';
+import ExhaustRepair from './pages/services/ExhaustRepair';
+import WheelAlignment from './pages/services/WheelAlignment';
+import SteeringRack from './pages/services/SteeringRack';
+import EuropeanRepair from './pages/services/EuropeanRepair';
+
+import Natchitoches from './pages/locations/Natchitoches';
+import VillePlatte from './pages/locations/VillePlatte';
+import DeRidder from './pages/locations/DeRidder';
+import Oakdale from './pages/locations/Oakdale';
+import Many from './pages/locations/Many';
+
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -50,7 +68,7 @@ export default function App() {
           <div className="bg-noise fixed inset-0 z-[99999] pointer-events-none mix-blend-overlay opacity-40"></div>
           <AnimatePresence mode="wait">
             {isLoading ? (
-              <LoadingScreen key="loading" onComplete={() => setIsLoading(false)} />
+              <LoadingScreen onComplete={() => setIsLoading(false)} />
             ) : (
               <>
                 <Navbar />
@@ -78,6 +96,18 @@ export default function App() {
                     <Route path="/maintenance/60k-mile-service" element={<Service60k />} />
                     <Route path="/maintenance/90k-mile-service" element={<Service90k />} />
 
+                    {/* Phase 6 Massive Service Expansion */}
+                    <Route path="/services/oil-change-lube" element={<OilChange />} />
+                    <Route path="/services/battery-testing-replacement" element={<BatteryReplacement />} />
+                    <Route path="/services/preventative-maintenance" element={<PreventativeMaintenance />} />
+                    <Route path="/services/electrical-diagnostics" element={<ElectricalDiagnostics />} />
+                    <Route path="/services/engine-repair-rebuild" element={<EngineRepair />} />
+                    <Route path="/services/transmission-flush" element={<TransmissionFlush />} />
+                    <Route path="/services/exhaust-muffler-repair" element={<ExhaustRepair />} />
+                    <Route path="/services/wheel-alignment-balancing" element={<WheelAlignment />} />
+                    <Route path="/services/steering-rack-pinion" element={<SteeringRack />} />
+                    <Route path="/services/european-import-repair" element={<EuropeanRepair />} />
+
                     {/* Hyper-Local Routes */}
                     <Route path="/locations/alexandria" element={<Alexandria />} />
                     <Route path="/locations/pineville" element={<Pineville />} />
@@ -85,6 +115,11 @@ export default function App() {
                     <Route path="/locations/leesville" element={<Leesville />} />
                     <Route path="/locations/bunkie" element={<Bunkie />} />
                     <Route path="/locations/opelousas" element={<Opelousas />} />
+                    <Route path="/locations/natchitoches" element={<Natchitoches />} />
+                    <Route path="/locations/ville-platte" element={<VillePlatte />} />
+                    <Route path="/locations/deridder" element={<DeRidder />} />
+                    <Route path="/locations/oakdale" element={<Oakdale />} />
+                    <Route path="/locations/many" element={<Many />} />
 
                     {/* Pillar Guide Routes */}
                     <Route path="/guides/the-ultimate-guide-to-adas-calibration" element={<AdasGuide />} />

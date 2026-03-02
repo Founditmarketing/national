@@ -112,9 +112,15 @@ export default function Testimonials() {
   );
 }
 
-function ReviewCard({ review }: { review: any }) {
+interface ReviewProps {
+  name: string;
+  content: string;
+  rating: number;
+}
+
+const ReviewCard = React.forwardRef<HTMLDivElement, { review: ReviewProps }>(({ review }, ref) => {
   return (
-    <div className="w-[350px] md:w-[450px] shrink-0 group relative glass p-8 rounded-[2rem] border border-white/5 hover:border-brand-red/30 transition-all duration-500 hover:shadow-2xl flex flex-col h-full bg-slate-900/50">
+    <div ref={ref} className="w-[350px] md:w-[450px] shrink-0 group relative glass p-8 rounded-[2rem] border border-white/5 hover:border-brand-red/30 transition-all duration-500 hover:shadow-2xl flex flex-col h-full bg-slate-900/50">
       <Quote className="absolute top-8 right-8 w-10 h-10 text-white/5 group-hover:text-brand-red/10 transition-colors" />
 
       <div className="flex gap-1 mb-6">
@@ -141,4 +147,4 @@ function ReviewCard({ review }: { review: any }) {
       </div>
     </div>
   );
-}
+});
