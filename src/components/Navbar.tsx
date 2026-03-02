@@ -8,6 +8,8 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
+  const handleClose = React.useCallback(() => setIsOpen(false), []);
+
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener('scroll', handleScroll);
@@ -76,7 +78,7 @@ export default function Navbar() {
         </div>
       </nav>
 
-      <MegaMenu isOpen={isOpen} onClose={() => setIsOpen(false)} />
+      <MegaMenu isOpen={isOpen} onClose={handleClose} />
     </>
   );
 }
