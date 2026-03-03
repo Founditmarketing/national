@@ -62,6 +62,11 @@ import DeRidder from './pages/locations/DeRidder';
 import Oakdale from './pages/locations/Oakdale';
 import Many from './pages/locations/Many';
 
+// Brand Landing Pages
+import NationalTireAndAuto from './pages/brands/NationalTireAndAuto';
+import FastGlass from './pages/brands/FastGlass';
+import NationalTransmission from './pages/brands/NationalTransmission';
+
 import LLMStructuredData from './components/LLMStructuredData';
 import EmergencyAlignmentAd from './pages/campaigns/EmergencyAlignmentAd';
 import FleetMaintenanceAd from './pages/campaigns/FleetMaintenanceAd';
@@ -138,6 +143,11 @@ export default function App() {
                     <Route path="/guides/the-ultimate-guide-to-adas-calibration" element={<AdasGuide />} />
                     <Route path="/guides/commercial-fleet-maintenance-checklist" element={<FleetGuide />} />
                     <Route path="/guides/understanding-road-force-balancing" element={<RoadForceGuide />} />
+
+                    {/* Brand Pages */}
+                    <Route path="/brands/national-tire-and-auto" element={<NationalTireAndAuto />} />
+                    <Route path="/brands/fast-glass" element={<FastGlass />} />
+                    <Route path="/brands/national-transmission" element={<NationalTransmission />} />
 
                     {/* AdWords Keyword Match Pages */}
                     <Route path="/campaigns/emergency-alignment" element={<EmergencyAlignmentAd />} />
