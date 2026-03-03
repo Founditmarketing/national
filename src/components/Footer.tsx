@@ -22,7 +22,7 @@ export default function Footer() {
             </p>
             <div className="flex gap-4">
               {[Instagram, Facebook, Twitter].map((Icon, i) => (
-                <a key={i} href="#" className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-brand-red/10 hover:border-brand-red/30 transition-all text-slate-400 hover:text-brand-red">
+                <a key={i} href="#" className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-brand-blue/10 hover:border-brand-blue/30 transition-all text-slate-400 hover:text-brand-blue">
                   <Icon className="w-5 h-5" />
                 </a>
               ))}
@@ -31,45 +31,45 @@ export default function Footer() {
 
           <div>
             <h4 className="text-white font-display font-bold mb-8 uppercase tracking-widest text-xs flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full bg-brand-red" /> Strategic Links
+              <div className="w-1.5 h-1.5 rounded-full bg-brand-blue" /> Strategic Links
             </h4>
             <ul className="space-y-4 font-bold text-sm">
-              <li><Link to="/" className="hover:text-brand-red transition-colors">Home Terminal</Link></li>
-              <li><Link to="/services" className="hover:text-brand-red transition-colors">Service Sectors</Link></li>
-              <li><Link to="/fleet" className="hover:text-brand-red transition-colors">Commercial Fleet</Link></li>
-              <li><Link to="/about" className="hover:text-brand-red transition-colors">The National Story</Link></li>
-              <li><Link to="/contact" className="hover:text-brand-red transition-colors">Contact HQ</Link></li>
+              <li><Link to="/" className="hover:text-brand-blue transition-colors">Home Terminal</Link></li>
+              <li><Link to="/services" className="hover:text-brand-blue transition-colors">Service Sectors</Link></li>
+              <li><Link to="/fleet" className="hover:text-brand-blue transition-colors">Commercial Fleet</Link></li>
+              <li><Link to="/about" className="hover:text-brand-blue transition-colors">The National Story</Link></li>
+              <li><Link to="/contact" className="hover:text-brand-blue transition-colors">Contact HQ</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-white font-display font-bold mb-8 uppercase tracking-widest text-xs flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full bg-brand-red" /> Areas Served
+              <div className="w-1.5 h-1.5 rounded-full bg-brand-blue" /> Areas Served
             </h4>
             <ul className="space-y-4 font-bold text-sm">
-              <li><Link to="/locations/alexandria" className="hover:text-white transition-colors flex items-center gap-2 group"><ChevronRight className="w-3 h-3 text-brand-red opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" /> Alexandria Hub</Link></li>
-              <li><Link to="/locations/pineville" className="hover:text-white transition-colors flex items-center gap-2 group"><ChevronRight className="w-3 h-3 text-brand-red opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" /> Pineville</Link></li>
-              <li><Link to="/locations/marksville" className="hover:text-white transition-colors flex items-center gap-2 group"><ChevronRight className="w-3 h-3 text-brand-red opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" /> Marksville</Link></li>
-              <li><Link to="/locations/leesville" className="hover:text-white transition-colors flex items-center gap-2 group"><ChevronRight className="w-3 h-3 text-brand-red opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" /> Leesville</Link></li>
-              <li><Link to="/locations/bunkie" className="hover:text-white transition-colors flex items-center gap-2 group"><ChevronRight className="w-3 h-3 text-brand-red opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" /> Bunkie</Link></li>
-              <li><Link to="/locations/opelousas" className="hover:text-white transition-colors flex items-center gap-2 group"><ChevronRight className="w-3 h-3 text-brand-red opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" /> Opelousas</Link></li>
-              <li><Link to="/locations/natchitoches" className="hover:text-white transition-colors flex items-center gap-2 group"><ChevronRight className="w-3 h-3 text-brand-red opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" /> Natchitoches</Link></li>
-              <li><Link to="/locations/ville-platte" className="hover:text-white transition-colors flex items-center gap-2 group"><ChevronRight className="w-3 h-3 text-brand-red opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" /> Ville Platte</Link></li>
-              <li><Link to="/locations/deridder" className="hover:text-white transition-colors flex items-center gap-2 group"><ChevronRight className="w-3 h-3 text-brand-red opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" /> DeRidder</Link></li>
-              <li><Link to="/locations/oakdale" className="hover:text-white transition-colors flex items-center gap-2 group"><ChevronRight className="w-3 h-3 text-brand-red opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" /> Oakdale</Link></li>
-              <li><Link to="/locations/many" className="hover:text-white transition-colors flex items-center gap-2 group"><ChevronRight className="w-3 h-3 text-brand-red opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" /> Many</Link></li>
+              <li><Link to="/locations/alexandria" className="hover:text-white transition-colors flex items-center gap-2 group"><ChevronRight className="w-3 h-3 text-brand-blue opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" /> Alexandria Hub</Link></li>
+              <li><Link to="/locations/pineville" className="hover:text-white transition-colors flex items-center gap-2 group"><ChevronRight className="w-3 h-3 text-brand-blue opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" /> Pineville</Link></li>
+              <li><Link to="/locations/marksville" className="hover:text-white transition-colors flex items-center gap-2 group"><ChevronRight className="w-3 h-3 text-brand-blue opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" /> Marksville</Link></li>
+              <li><Link to="/locations/leesville" className="hover:text-white transition-colors flex items-center gap-2 group"><ChevronRight className="w-3 h-3 text-brand-blue opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" /> Leesville</Link></li>
+              <li><Link to="/locations/bunkie" className="hover:text-white transition-colors flex items-center gap-2 group"><ChevronRight className="w-3 h-3 text-brand-blue opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" /> Bunkie</Link></li>
+              <li><Link to="/locations/opelousas" className="hover:text-white transition-colors flex items-center gap-2 group"><ChevronRight className="w-3 h-3 text-brand-blue opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" /> Opelousas</Link></li>
+              <li><Link to="/locations/natchitoches" className="hover:text-white transition-colors flex items-center gap-2 group"><ChevronRight className="w-3 h-3 text-brand-blue opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" /> Natchitoches</Link></li>
+              <li><Link to="/locations/ville-platte" className="hover:text-white transition-colors flex items-center gap-2 group"><ChevronRight className="w-3 h-3 text-brand-blue opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" /> Ville Platte</Link></li>
+              <li><Link to="/locations/deridder" className="hover:text-white transition-colors flex items-center gap-2 group"><ChevronRight className="w-3 h-3 text-brand-blue opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" /> DeRidder</Link></li>
+              <li><Link to="/locations/oakdale" className="hover:text-white transition-colors flex items-center gap-2 group"><ChevronRight className="w-3 h-3 text-brand-blue opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" /> Oakdale</Link></li>
+              <li><Link to="/locations/many" className="hover:text-white transition-colors flex items-center gap-2 group"><ChevronRight className="w-3 h-3 text-brand-blue opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" /> Many</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-white font-display font-bold mb-8 uppercase tracking-widest text-xs flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full bg-brand-red" /> Knowledge Base
+              <div className="w-1.5 h-1.5 rounded-full bg-brand-blue" /> Knowledge Base
             </h4>
             <ul className="space-y-4 font-bold text-sm">
-              <li><Link to="/guides/the-ultimate-guide-to-adas-calibration" className="hover:text-white transition-colors flex items-center gap-2 group leading-snug"><ChevronRight className="w-3 h-3 text-brand-red opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all shrink-0" /> ADAS Calibration Science</Link></li>
-              <li><Link to="/guides/commercial-fleet-maintenance-checklist" className="hover:text-white transition-colors flex items-center gap-2 group leading-snug"><ChevronRight className="w-3 h-3 text-brand-red opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all shrink-0" /> Fleet Maintenance Standard</Link></li>
-              <li><Link to="/guides/understanding-road-force-balancing" className="hover:text-white transition-colors flex items-center gap-2 group leading-snug"><ChevronRight className="w-3 h-3 text-brand-red opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all shrink-0" /> Hunter Road Force Tech</Link></li>
-              <li><Link to="/faq" className="hover:text-white transition-colors flex items-center gap-2 group leading-snug"><ChevronRight className="w-3 h-3 text-brand-red opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all shrink-0" /> Warranties & Insurance</Link></li>
+              <li><Link to="/guides/the-ultimate-guide-to-adas-calibration" className="hover:text-white transition-colors flex items-center gap-2 group leading-snug"><ChevronRight className="w-3 h-3 text-brand-blue opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all shrink-0" /> ADAS Calibration Science</Link></li>
+              <li><Link to="/guides/commercial-fleet-maintenance-checklist" className="hover:text-white transition-colors flex items-center gap-2 group leading-snug"><ChevronRight className="w-3 h-3 text-brand-blue opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all shrink-0" /> Fleet Maintenance Standard</Link></li>
+              <li><Link to="/guides/understanding-road-force-balancing" className="hover:text-white transition-colors flex items-center gap-2 group leading-snug"><ChevronRight className="w-3 h-3 text-brand-blue opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all shrink-0" /> Hunter Road Force Tech</Link></li>
+              <li><Link to="/faq" className="hover:text-white transition-colors flex items-center gap-2 group leading-snug"><ChevronRight className="w-3 h-3 text-brand-blue opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all shrink-0" /> Warranties & Insurance</Link></li>
             </ul>
           </div>
         </div>

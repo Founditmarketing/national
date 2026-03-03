@@ -6,7 +6,7 @@ export default function Many() {
         <LocationLayout
             city="Many"
             heroImage="https://images.unsplash.com/photo-1502470769865-ebbd80a22a76?auto=format&fit=crop&q=80&w=2000"
-            description="Comprehensive coverage for the Toledo Bend region. Whether hauling heavy loads or navigating long stretches, our pristine facility offers Many drivers bulletproof transmission re-manufacturing and laser-guided alignments."
+            description="Comprehensive auto repair for the Toledo Bend region. Whether you're hauling a boat or commuting to work, we offer reliable transmission and alignment services to keep you moving safely."
         />
     );
 }

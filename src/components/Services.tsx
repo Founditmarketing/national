@@ -25,7 +25,7 @@ export default function Services() {
       icon: <Settings className="w-8 h-8" />,
       image: '/suspension.png',
       description: 'Master-certified heavy repair and complex component replacements.',
-      gradient: 'from-brand-red/10 to-transparent',
+      gradient: 'from-brand-blue/10 to-transparent',
       items: [
         'Engine Repair & Replacements',
         'Transmission Overhauls',
@@ -62,7 +62,7 @@ export default function Services() {
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 text-brand-red text-xs font-bold mb-6 uppercase tracking-widest"
+              className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 text-brand-blue text-xs font-bold mb-6 uppercase tracking-widest"
             >
               <Zap className="w-3 h-3" />
               Service Excellence
@@ -96,7 +96,7 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className={`group relative bg-white/5 rounded-[2.5rem] p-8 border border-white/5 hover:border-brand-red/30 transition-all duration-500 overflow-hidden bg-gradient-to-br ${service.gradient}`}
+              className={`group relative bg-white/5 rounded-[2.5rem] p-8 border border-white/5 hover:border-brand-blue/30 transition-all duration-500 overflow-hidden bg-gradient-to-br ${service.gradient}`}
             >
               {/* Image Background Layer */}
               <div className="absolute inset-0 z-0">
@@ -110,18 +110,18 @@ export default function Services() {
 
               <div className="relative z-10">
                 <div className="w-16 h-16 bg-slate-900 rounded-2xl flex items-center justify-center mb-8 border border-white/10 group-hover:scale-110 transition-transform duration-500 shadow-2xl">
-                  <div className="text-brand-red">
+                  <div className="text-brand-blue">
                     {service.icon}
                   </div>
                 </div>
                 <div className="text-slate-500 text-[10px] uppercase tracking-[0.2em] font-bold mb-2">{service.subtitle}</div>
-                <h3 className="text-2xl font-display font-bold text-white mb-4 group-hover:text-brand-red transition-colors">{service.category}</h3>
+                <h3 className="text-2xl font-display font-bold text-white mb-4 group-hover:text-brand-blue transition-colors">{service.category}</h3>
                 <p className="text-slate-400 text-sm mb-8 leading-relaxed font-medium">{service.description}</p>
                 <div className="h-px w-full bg-white/5 mb-8" />
                 <ul className="space-y-4 mb-10">
                   {service.items.map((item, i) => (
                     <li key={i} className="flex items-center gap-3 group/item">
-                      <div className="w-1.5 h-1.5 rounded-full bg-brand-red/40 group-hover/item:bg-brand-red transition-colors" />
+                      <div className="w-1.5 h-1.5 rounded-full bg-brand-blue/40 group-hover/item:bg-brand-blue transition-colors" />
                       <span className="text-slate-300 font-bold text-sm tracking-tight">{item}</span>
                     </li>
                   ))}
@@ -137,7 +137,7 @@ export default function Services() {
 
               {/* Decorative Mesh Background for Card */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 pointer-events-none z-0">
-                <div className="absolute -bottom-20 -right-20 w-40 h-40 bg-brand-red/10 blur-[60px] rounded-full" />
+                <div className="absolute -bottom-20 -right-20 w-40 h-40 bg-brand-blue/10 blur-[60px] rounded-full" />
               </div>
             </motion.div>
           ))}

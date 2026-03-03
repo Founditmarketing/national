@@ -6,7 +6,7 @@ import Contact from '../components/Contact';
 export default function Suspension() {
     return (
         <div className="pt-24 min-h-screen">
-            <section className="relative py-32 bg-slate-900 border-b border-brand-red/20 overflow-hidden">
+            <section className="relative py-32 bg-slate-900 border-b border-brand-blue/20 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
                         src="https://images.unsplash.com/photo-1542365851-4043232c7fbd?auto=format&fit=crop&q=80&w=2000"
@@ -24,7 +24,7 @@ export default function Suspension() {
                     >
                         <h1 className="text-5xl md:text-8xl font-display font-bold mb-6 tracking-tight">
                             Suspension & <br />
-                            <span className="text-brand-red text-glow-red italic">Strut Assemblies.</span>
+                            <span className="text-brand-blue text-glow-red italic">Strut Assemblies.</span>
                         </h1>
                         <p className="text-xl text-slate-400 max-w-3xl mx-auto font-medium">
                             Restore factory ride quality, eliminate body roll, and ensure your tires maintain perfectly even road contact.
@@ -37,14 +37,14 @@ export default function Suspension() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid md:grid-cols-2 gap-8">
 
-                        <div className="glass p-8 rounded-[2rem] border border-white/10 hover:border-brand-red/30 transition-colors group">
-                            <MoveUpRight className="w-10 h-10 text-brand-red mb-6" />
+                        <div className="glass p-8 rounded-[2rem] border border-white/10 hover:border-brand-blue/30 transition-colors group">
+                            <MoveUpRight className="w-10 h-10 text-brand-blue mb-6" />
                             <h3 className="text-2xl font-bold text-white mb-4">Shocks & Struts</h3>
                             <p className="text-slate-400 mb-6">Worn struts increase braking distance dramatically and cause severe tire cupping. We install premium Monroe and Bilstein assemblies to stabilize your chassis against Louisiana pothole damage.</p>
                         </div>
 
-                        <div className="glass p-8 rounded-[2rem] border border-brand-red/20 hover:border-brand-red/50 transition-colors group">
-                            <Settings className="w-10 h-10 text-brand-red mb-6" />
+                        <div className="glass p-8 rounded-[2rem] border border-brand-blue/20 hover:border-brand-blue/50 transition-colors group">
+                            <Settings className="w-10 h-10 text-brand-blue mb-6" />
                             <h3 className="text-2xl font-bold text-white mb-4">Linkages & Control Arms</h3>
                             <p className="text-slate-400 mb-6">Clunking sounds over bumps? A loose front end is a major safety hazard. We inspect and replace worn ball joints, tie rod ends, and sway bar bushings to tighten steering response.</p>
                         </div>

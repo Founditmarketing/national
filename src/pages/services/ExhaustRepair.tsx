@@ -8,7 +8,7 @@ export default function ExhaustRepair() {
     return (
         <div className="pt-24 min-h-screen">
             {/* Hero */}
-            <section className="relative py-32 bg-slate-900 border-b border-brand-red/20 overflow-hidden">
+            <section className="relative py-32 bg-slate-900 border-b border-brand-blue/20 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(220,38,38,0.15),transparent)]" />
                     <img
@@ -27,7 +27,7 @@ export default function ExhaustRepair() {
                     >
                         <h1 className="text-5xl md:text-8xl font-display font-bold mb-6 tracking-tight">
                             Exhaust & <br />
-                            <span className="text-brand-red text-glow-red italic">Catalytic Converters.</span>
+                            <span className="text-brand-blue text-glow-red italic">Catalytic Converters.</span>
                         </h1>
                         <p className="text-xl text-slate-400 max-w-3xl mx-auto font-medium">
                             Restoring backpressure sensors, O2 thresholds, and ensuring state environmental compliance.
@@ -41,14 +41,14 @@ export default function ExhaustRepair() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid md:grid-cols-2 gap-8">
 
-                        <div className="glass p-8 rounded-[2rem] border border-brand-red/20 hover:border-brand-red/50 transition-colors group">
-                            <Activity className="w-10 h-10 text-brand-red mb-6" />
+                        <div className="glass p-8 rounded-[2rem] border border-brand-blue/20 hover:border-brand-blue/50 transition-colors group">
+                            <Activity className="w-10 h-10 text-brand-blue mb-6" />
                             <h3 className="text-2xl font-bold text-white mb-4">Direct-Fit Converters</h3>
                             <p className="text-slate-400 mb-6">When P0420 efficiency codes trigger, we employ direct-fit CARB-compliant catalytic converters. This avoids cutting/welding universal patches that trigger future sensor faults.</p>
                         </div>
 
-                        <div className="glass p-8 rounded-[2rem] border border-white/10 hover:border-brand-red/30 transition-colors group">
-                            <Wrench className="w-10 h-10 text-brand-red mb-6" />
+                        <div className="glass p-8 rounded-[2rem] border border-white/10 hover:border-brand-blue/30 transition-colors group">
+                            <Wrench className="w-10 h-10 text-brand-blue mb-6" />
                             <h3 className="text-2xl font-bold text-white mb-4">O2 Sensor Calibration</h3>
                             <p className="text-slate-400 mb-6">Upstream and downstream wideband air/fuel sensors must report accurate impedance to the ECM. We replace sluggish sensors to restore proper lean/rich fuel trimming and gas mileage.</p>
                         </div>

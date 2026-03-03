@@ -24,11 +24,11 @@ export default function AutoRepair() {
                         transition={{ duration: 0.8 }}
                         className="max-w-3xl"
                     >
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-light border border-white/10 text-brand-red text-sm font-bold mb-8 tracking-widest uppercase">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-light border border-white/10 text-brand-blue text-sm font-bold mb-8 tracking-widest uppercase">
                             <Wrench className="w-4 h-4" /> Master Technicians
                         </div>
                         <h1 className="text-5xl md:text-7xl font-display font-bold mb-6 tracking-tight leading-[1.05]">
-                            Advanced <span className="text-brand-red text-glow-red italic">Auto Repair</span>
+                            Advanced <span className="text-brand-blue text-glow-red italic">Auto Repair</span>
                         </h1>
                         <p className="text-xl text-slate-400 leading-relaxed font-medium">
                             From sophisticated computer diagnostics to complete engine overhauls. We employ strictly ASE-certified master mechanics capable of resolving the most complex modern automotive failures.
@@ -42,7 +42,7 @@ export default function AutoRepair() {
                     <div className="grid md:grid-cols-2 gap-16">
                         <div className="glass p-8 rounded-[2rem] border border-white/10">
                             <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-                                <Zap className="w-8 h-8 text-brand-red" /> No Guesswork
+                                <Zap className="w-8 h-8 text-brand-blue" /> No Guesswork
                             </h3>
                             <p className="text-slate-300 leading-relaxed mb-6">
                                 Modern vehicles are rolling computers. We utilize dealership-level scan tools (Snap-On, Autel) to interface directly with your ECU, TCP, and BCM modules. We diagnose the root cause, not just the symptom.
@@ -51,7 +51,7 @@ export default function AutoRepair() {
                         </div>
 
                         <div>
-                            <h2 className="text-4xl font-display font-bold mb-8">Comprehensive <span className="text-brand-red">Diagnostics</span></h2>
+                            <h2 className="text-4xl font-display font-bold mb-8">Comprehensive <span className="text-brand-blue">Diagnostics</span></h2>
                             <div className="space-y-6">
                                 {[
                                     "Engine Performance & Drivability",
@@ -60,8 +60,8 @@ export default function AutoRepair() {
                                     "Heating & Air Conditioning (A/C)"
                                 ].map((item, index) => (
                                     <div key={index} className="flex items-start gap-4">
-                                        <div className="bg-brand-red/10 p-2 rounded-lg mt-1">
-                                            <CheckCircle2 className="w-6 h-6 text-brand-red" />
+                                        <div className="bg-brand-blue/10 p-2 rounded-lg mt-1">
+                                            <CheckCircle2 className="w-6 h-6 text-brand-blue" />
                                         </div>
                                         <div>
                                             <h3 className="text-xl font-bold text-white mb-2">{item}</h3>

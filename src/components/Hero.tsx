@@ -47,9 +47,9 @@ export default function Hero() {
           >
             <motion.div
               variants={itemVariants}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-light border border-white/10 text-brand-red text-sm font-bold mb-8 shadow-2xl uppercase tracking-widest"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-light border border-white/10 text-brand-blue text-sm font-bold mb-8 shadow-2xl uppercase tracking-widest"
             >
-              <span className="flex h-2 w-2 rounded-full bg-brand-red animate-pulse shadow-[0_0_10px_rgba(220,38,38,1)]"></span>
+              <span className="flex h-2 w-2 rounded-full bg-brand-blue animate-pulse shadow-[0_0_10px_rgba(220,38,38,1)]"></span>
               Central Louisiana's Premier Hub
             </motion.div>
 
@@ -58,7 +58,7 @@ export default function Hero() {
               className="text-[12.5vw] md:text-[9.5vw] lg:text-[7.5vw] font-display font-bold text-white tracking-tighter leading-[0.9] mb-8 uppercase"
             >
               Mastery In <br />
-              <span className="text-brand-red text-glow-red italic pr-2">Motion.</span>
+              <span className="text-brand-blue text-glow-red italic pr-2">Motion.</span>
             </motion.h1>
 
             <motion.p
@@ -75,7 +75,7 @@ export default function Hero() {
               <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                 <Link
                   to="/contact"
-                  className="group relative inline-flex justify-center items-center gap-3 bg-brand-red hover:bg-brand-red-dark text-white px-10 py-5 rounded-2xl font-bold text-lg transition-all shadow-2xl shadow-brand-red/30 overflow-hidden w-full sm:w-auto"
+                  className="group relative inline-flex justify-center items-center gap-3 bg-brand-blue hover:bg-brand-blue-dark text-white px-10 py-5 rounded-2xl font-bold text-lg transition-all shadow-2xl shadow-brand-blue/30 overflow-hidden w-full sm:w-auto"
                 >
                   <span className="relative z-10">Book Expert Service</span>
                   <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform" />
@@ -104,7 +104,7 @@ export default function Hero() {
             <div className="glass p-8 rounded-[2.5rem] relative z-10 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] border border-white/10">
               <div className="grid grid-cols-2 gap-8">
                 <div className="space-y-2">
-                  <div className="text-brand-red mb-2 bg-brand-red/10 w-fit p-3 rounded-2xl">
+                  <div className="text-brand-blue mb-2 bg-brand-blue/10 w-fit p-3 rounded-2xl">
                     <Star className="w-6 h-6" />
                   </div>
                   <h4 className="text-3xl font-display font-bold text-white leading-none">4.9/5</h4>
@@ -121,8 +121,8 @@ export default function Hero() {
 
               <div className="mt-8 pt-8 border-t border-white/5 space-y-6">
                 <div className="flex items-center gap-4 group cursor-pointer">
-                  <div className="bg-white/5 p-3 rounded-xl group-hover:bg-brand-red/10 transition-colors">
-                    <MapPin className="w-5 h-5 text-slate-400 group-hover:text-brand-red transition-colors" />
+                  <div className="bg-white/5 p-3 rounded-xl group-hover:bg-brand-blue/10 transition-colors">
+                    <MapPin className="w-5 h-5 text-slate-400 group-hover:text-brand-blue transition-colors" />
                   </div>
                   <div>
                     <p className="text-white font-bold text-sm">Main Street Depot</p>
@@ -132,9 +132,9 @@ export default function Hero() {
               </div>
 
               {/* Tax Time Callout Inside Card */}
-              <div className="mt-8 bg-brand-red/5 border border-brand-red/20 rounded-2xl p-4">
+              <div className="mt-8 bg-brand-blue/5 border border-brand-blue/20 rounded-2xl p-4">
                 <div className="flex gap-4">
-                  <ShieldCheck className="w-6 h-6 text-brand-red shrink-0" />
+                  <ShieldCheck className="w-6 h-6 text-brand-blue shrink-0" />
                   <p className="text-sm text-slate-300">
                     <span className="text-white font-bold">Tax Time Special:</span> The Complete Overhaul package is now available.
                   </p>
@@ -143,7 +143,7 @@ export default function Hero() {
             </div>
 
             {/* Decorative Orbs */}
-            <div className="absolute -top-10 -right-10 w-40 h-40 bg-brand-red/20 blur-[80px] rounded-full" />
+            <div className="absolute -top-10 -right-10 w-40 h-40 bg-brand-blue/20 blur-[80px] rounded-full" />
             <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-blue-500/10 blur-[80px] rounded-full" />
           </motion.div>
         </div>

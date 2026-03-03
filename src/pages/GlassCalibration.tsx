@@ -24,11 +24,11 @@ export default function GlassCalibration() {
                         transition={{ duration: 0.8 }}
                         className="max-w-3xl"
                     >
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-light border border-white/10 text-brand-red text-sm font-bold mb-8 tracking-widest uppercase">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-light border border-white/10 text-brand-blue text-sm font-bold mb-8 tracking-widest uppercase">
                             <Focus className="w-4 h-4" /> Optical Clarity
                         </div>
                         <h1 className="text-5xl md:text-7xl font-display font-bold mb-6 tracking-tight leading-[1.05]">
-                            Glass & <br /> <span className="text-brand-red text-glow-red italic">ADAS Calibration</span>
+                            Glass & <br /> <span className="text-brand-blue text-glow-red italic">ADAS Calibration</span>
                         </h1>
                         <p className="text-xl text-slate-400 leading-relaxed font-medium">
                             A modern windshield is effectively a transparent sensor array. We provide OEM-quality glass replacement paired with millimeter-precise ADAS camera recalibration to keep your safety systems online.
@@ -41,7 +41,7 @@ export default function GlassCalibration() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid md:grid-cols-2 gap-16">
                         <div>
-                            <h2 className="text-4xl font-display font-bold mb-8">Crystal <span className="text-brand-red">Clear</span></h2>
+                            <h2 className="text-4xl font-display font-bold mb-8">Crystal <span className="text-brand-blue">Clear</span></h2>
                             <div className="space-y-6">
                                 {[
                                     "OEM-Equivalent Windshield Replacement",
@@ -50,8 +50,8 @@ export default function GlassCalibration() {
                                     "Insurance Claims Processing Handled Internally"
                                 ].map((item, index) => (
                                     <div key={index} className="flex items-start gap-4">
-                                        <div className="bg-brand-red/10 p-2 rounded-lg mt-1">
-                                            <CheckCircle2 className="w-6 h-6 text-brand-red" />
+                                        <div className="bg-brand-blue/10 p-2 rounded-lg mt-1">
+                                            <CheckCircle2 className="w-6 h-6 text-brand-blue" />
                                         </div>
                                         <div>
                                             <h3 className="text-xl font-bold text-white mb-2">{item}</h3>
@@ -63,13 +63,13 @@ export default function GlassCalibration() {
                         </div>
                         <div className="glass p-8 rounded-[2rem] border border-white/10">
                             <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-                                <Eye className="w-8 h-8 text-brand-red" /> The ADAS Imperative
+                                <Eye className="w-8 h-8 text-brand-blue" /> The ADAS Imperative
                             </h3>
                             <p className="text-slate-300 leading-relaxed mb-6">
                                 Advanced Driver Assistance Systems (Lane Departure, Auto Braking) rely on cameras mounted to your glass. Replacing the glass without re-aiming the optic array is dangerous. Our facility is equipped with the physical targets and diagnostic software required to reset these systems to factory zero.
                             </p>
-                            <div className="bg-brand-red/10 border border-brand-red/20 rounded-xl p-4">
-                                <p className="text-brand-red font-bold text-sm uppercase tracking-widest text-center">Do not compromise safety.</p>
+                            <div className="bg-brand-blue/10 border border-brand-blue/20 rounded-xl p-4">
+                                <p className="text-brand-blue font-bold text-sm uppercase tracking-widest text-center">Do not compromise safety.</p>
                             </div>
                         </div>
                     </div>

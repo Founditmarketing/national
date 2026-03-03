@@ -26,6 +26,10 @@ import Marksville from './pages/locations/Marksville';
 import Leesville from './pages/locations/Leesville';
 import Bunkie from './pages/locations/Bunkie';
 import Opelousas from './pages/locations/Opelousas';
+import Ball from './pages/locations/Ball';
+import Tioga from './pages/locations/Tioga';
+import GrantParish from './pages/locations/GrantParish';
+import Creola from './pages/locations/Creola';
 import AdasGuide from './pages/guides/AdasGuide';
 import FleetGuide from './pages/guides/FleetGuide';
 import RoadForceGuide from './pages/guides/RoadForceGuide';
@@ -64,7 +68,7 @@ export default function App() {
   return (
     <Router>
       <SmoothScroll>
-        <div className="min-h-screen bg-slate-900 font-sans text-white selection:bg-brand-red selection:text-white antialiased">
+        <div className="min-h-screen bg-slate-900 font-sans text-white selection:bg-brand-blue selection:text-white antialiased">
           <div className="bg-noise fixed inset-0 z-[99999] pointer-events-none mix-blend-overlay opacity-40"></div>
           <AnimatePresence mode="wait">
             {isLoading ? (
@@ -115,6 +119,10 @@ export default function App() {
                     <Route path="/locations/leesville" element={<Leesville />} />
                     <Route path="/locations/bunkie" element={<Bunkie />} />
                     <Route path="/locations/opelousas" element={<Opelousas />} />
+                    <Route path="/locations/ball" element={<Ball />} />
+                    <Route path="/locations/tioga" element={<Tioga />} />
+                    <Route path="/locations/grant-parish" element={<GrantParish />} />
+                    <Route path="/locations/creola" element={<Creola />} />
                     <Route path="/locations/natchitoches" element={<Natchitoches />} />
                     <Route path="/locations/ville-platte" element={<VillePlatte />} />
                     <Route path="/locations/deridder" element={<DeRidder />} />

@@ -40,7 +40,7 @@ export default function Navbar() {
                       className="h-10 md:h-12 w-auto object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.1)] transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="hidden sm:flex flex-col justify-center">
-                      <span className="font-display font-bold text-xl tracking-tight block leading-none text-white uppercase group-hover:text-brand-red transition-colors duration-300">NATIONAL</span>
+                      <span className="font-display font-bold text-xl tracking-tight block leading-none text-white uppercase group-hover:text-brand-blue transition-colors duration-300">NATIONAL</span>
                       <span className="text-[10px] text-slate-400 tracking-[0.2em] uppercase font-bold text-nowrap">Tire & Auto</span>
                     </div>
                   </Link>
@@ -52,10 +52,10 @@ export default function Navbar() {
 
                 <button
                   onClick={() => setIsOpen(true)}
-                  className="group flex items-center gap-3 text-white hover:text-brand-red transition-colors"
+                  className="group flex items-center gap-3 text-white hover:text-brand-blue transition-colors"
                 >
                   <span className="text-sm font-bold tracking-widest uppercase hidden md:block group-hover:tracking-[0.3em] transition-all duration-300">Menu</span>
-                  <div className="p-2 md:p-3 rounded-full glass-light border border-white/10 group-hover:border-brand-red/30 transition-all">
+                  <div className="p-2 md:p-3 rounded-full glass-light border border-white/10 group-hover:border-brand-blue/30 transition-all">
                     <Menu className="w-6 h-6" />
                   </div>
                 </button>
@@ -64,7 +64,7 @@ export default function Navbar() {
                   <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                     <Link
                       to="/contact"
-                      className="bg-brand-red hover:bg-brand-red-dark text-white px-6 py-3 rounded-xl font-bold text-sm transition-all shadow-lg shadow-brand-red/20 flex items-center gap-2 group block"
+                      className="bg-brand-blue hover:bg-brand-blue-dark text-white px-6 py-3 rounded-xl font-bold text-sm transition-all shadow-lg shadow-brand-blue/20 flex items-center gap-2 group block"
                     >
                       Book Priority
                       <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

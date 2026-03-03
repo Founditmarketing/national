@@ -59,7 +59,7 @@ export default function Testimonials() {
   return (
     <section className="py-32 bg-slate-950 relative overflow-hidden border-t border-white/5">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(220,38,38,0.03),transparent)] pointer-events-none" />
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-red/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-blue/5 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 mb-20">
         <div className="text-center max-w-3xl mx-auto">
@@ -74,7 +74,7 @@ export default function Testimonials() {
           </motion.div>
           <h2 className="text-4xl md:text-5xl lg:text-7xl font-display font-bold text-white mb-8 tracking-tight">
             Institutional Trust in <br />
-            <span className="text-brand-red italic">Central Louisiana.</span>
+            <span className="text-brand-blue italic">Central Louisiana.</span>
           </h2>
           <p className="text-xl text-slate-400 font-medium leading-relaxed max-w-2xl mx-auto">
             Real feedback from hundreds of private vehicle owners, corporate fleet commanders, and daily commuters who rely on our infrastructure.
@@ -120,8 +120,8 @@ interface ReviewProps {
 
 const ReviewCard = React.forwardRef<HTMLDivElement, { review: ReviewProps }>(({ review }, ref) => {
   return (
-    <div ref={ref} className="w-[350px] md:w-[450px] shrink-0 group relative glass p-8 rounded-[2rem] border border-white/5 hover:border-brand-red/30 transition-all duration-500 hover:shadow-2xl flex flex-col h-full bg-slate-900/50">
-      <Quote className="absolute top-8 right-8 w-10 h-10 text-white/5 group-hover:text-brand-red/10 transition-colors" />
+    <div ref={ref} className="w-[350px] md:w-[450px] shrink-0 group relative glass p-8 rounded-[2rem] border border-white/5 hover:border-brand-blue/30 transition-all duration-500 hover:shadow-2xl flex flex-col h-full bg-slate-900/50">
+      <Quote className="absolute top-8 right-8 w-10 h-10 text-white/5 group-hover:text-brand-blue/10 transition-colors" />
 
       <div className="flex gap-1 mb-6">
         {[...Array(review.rating)].map((_, i) => (

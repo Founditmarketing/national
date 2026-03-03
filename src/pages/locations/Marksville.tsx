@@ -6,7 +6,7 @@ export default function Marksville() {
         <LocationLayout
             city="Marksville"
             heroImage="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&q=80&w=2000"
-            description="We extend our master-level automotive services to Marksville. Rather than dealing with dealership wait times, bring your vehicle to the specialists who diagnose the root cause."
+            description="Extending our professional automotive services to Marksville. Skip the long dealership lines and bring your vehicle to mechanics who actually find and fix the root cause."
         />
     );
 }

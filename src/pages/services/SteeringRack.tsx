@@ -8,7 +8,7 @@ export default function SteeringRack() {
     return (
         <div className="pt-24 min-h-screen">
             {/* Hero */}
-            <section className="relative py-32 bg-slate-900 border-b border-brand-red/20 overflow-hidden">
+            <section className="relative py-32 bg-slate-900 border-b border-brand-blue/20 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(220,38,38,0.15),transparent)]" />
                     <img
@@ -27,7 +27,7 @@ export default function SteeringRack() {
                     >
                         <h1 className="text-5xl md:text-8xl font-display font-bold mb-6 tracking-tight">
                             Steering Rack & <br />
-                            <span className="text-brand-red text-glow-red italic">Pinion Repair.</span>
+                            <span className="text-brand-blue text-glow-red italic">Pinion Repair.</span>
                         </h1>
                         <p className="text-xl text-slate-400 max-w-3xl mx-auto font-medium">
                             Restoring tight steering geometry, resolving power steering fluid hemorrhages, and replacing degraded pump seals.
@@ -41,14 +41,14 @@ export default function SteeringRack() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid md:grid-cols-2 gap-8">
 
-                        <div className="glass p-8 rounded-[2rem] border border-brand-red/20 hover:border-brand-red/50 transition-colors group">
-                            <Navigation className="w-10 h-10 text-brand-red mb-6" />
+                        <div className="glass p-8 rounded-[2rem] border border-brand-blue/20 hover:border-brand-blue/50 transition-colors group">
+                            <Navigation className="w-10 h-10 text-brand-blue mb-6" />
                             <h3 className="text-2xl font-bold text-white mb-4">Complete Rack Replacement</h3>
                             <p className="text-slate-400 mb-6">Loose handling and wandering steering typically point to inner seal failure or worn pinion gear teeth. We execute complete hydraulic and electronic EPS rack swaps for factory-level control.</p>
                         </div>
 
-                        <div className="glass p-8 rounded-[2rem] border border-white/10 hover:border-brand-red/30 transition-colors group">
-                            <Wrench className="w-10 h-10 text-brand-red mb-6" />
+                        <div className="glass p-8 rounded-[2rem] border border-white/10 hover:border-brand-blue/30 transition-colors group">
+                            <Wrench className="w-10 h-10 text-brand-blue mb-6" />
                             <h3 className="text-2xl font-bold text-white mb-4">Power Steering Pumps & Lines</h3>
                             <p className="text-slate-400 mb-6">If the wheel whines under tension, the high-pressure PS pump is starving. We flush the hydraulic fluid reservoir and replace ruptured return lines to re-pressurize the system.</p>
                         </div>

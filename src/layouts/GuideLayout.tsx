@@ -15,7 +15,7 @@ export default function GuideLayout({ title, subtitle, heroImage, readTime, chil
     return (
         <div className="pt-24 min-h-screen bg-slate-900">
             {/* Article Hero */}
-            <section className="relative py-24 border-b border-brand-red/20 overflow-hidden">
+            <section className="relative py-24 border-b border-brand-blue/20 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(220,38,38,0.1),transparent)]" />
                     <img
@@ -32,7 +32,7 @@ export default function GuideLayout({ title, subtitle, heroImage, readTime, chil
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <div className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full glass-light border border-white/10 text-brand-red text-xs font-bold mb-6 mx-auto tracking-widest uppercase">
+                        <div className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full glass-light border border-white/10 text-brand-blue text-xs font-bold mb-6 mx-auto tracking-widest uppercase">
                             <BookOpen className="w-4 h-4" /> {readTime} Read
                         </div>
                         <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 tracking-tight leading-tight">
@@ -48,7 +48,7 @@ export default function GuideLayout({ title, subtitle, heroImage, readTime, chil
             {/* Article Body */}
             <section className="py-20">
                 <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="prose prose-invert prose-lg prose-headings:font-display prose-headings:font-bold prose-a:text-brand-red hover:prose-a:text-brand-red-light prose-img:rounded-3xl prose-img:border prose-img:border-white/10 max-w-none">
+                    <div className="prose prose-invert prose-lg prose-headings:font-display prose-headings:font-bold prose-a:text-brand-blue hover:prose-a:text-brand-blue-light prose-img:rounded-3xl prose-img:border prose-img:border-white/10 max-w-none">
                         {children}
                     </div>
                 </div>

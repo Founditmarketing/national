@@ -38,12 +38,12 @@ export default function FAQ() {
             viewport={{ once: true }}
             className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 text-slate-400 text-xs font-bold mb-8 uppercase tracking-widest border border-white/5"
           >
-            <HelpCircle className="w-4 h-4 text-brand-red" />
+            <HelpCircle className="w-4 h-4 text-brand-blue" />
             Operational Intel
           </motion.div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-8 tracking-tight">
             Frequently Asked <br />
-            <span className="text-brand-red">Questions.</span>
+            <span className="text-brand-blue">Questions.</span>
           </h2>
           <p className="text-lg text-slate-400 font-medium leading-relaxed">
             Technical insight into our consolidated service ecosystem and institutional fleet protocols.
@@ -58,15 +58,15 @@ export default function FAQ() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="glass rounded-3xl overflow-hidden border border-white/5 hover:border-brand-red/20 transition-all duration-300"
+              className="glass rounded-3xl overflow-hidden border border-white/5 hover:border-brand-blue/20 transition-all duration-300"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className="w-full flex items-center justify-between p-6 md:p-8 text-left focus:outline-none"
               >
                 <span className="text-xl font-display font-bold text-white pr-8">{faq.question}</span>
-                <div className={`p-2 rounded-xl bg-white/5 border border-white/10 transition-transform duration-500 ${openIndex === index ? 'rotate-180 bg-brand-red/10 border-brand-red/20' : ''}`}>
-                  <ChevronDown className={`w-5 h-5 text-slate-400 ${openIndex === index ? 'text-brand-red' : ''}`} />
+                <div className={`p-2 rounded-xl bg-white/5 border border-white/10 transition-transform duration-500 ${openIndex === index ? 'rotate-180 bg-brand-blue/10 border-brand-blue/20' : ''}`}>
+                  <ChevronDown className={`w-5 h-5 text-slate-400 ${openIndex === index ? 'text-brand-blue' : ''}`} />
                 </div>
               </button>
               <AnimatePresence>

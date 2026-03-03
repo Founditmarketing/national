@@ -8,7 +8,7 @@ export default function EngineRepair() {
     return (
         <div className="pt-24 min-h-screen">
             {/* Hero */}
-            <section className="relative py-32 bg-slate-900 border-b border-brand-red/20 overflow-hidden">
+            <section className="relative py-32 bg-slate-900 border-b border-brand-blue/20 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(220,38,38,0.15),transparent)]" />
                     <img
@@ -27,7 +27,7 @@ export default function EngineRepair() {
                     >
                         <h1 className="text-5xl md:text-8xl font-display font-bold mb-6 tracking-tight">
                             Engine Repair & <br />
-                            <span className="text-brand-red text-glow-red italic">Block Replacements.</span>
+                            <span className="text-brand-blue text-glow-red italic">Block Replacements.</span>
                         </h1>
                         <p className="text-xl text-slate-400 max-w-3xl mx-auto font-medium">
                             From timing chains and head gaskets to complete remanufactured powertrain swaps.
@@ -41,14 +41,14 @@ export default function EngineRepair() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid md:grid-cols-2 gap-8">
 
-                        <div className="glass p-8 rounded-[2rem] border border-brand-red/20 hover:border-brand-red/50 transition-colors group">
-                            <Wrench className="w-10 h-10 text-brand-red mb-6" />
+                        <div className="glass p-8 rounded-[2rem] border border-brand-blue/20 hover:border-brand-blue/50 transition-colors group">
+                            <Wrench className="w-10 h-10 text-brand-blue mb-6" />
                             <h3 className="text-2xl font-bold text-white mb-4">Timing Components</h3>
                             <p className="text-slate-400 mb-6">Misfires and rattling indicate internal timing wear. We execute precision replacements of timing chains, specialized tensioners, and variable valve timing (VVT) solenoids to restore synchronized RPMs.</p>
                         </div>
 
-                        <div className="glass p-8 rounded-[2rem] border border-white/10 hover:border-brand-red/30 transition-colors group">
-                            <Settings className="w-10 h-10 text-brand-red mb-6" />
+                        <div className="glass p-8 rounded-[2rem] border border-white/10 hover:border-brand-blue/30 transition-colors group">
+                            <Settings className="w-10 h-10 text-brand-blue mb-6" />
                             <h3 className="text-2xl font-bold text-white mb-4">Cooling & Head Gaskets</h3>
                             <p className="text-slate-400 mb-6">Overheating causes catastrophic engine failure. We pressure test cooling systems, machine warped cylinder heads, and apply high-pressure multi-layer steel (MLS) gaskets for permanent sealing.</p>
                         </div>

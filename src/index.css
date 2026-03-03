@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-red: #dc2626;
-  --color-brand-red-dark: #991b1b;
-  --color-slate-900: #0f172a;
-  --color-slate-800: #1e293b;
+  --color-brand-blue: #0f52ba;
+  --color-brand-blue-dark: #003478;
+  --color-slate-900: #020C1B;
+  --color-slate-800: #0B1D3A;
   --color-slate-100: #f1f5f9;
 
   --font-sans: "Inter", system-ui, sans-serif;
@@ -44,7 +44,7 @@
   }
 
   .text-glow-red {
-    text-shadow: 0 0 20px rgba(220, 38, 38, 0.5);
+    text-shadow: 0 0 20px rgba(15, 82, 186, 0.5);
   }
 
   .bg-noise {

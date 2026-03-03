@@ -7,8 +7,8 @@ export default function Brands() {
     {
       name: 'National Tire & Auto',
       description: 'The industrial cornerstone for retail tires, heavy-duty truck maintenance, and full-spectrum mechanical repair.',
-      icon: <Wrench className="w-10 h-10 text-brand-red" />,
-      color: 'border-brand-red/20 bg-brand-red/5',
+      icon: <Wrench className="w-10 h-10 text-brand-blue" />,
+      color: 'border-brand-blue/20 bg-brand-blue/5',
     },
     {
       name: 'Fast Glass',
@@ -44,7 +44,7 @@ export default function Brands() {
           </motion.div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-8 tracking-tight">
             Four Entities. <br />
-            <span className="text-brand-red">One Strategic Hub.</span>
+            <span className="text-brand-blue">One Strategic Hub.</span>
           </h2>
           <p className="text-lg text-slate-400 font-medium leading-relaxed">
             We have engineered a consolidated automotive ecosystem in Pineville. Integrated services, synchronized logistics, and unparalleled efficiency.

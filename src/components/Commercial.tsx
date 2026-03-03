@@ -31,12 +31,12 @@ export default function Commercial() {
               viewport={{ once: true }}
               className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 text-slate-300 border border-white/10 text-xs font-bold mb-8 uppercase tracking-widest"
             >
-              <Truck className="w-3 h-3 text-brand-red" />
+              <Truck className="w-3 h-3 text-brand-blue" />
               Enterprise & Fleet Solutions
             </motion.div>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-8 tracking-tight leading-tight">
               Centralized Control <br />
-              <span className="text-brand-red text-glow-red">For Your Entire Fleet.</span>
+              <span className="text-brand-blue text-glow-red">For Your Entire Fleet.</span>
             </h2>
             <p className="text-xl text-slate-400 mb-12 leading-relaxed font-medium">
               National Tire & Auto is Pineville's exclusive one-stop hub for B2B logistics. From official inspections to mobile heavy-duty response, we keep your fleet moving.
@@ -44,8 +44,8 @@ export default function Commercial() {
 
             <div className="space-y-10">
               <div className="flex gap-6 group">
-                <div className="bg-brand-red/10 p-4 rounded-2xl h-fit border border-brand-red/20 group-hover:scale-110 transition-transform duration-300 shadow-2xl shadow-brand-red/10">
-                  <Truck className="w-6 h-6 text-brand-red" />
+                <div className="bg-brand-blue/10 p-4 rounded-2xl h-fit border border-brand-blue/20 group-hover:scale-110 transition-transform duration-300 shadow-2xl shadow-brand-blue/10">
+                  <Truck className="w-6 h-6 text-brand-blue" />
                 </div>
                 <div>
                   <h3 className="text-xl font-display font-bold mb-2">Dedicated Mobile Service</h3>
@@ -96,15 +96,15 @@ export default function Commercial() {
                   className="glass p-8 rounded-[2rem] border border-white/10 shadow-2xl"
                 >
                   <div className="flex items-center gap-4 mb-6">
-                    <div className="bg-brand-red/20 p-3 rounded-xl">
-                      <AlertTriangle className="w-6 h-6 text-brand-red" />
+                    <div className="bg-brand-blue/20 p-3 rounded-xl">
+                      <AlertTriangle className="w-6 h-6 text-brand-blue" />
                     </div>
                     <h4 className="text-xl font-display font-bold text-white uppercase tracking-tight">Fleet Activation</h4>
                   </div>
                   <p className="text-slate-400 font-medium mb-8 text-base">
                     Unlock priority scheduling and strategic corporate pricing for organizations with 5+ vehicles.
                   </p>
-                  <button className="w-full bg-brand-red hover:bg-brand-red-dark text-white font-bold py-5 rounded-2xl transition-all shadow-xl shadow-brand-red/20 flex items-center justify-center gap-3 active:scale-[0.98]">
+                  <button className="w-full bg-brand-blue hover:bg-brand-blue-dark text-white font-bold py-5 rounded-2xl transition-all shadow-xl shadow-brand-blue/20 flex items-center justify-center gap-3 active:scale-[0.98]">
                     Initiate Fleet Account
                     <ArrowRight className="w-5 h-5" />
                   </button>

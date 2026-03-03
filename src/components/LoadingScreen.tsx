@@ -52,7 +52,7 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
         >
             {/* Background Glow */}
             <div className="absolute inset-0 z-0">
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-red/10 rounded-full blur-[120px] animate-pulse" />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-blue/10 rounded-full blur-[120px] animate-pulse" />
             </div>
 
             <div className="relative z-10 flex flex-col items-center">
@@ -71,7 +71,7 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
                     <motion.div
                         animate={{ scale: [1, 1.2, 1], opacity: [0.5, 0.2, 0.5] }}
                         transition={{ duration: 2, repeat: Infinity }}
-                        className="absolute inset-0 bg-brand-red/20 blur-2xl rounded-full"
+                        className="absolute inset-0 bg-brand-blue/20 blur-2xl rounded-full"
                     />
                 </motion.div>
 
@@ -89,19 +89,19 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
                                 {messages[messageIndex]}
                             </motion.p>
                         </AnimatePresence>
-                        <span className="text-brand-red font-display font-bold text-sm tracking-tighter">
+                        <span className="text-brand-blue font-display font-bold text-sm tracking-tighter">
                             {Math.round(progress)}%
                         </span>
                     </div>
 
                     <div className="h-[2px] w-full bg-white/5 rounded-full overflow-hidden relative">
                         <motion.div
-                            className="absolute top-0 left-0 h-full bg-gradient-to-r from-transparent via-brand-red to-transparent w-2/3"
+                            className="absolute top-0 left-0 h-full bg-gradient-to-r from-transparent via-brand-blue to-transparent w-2/3"
                             animate={{ x: ['150%', '-150%'] }}
                             transition={{ duration: 1.5, repeat: Infinity, ease: "linear" }}
                         />
                         <motion.div
-                            className="h-full bg-brand-red relative z-10"
+                            className="h-full bg-brand-blue relative z-10"
                             style={{ width: `${progress}%` }}
                             transition={{ duration: 0.3 }}
                         />

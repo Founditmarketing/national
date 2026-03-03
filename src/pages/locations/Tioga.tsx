@@ -1,12 +1,12 @@
 import React from 'react';
 import LocationLayout from '../../layouts/LocationLayout';
 
-export default function Alexandria() {
+export default function Tioga() {
     return (
         <LocationLayout
-            city="Alexandria"
+            city="Tioga"
             heroImage="https://images.unsplash.com/photo-1510425463958-dcced28da480?auto=format&fit=crop&q=80&w=2000"
-            description="Serving our local Alexandria drivers and commercial fleets with reliable, expert auto repair, precision alignments, and professional windshield replacement."
+            description="Providing Tioga and nearby communities with uncompromising mechanical care, specialized tire installations, and DOT-certified vehicle inspections."
         />
     );
 }

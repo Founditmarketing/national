@@ -46,7 +46,7 @@ export default function ContactWidget() {
                         className="mb-6 w-[350px] sm:w-[400px] glass rounded-[2.5rem] border border-white/10 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] overflow-hidden flex flex-col"
                     >
                         {/* Header */}
-                        <div className="bg-brand-red p-6 pb-8">
+                        <div className="bg-brand-blue p-6 pb-8">
                             <div className="flex justify-between items-start mb-6">
                                 <div>
                                     <h3 className="text-white font-display font-bold text-2xl tracking-tight">How can we help?</h3>
@@ -62,9 +62,9 @@ export default function ContactWidget() {
 
                             <a
                                 href="tel:3184422003"
-                                className="flex items-center justify-center gap-3 w-full bg-white py-4 rounded-2xl text-brand-red font-bold shadow-xl shadow-black/10 hover:scale-[1.02] active:scale-[0.98] transition-all"
+                                className="flex items-center justify-center gap-3 w-full bg-white py-4 rounded-2xl text-brand-blue font-bold shadow-xl shadow-black/10 hover:scale-[1.02] active:scale-[0.98] transition-all"
                             >
-                                <Phone className="w-5 h-5 fill-brand-red text-brand-red" />
+                                <Phone className="w-5 h-5 fill-brand-blue text-brand-blue" />
                                 Call Now: (318) 442-2003
                             </a>
                         </div>
@@ -72,8 +72,8 @@ export default function ContactWidget() {
                         {/* Chat Content */}
                         <div className="p-6 bg-slate-900/50 flex flex-col gap-6 max-h-[400px] overflow-y-auto scrollbar-hide">
                             <div className="flex gap-3">
-                                <div className="w-10 h-10 rounded-xl bg-brand-red/10 border border-brand-red/20 flex items-center justify-center shrink-0">
-                                    <User className="w-5 h-5 text-brand-red" />
+                                <div className="w-10 h-10 rounded-xl bg-brand-blue/10 border border-brand-blue/20 flex items-center justify-center shrink-0">
+                                    <User className="w-5 h-5 text-brand-blue" />
                                 </div>
                                 <div className="glass-light p-4 rounded-2xl rounded-tl-none border border-white/5">
                                     <p className="text-slate-300 text-sm font-medium leading-relaxed">
@@ -89,14 +89,14 @@ export default function ContactWidget() {
                                     className="space-y-4"
                                 >
                                     <div className="flex flex-row-reverse gap-3">
-                                        <div className="glass p-4 rounded-2xl rounded-tr-none border border-brand-red/20 bg-brand-red/5">
+                                        <div className="glass p-4 rounded-2xl rounded-tr-none border border-brand-blue/20 bg-brand-blue/5">
                                             <p className="text-white text-sm font-bold">{selectedFaq.question}</p>
                                         </div>
                                     </div>
 
                                     <div className="flex gap-3">
-                                        <div className="w-10 h-10 rounded-xl bg-brand-red/10 border border-brand-red/20 flex items-center justify-center shrink-0">
-                                            <User className="w-5 h-5 text-brand-red" />
+                                        <div className="w-10 h-10 rounded-xl bg-brand-blue/10 border border-brand-blue/20 flex items-center justify-center shrink-0">
+                                            <User className="w-5 h-5 text-brand-blue" />
                                         </div>
                                         <div className="glass-light p-4 rounded-2xl rounded-tl-none border border-white/5">
                                             <p className="text-slate-300 text-sm font-medium leading-relaxed italic">
@@ -107,7 +107,7 @@ export default function ContactWidget() {
 
                                     <button
                                         onClick={() => setSelectedFaq(null)}
-                                        className="text-brand-red text-xs font-bold uppercase tracking-widest pl-13 hover:underline"
+                                        className="text-brand-blue text-xs font-bold uppercase tracking-widest pl-13 hover:underline"
                                     >
                                         Ask something else
                                     </button>
@@ -121,10 +121,10 @@ export default function ContactWidget() {
                                         <button
                                             key={faq.id}
                                             onClick={() => setSelectedFaq(faq)}
-                                            className="w-full flex items-center justify-between p-4 rounded-xl glass-light border border-white/5 hover:border-brand-red/30 hover:bg-white/5 transition-all group text-left"
+                                            className="w-full flex items-center justify-between p-4 rounded-xl glass-light border border-white/5 hover:border-brand-blue/30 hover:bg-white/5 transition-all group text-left"
                                         >
                                             <span className="text-slate-300 text-sm font-bold">{faq.question}</span>
-                                            <ArrowRight className="w-4 h-4 text-slate-600 group-hover:text-brand-red transition-colors" />
+                                            <ArrowRight className="w-4 h-4 text-slate-600 group-hover:text-brand-blue transition-colors" />
                                         </button>
                                     ))}
                                 </div>
@@ -141,7 +141,7 @@ export default function ContactWidget() {
                 onClick={() => setIsOpen(!isOpen)}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className={`w-16 h-16 rounded-[1.5rem] flex items-center justify-center shadow-2xl transition-all duration-500 ${isOpen ? 'bg-slate-800 rotate-90 border border-white/10' : 'bg-brand-red shadow-brand-red/20 border border-brand-red/20'
+                className={`w-16 h-16 rounded-[1.5rem] flex items-center justify-center shadow-2xl transition-all duration-500 ${isOpen ? 'bg-slate-800 rotate-90 border border-white/10' : 'bg-brand-blue shadow-brand-blue/20 border border-brand-blue/20'
                     }`}
             >
                 {isOpen ? (

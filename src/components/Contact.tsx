@@ -1,8 +1,25 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { Phone, MapPin, Clock, Send, Calendar, Car, Wrench, ShieldCheck } from 'lucide-react';
+import { useLocation } from 'react-router-dom';
 
 export default function Contact() {
+  const location = useLocation();
+
+  let phoneNumber = "(318) 442-2003";
+  let phoneHref = "tel:3184422003";
+  let deskLabel = "Emergency Dispatch";
+
+  if (location.pathname.includes('/glass')) {
+    phoneNumber = "(318) 442-GLASS";
+    phoneHref = "tel:3184424527";
+    deskLabel = "Glass Desk";
+  } else if (location.pathname.includes('/tire') || location.pathname.includes('/wheel')) {
+    phoneNumber = "(318) 442-TIRE";
+    phoneHref = "tel:3184428473";
+    deskLabel = "Tire & Alignment Desk";
+  }
+
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -38,12 +55,12 @@ export default function Contact() {
               viewport={{ once: true }}
               className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 text-slate-400 text-xs font-bold mb-8 uppercase tracking-widest border border-white/5"
             >
-              <Calendar className="w-3 h-3 text-brand-red" />
+              <Calendar className="w-3 h-3 text-brand-blue" />
               Direct Channel
             </motion.div>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-8 tracking-tight">
               Ready to <br />
-              <span className="text-brand-red text-glow-red">Recalibrate?</span>
+              <span className="text-brand-blue text-glow-red">Recalibrate?</span>
             </h2>
             <p className="text-xl text-slate-400 mb-12 leading-relaxed font-medium max-w-lg">
               Pineville's master hub for tires, glass, and mechanical excellence. Schedule your intervention or fleet consultation today.
@@ -51,17 +68,17 @@ export default function Contact() {
 
             <div className="space-y-8 mb-12">
               <div className="flex items-center gap-6 group">
-                <div className="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center border border-white/10 group-hover:border-brand-red/30 group-hover:bg-brand-red/5 transition-all">
-                  <Phone className="w-6 h-6 text-brand-red" />
+                <div className="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center border border-white/10 group-hover:border-brand-blue/30 group-hover:bg-brand-blue/5 transition-all">
+                  <Phone className="w-6 h-6 text-brand-blue" />
                 </div>
                 <div>
-                  <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">Emergency Dispatch</p>
-                  <a href="tel:3184422003" className="text-xl font-display font-bold text-white hover:text-brand-red transition-colors">(318) 442-2003</a>
+                  <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">{deskLabel}</p>
+                  <a href={phoneHref} className="text-xl font-display font-bold text-white hover:text-brand-blue transition-colors">{phoneNumber}</a>
                 </div>
               </div>
               <div className="flex items-center gap-6 group">
-                <div className="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center border border-white/10 group-hover:border-brand-red/30 group-hover:bg-brand-red/5 transition-all">
-                  <MapPin className="w-6 h-6 text-brand-red" />
+                <div className="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center border border-white/10 group-hover:border-brand-blue/30 group-hover:bg-brand-blue/5 transition-all">
+                  <MapPin className="w-6 h-6 text-brand-blue" />
                 </div>
                 <div>
                   <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">Operations HQ</p>
@@ -69,8 +86,8 @@ export default function Contact() {
                 </div>
               </div>
               <div className="flex items-center gap-6 group">
-                <div className="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center border border-white/10 group-hover:border-brand-red/30 group-hover:bg-brand-red/5 transition-all">
-                  <Clock className="w-6 h-6 text-brand-red" />
+                <div className="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center border border-white/10 group-hover:border-brand-blue/30 group-hover:bg-brand-blue/5 transition-all">
+                  <Clock className="w-6 h-6 text-brand-blue" />
                 </div>
                 <div>
                   <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">Active Hours</p>
@@ -97,13 +114,13 @@ export default function Contact() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative"
           >
-            <div className="absolute -inset-1 bg-gradient-to-r from-brand-red/20 to-transparent rounded-[3rem] blur-2xl opacity-50" />
+            <div className="absolute -inset-1 bg-gradient-to-r from-brand-blue/20 to-transparent rounded-[3rem] blur-2xl opacity-50" />
             <form
               onSubmit={handleSubmit}
               className="relative glass p-8 md:p-12 rounded-[3.5rem] border border-white/10 shadow-2xl"
             >
               <h3 className="text-2xl font-display font-bold text-white mb-8 tracking-tight flex items-center gap-3">
-                <Wrench className="w-6 h-6 text-brand-red" />
+                <Wrench className="w-6 h-6 text-brand-blue" />
                 Secure Deployment
               </h3>
 
@@ -113,7 +130,7 @@ export default function Contact() {
                   <input
                     type="text"
                     placeholder="John"
-                    className="w-full bg-white/5 border border-white/10 rounded-2xl p-4 focus:outline-none focus:border-brand-red/50 focus:bg-white/10 transition-all font-medium text-white placeholder:text-slate-600"
+                    className="w-full bg-white/5 border border-white/10 rounded-2xl p-4 focus:outline-none focus:border-brand-blue/50 focus:bg-white/10 transition-all font-medium text-white placeholder:text-slate-600"
                     onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
                     required
                   />
@@ -123,7 +140,7 @@ export default function Contact() {
                   <input
                     type="text"
                     placeholder="Doe"
-                    className="w-full bg-white/5 border border-white/10 rounded-2xl p-4 focus:outline-none focus:border-brand-red/50 focus:bg-white/10 transition-all font-medium text-white placeholder:text-slate-600"
+                    className="w-full bg-white/5 border border-white/10 rounded-2xl p-4 focus:outline-none focus:border-brand-blue/50 focus:bg-white/10 transition-all font-medium text-white placeholder:text-slate-600"
                     onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
                     required
                   />
@@ -137,7 +154,7 @@ export default function Contact() {
                   <input
                     type="tel"
                     placeholder="(318) 555-0000"
-                    className="w-full bg-white/5 border border-white/10 rounded-2xl p-4 pl-12 focus:outline-none focus:border-brand-red/50 focus:bg-white/10 transition-all font-medium text-white placeholder:text-slate-600"
+                    className="w-full bg-white/5 border border-white/10 rounded-2xl p-4 pl-12 focus:outline-none focus:border-brand-blue/50 focus:bg-white/10 transition-all font-medium text-white placeholder:text-slate-600"
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     required
                   />
@@ -152,7 +169,7 @@ export default function Contact() {
                     <input
                       type="text"
                       placeholder="Year, Make, Model"
-                      className="w-full bg-white/5 border border-white/10 rounded-2xl p-4 pl-12 focus:outline-none focus:border-brand-red/50 focus:bg-white/10 transition-all font-medium text-white placeholder:text-slate-600"
+                      className="w-full bg-white/5 border border-white/10 rounded-2xl p-4 pl-12 focus:outline-none focus:border-brand-blue/50 focus:bg-white/10 transition-all font-medium text-white placeholder:text-slate-600"
                       onChange={(e) => setFormData({ ...formData, vehicle: e.target.value })}
                     />
                   </div>
@@ -160,7 +177,7 @@ export default function Contact() {
                 <div className="space-y-2">
                   <label className="text-[10px] font-bold text-slate-500 uppercase tracking-widest ml-1">Target Service</label>
                   <select
-                    className="w-full bg-slate-800 border border-white/10 rounded-2xl p-4 focus:outline-none focus:border-brand-red/50 appearance-none font-medium text-white cursor-pointer"
+                    className="w-full bg-slate-800 border border-white/10 rounded-2xl p-4 focus:outline-none focus:border-brand-blue/50 appearance-none font-medium text-white cursor-pointer"
                     onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                   >
                     <option value="">Select a service...</option>
@@ -175,7 +192,7 @@ export default function Contact() {
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="w-full bg-brand-red hover:bg-brand-red-dark text-white font-bold py-5 rounded-[1.5rem] transition-all shadow-xl shadow-brand-red/20 flex items-center justify-center gap-3 text-lg"
+                className="w-full bg-brand-blue hover:bg-brand-blue-dark text-white font-bold py-5 rounded-[1.5rem] transition-all shadow-xl shadow-brand-blue/20 flex items-center justify-center gap-3 text-lg"
               >
                 Execute Transmission
                 <Send className="w-5 h-5" />

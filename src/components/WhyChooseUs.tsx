@@ -15,8 +15,8 @@ export default function WhyChooseUs() {
       title: 'Master Technicians',
       description: 'Specialists across three disciplines—mechanics, heavy-duty tires, and glass engineering.',
       icon: <Wrench className="w-6 h-6" />,
-      color: 'text-brand-red',
-      bg: 'bg-brand-red/10'
+      color: 'text-brand-blue',
+      bg: 'bg-brand-blue/10'
     },
     {
       title: 'Institutional Quality',
@@ -38,7 +38,7 @@ export default function WhyChooseUs() {
     <section className="py-24 md:py-32 bg-slate-900 text-white relative overflow-hidden">
       {/* Dynamic Background Elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-[600px] h-[600px] bg-brand-red/5 rounded-full blur-[120px]" />
+        <div className="absolute -top-40 -right-40 w-[600px] h-[600px] bg-brand-blue/5 rounded-full blur-[120px]" />
         <div className="absolute -bottom-40 -left-40 w-[600px] h-[600px] bg-blue-500/5 rounded-full blur-[120px]" />
       </div>
 
@@ -52,7 +52,7 @@ export default function WhyChooseUs() {
           >
             <h2 className="text-4xl md:text-5xl font-display font-bold mb-8 tracking-tight leading-tight">
               Why the Region Trusts <br />
-              <span className="text-brand-red">National Tire & Auto.</span>
+              <span className="text-brand-blue">National Tire & Auto.</span>
             </h2>
             <p className="text-lg text-slate-400 mb-12 leading-relaxed font-medium">
               We aren't just another repair shop. We are a high-performance ecosystem designed to scale with your automotive needs—from personal daily drivers to heavy commercial fleets.
@@ -99,12 +99,12 @@ export default function WhyChooseUs() {
                   className="w-full h-80 object-cover rounded-[2.5rem] border border-white/10 shadow-2xl"
                 />
                 <div className="glass p-6 rounded-[2rem] border border-white/10 relative overflow-hidden flex items-center gap-6 group">
-                  <div className="absolute inset-0 bg-gradient-to-r from-brand-red/0 via-brand-red/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-brand-blue/0 via-brand-blue/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
                   <div className="relative w-16 h-16 flex-shrink-0">
                     <svg className="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
                       <circle className="text-white/10 stroke-current" strokeWidth="8" cx="50" cy="50" r="40" fill="transparent"></circle>
                       <motion.circle
-                        className="text-brand-red stroke-current drop-shadow-[0_0_8px_rgba(220,38,38,0.5)]"
+                        className="text-brand-blue stroke-current drop-shadow-[0_0_8px_rgba(220,38,38,0.5)]"
                         strokeWidth="8"
                         strokeLinecap="round"
                         cx="50"
@@ -118,7 +118,7 @@ export default function WhyChooseUs() {
                       ></motion.circle>
                     </svg>
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <span className="text-white font-bold text-sm">98<span className="text-[10px] text-brand-red">%</span></span>
+                      <span className="text-white font-bold text-sm">98<span className="text-[10px] text-brand-blue">%</span></span>
                     </div>
                   </div>
                   <div className="relative z-10">
@@ -133,7 +133,7 @@ export default function WhyChooseUs() {
                   alt="Precision Service"
                   className="w-full h-[400px] object-cover rounded-[2.5rem] border border-white/10 shadow-2xl"
                 />
-                <div className="bg-brand-red p-6 rounded-[2rem] shadow-2xl shadow-brand-red/20 relative overflow-hidden flex items-center gap-5 group">
+                <div className="bg-brand-blue p-6 rounded-[2rem] shadow-2xl shadow-brand-blue/20 relative overflow-hidden flex items-center gap-5 group">
                   <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.2),transparent)]" />
                   <div className="relative w-14 h-14 flex-shrink-0">
                     <svg className="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
@@ -168,7 +168,7 @@ export default function WhyChooseUs() {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-1 rounded-[2rem] glass-light hidden sm:block">
               <div className="bg-slate-900/90 py-4 px-8 rounded-[1.8rem] text-center border border-white/10 shadow-2xl">
                 <div className="text-2xl font-display font-bold text-white whitespace-nowrap">Local & Legacy</div>
-                <div className="text-[10px] text-brand-red font-bold uppercase tracking-[0.3em]">Family Owned</div>
+                <div className="text-[10px] text-brand-blue font-bold uppercase tracking-[0.3em]">Family Owned</div>
               </div>
             </div>
           </motion.div>

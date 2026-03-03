@@ -14,7 +14,7 @@ export default function About() {
                         transition={{ duration: 0.8 }}
                     >
                         <h1 className="text-5xl md:text-8xl font-display font-bold mb-6 tracking-tight">
-                            The <span className="text-brand-red text-glow-red italic">National</span> Story
+                            The <span className="text-brand-blue text-glow-red italic">National</span> Story
                         </h1>
                         <p className="text-xl text-slate-400 max-w-3xl mx-auto">
                             Decades of mastery. A commitment to institutional-grade service. Deep roots in Central Louisiana.
@@ -27,12 +27,12 @@ export default function About() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid md:grid-cols-2 gap-16 items-center">
                         <div className="relative">
-                            <div className="absolute inset-0 bg-brand-red rotate-3 rounded-3xl opacity-20"></div>
+                            <div className="absolute inset-0 bg-brand-blue rotate-3 rounded-3xl opacity-20"></div>
                             <img src="https://images.unsplash.com/photo-1549643444-2f22b822af4f?auto=format&fit=crop&q=80&w=1000" alt="Facility" className="relative z-10 rounded-3xl object-cover h-[500px] w-full border border-white/10 shadow-2xl" />
                         </div>
                         <div>
                             <h2 className="text-4xl font-display font-bold mb-6 flex items-center gap-4">
-                                <History className="text-brand-red w-10 h-10" /> Legacy of Excellence
+                                <History className="text-brand-blue w-10 h-10" /> Legacy of Excellence
                             </h2>
                             <div className="space-y-6 text-lg text-slate-300">
                                 <p>
@@ -45,12 +45,12 @@ export default function About() {
 
                             <div className="grid grid-cols-2 gap-6 mt-12">
                                 <div className="glass p-6 rounded-2xl border border-white/10">
-                                    <Target className="w-8 h-8 text-brand-red mb-4" />
+                                    <Target className="w-8 h-8 text-brand-blue mb-4" />
                                     <h4 className="text-white font-bold text-xl mb-2">Our Mission</h4>
                                     <p className="text-sm text-slate-400">To eradicate automotive anxiety through transparent, objective, and master-level diagnostics and repair.</p>
                                 </div>
                                 <div className="glass p-6 rounded-2xl border border-white/10">
-                                    <Users className="w-8 h-8 text-brand-red mb-4" />
+                                    <Users className="w-8 h-8 text-brand-blue mb-4" />
                                     <h4 className="text-white font-bold text-xl mb-2">Our Community</h4>
                                     <p className="text-sm text-slate-400">We are proudly locally owned and fiercely dedicated to keeping Central Louisiana's fleet moving.</p>
                                 </div>

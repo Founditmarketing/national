@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, ArrowRight, Activity, Wrench, Shield, Compass, MapPin } from 'lucide-react';
+import { X, ArrowRight, Activity, Wrench, Shield, Compass, MapPin, Search } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
 interface MegaMenuProps {
@@ -10,6 +10,7 @@ interface MegaMenuProps {
 
 export default function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
     const location = useLocation();
+    const [searchQuery, setSearchQuery] = React.useState('');
 
     // Close menu on route change
     React.useEffect(() => {
@@ -20,8 +21,12 @@ export default function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
     React.useEffect(() => {
         if (isOpen) {
             document.body.style.overflow = 'hidden';
+            setTimeout(() => {
+                document.getElementById('megamenu-search')?.focus();
+            }, 100);
         } else {
             document.body.style.overflow = '';
+            setSearchQuery('');
         }
         return () => {
             document.body.style.overflow = '';
@@ -101,6 +106,14 @@ export default function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
         { name: 'Hunter Road Force Tech', href: '/guides/understanding-road-force-balancing' }
     ];
 
+    const filteredColumns = menuColumns.map(col => ({
+        ...col,
+        links: col.links.filter(link => link.name.toLowerCase().includes(searchQuery.toLowerCase()))
+    })).filter(col => col.links.length > 0);
+
+    const filteredLocations = locations.filter(loc => loc.name.toLowerCase().includes(searchQuery.toLowerCase()));
+    const filteredGuides = guides.filter(guide => guide.name.toLowerCase().includes(searchQuery.toLowerCase()));
+
     return (
         <AnimatePresence>
             {isOpen && (
@@ -112,7 +125,7 @@ export default function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                     className="fixed inset-0 z-[100001] bg-slate-950/95 backdrop-blur-3xl overflow-y-auto"
                 >
                     {/* Subtle Background Accent */}
-                    <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-red/5 rounded-full blur-[150px] pointer-events-none -translate-y-1/2 translate-x-1/3" />
+                    <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-blue/5 rounded-full blur-[150px] pointer-events-none -translate-y-1/2 translate-x-1/3" />
 
                     <div className="min-h-screen max-w-[1600px] mx-auto px-6 py-8 md:py-24 relative z-10">
 
@@ -124,23 +137,38 @@ export default function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                                     alt="National Tire & Auto"
                                     className="h-10 md:h-12 w-auto object-contain brightness-0 invert opacity-90 transition-transform duration-500 group-hover:scale-105"
                                 />
-                                <span className="font-display font-bold text-xl tracking-tight text-white uppercase group-hover:text-brand-red transition-colors hidden sm:block">Command Center</span>
+                                <span className="font-display font-bold text-xl tracking-tight text-white uppercase group-hover:text-brand-blue transition-colors hidden sm:block">Command Center</span>
                             </Link>
 
                             <button
                                 onClick={onClose}
-                                className="group flex items-center gap-3 text-white hover:text-brand-red transition-colors"
+                                className="group flex items-center gap-3 text-white hover:text-brand-blue transition-colors"
                             >
                                 <span className="text-sm font-bold tracking-widest uppercase hidden md:block">Close Menu</span>
-                                <div className="p-3 md:p-4 rounded-full glass-light border border-white/10 group-hover:border-brand-red/30 transition-all">
+                                <div className="p-3 md:p-4 rounded-full glass-light border border-white/10 group-hover:border-brand-blue/30 transition-all">
                                     <X className="w-6 h-6 md:w-8 md:h-8" />
                                 </div>
                             </button>
                         </div>
 
+                        {/* Search Bar */}
+                        <div className="mb-12 relative group">
+                            <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                                <Search className="h-5 w-5 text-slate-500 group-focus-within:text-brand-blue transition-colors" />
+                            </div>
+                            <input
+                                id="megamenu-search"
+                                type="text"
+                                className="block w-full pl-12 pr-4 py-4 md:py-5 glass-light border border-white/10 rounded-2xl leading-5 bg-transparent text-white placeholder-slate-500 focus:outline-none focus:border-brand-blue/50 focus:ring-1 focus:ring-brand-blue/50 transition-all font-display text-lg"
+                                placeholder="Search for a service, repair, or location..."
+                                value={searchQuery}
+                                onChange={(e) => setSearchQuery(e.target.value)}
+                            />
+                        </div>
+
                         {/* Main Navigation Matrix */}
                         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-12 md:gap-x-16 gap-y-16 mb-24">
-                            {menuColumns.map((col, idx) => (
+                            {filteredColumns.map((col, idx) => (
                                 <motion.div
                                     key={col.title}
                                     initial={{ opacity: 0, y: 20 }}
@@ -148,8 +176,8 @@ export default function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                                     transition={{ delay: 0.1 + idx * 0.05, duration: 0.6 }}
                                 >
                                     <div className="flex items-center gap-3 mb-6">
-                                        <div className="p-2 bg-brand-red/10 rounded-lg">
-                                            <col.icon className="w-5 h-5 text-brand-red" />
+                                        <div className="p-2 bg-brand-blue/10 rounded-lg">
+                                            <col.icon className="w-5 h-5 text-brand-blue" />
                                         </div>
                                         <h3 className="text-xl font-display font-bold text-white tracking-tight">{col.title}</h3>
                                     </div>
@@ -158,12 +186,12 @@ export default function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                                             <li key={link.name}>
                                                 <Link
                                                     to={link.href}
-                                                    className={`group flex items-center text-lg lg:text-[1.35rem] leading-snug font-bold ${link.isHighlight ? 'text-brand-red' : 'text-slate-400 hover:text-white'
+                                                    className={`group flex items-center text-lg lg:text-[1.35rem] leading-snug font-bold ${link.isHighlight ? 'text-brand-blue' : 'text-slate-400 hover:text-white'
                                                         } transition-colors`}
                                                 >
                                                     <span className="relative">
                                                         {link.name}
-                                                        <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-brand-red scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+                                                        <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-brand-blue scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
                                                     </span>
                                                 </Link>
                                             </li>
@@ -182,11 +210,11 @@ export default function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                         >
                             <div>
                                 <h4 className="text-white font-display font-bold mb-6 flex items-center gap-2">
-                                    <MapPin className="w-4 h-4 text-brand-red" /> Service Footprint
+                                    <MapPin className="w-4 h-4 text-brand-blue" /> Service Footprint
                                 </h4>
                                 <div className="flex flex-wrap gap-3">
-                                    {locations.map(loc => (
-                                        <Link key={loc.name} to={loc.href} className="px-4 py-2 rounded-full glass border border-white/10 text-sm font-bold text-slate-300 hover:text-white hover:border-brand-red/50 transition-colors">
+                                    {filteredLocations.map(loc => (
+                                        <Link key={loc.name} to={loc.href} className="px-4 py-2 rounded-full glass border border-white/10 text-sm font-bold text-slate-300 hover:text-white hover:border-brand-blue/50 transition-colors">
                                             {loc.name}
                                         </Link>
                                     ))}
@@ -195,12 +223,12 @@ export default function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
 
                             <div className="lg:col-span-2">
                                 <h4 className="text-white font-display font-bold mb-6 flex items-center gap-2">
-                                    <Compass className="w-4 h-4 text-brand-red" /> Authority Guides
+                                    <Compass className="w-4 h-4 text-brand-blue" /> Authority Guides
                                 </h4>
                                 <div className="flex flex-col gap-3">
-                                    {guides.map(guide => (
+                                    {filteredGuides.map(guide => (
                                         <Link key={guide.name} to={guide.href} className="text-slate-400 hover:text-white text-sm font-bold flex items-center gap-2 group">
-                                            <ArrowRight className="w-3 h-3 text-brand-red opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" />
+                                            <ArrowRight className="w-3 h-3 text-brand-blue opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" />
                                             {guide.name}
                                         </Link>
                                     ))}

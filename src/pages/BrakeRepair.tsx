@@ -8,7 +8,7 @@ export default function BrakeRepair() {
     return (
         <div className="pt-24 min-h-screen">
             {/* Hero */}
-            <section className="relative py-32 bg-slate-900 border-b border-brand-red/20 overflow-hidden">
+            <section className="relative py-32 bg-slate-900 border-b border-brand-blue/20 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(220,38,38,0.15),transparent)]" />
                     <img
@@ -27,7 +27,7 @@ export default function BrakeRepair() {
                     >
                         <h1 className="text-5xl md:text-8xl font-display font-bold mb-6 tracking-tight">
                             Brake Repair & <br />
-                            <span className="text-brand-red text-glow-red italic">Rotor Machining.</span>
+                            <span className="text-brand-blue text-glow-red italic">Rotor Machining.</span>
                         </h1>
                         <p className="text-xl text-slate-400 max-w-3xl mx-auto font-medium">
                             We exclusively utilize OEM-grade ceramic and semi-metallic friction materials. Never compromise on stopping power.
@@ -41,14 +41,14 @@ export default function BrakeRepair() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid md:grid-cols-2 gap-8">
 
-                        <div className="glass p-8 rounded-[2rem] border border-brand-red/20 hover:border-brand-red/50 transition-colors group">
-                            <Shield className="w-10 h-10 text-brand-red mb-6" />
+                        <div className="glass p-8 rounded-[2rem] border border-brand-blue/20 hover:border-brand-blue/50 transition-colors group">
+                            <Shield className="w-10 h-10 text-brand-blue mb-6" />
                             <h3 className="text-2xl font-bold text-white mb-4">Precision Pad Replacement</h3>
                             <p className="text-slate-400 mb-6">Squeaking or grinding? We analyze pad wear patterns to ensure your calipers are functioning properly before installing premium ceramic pads for quiet, dust-free performance.</p>
                         </div>
 
-                        <div className="glass p-8 rounded-[2rem] border border-white/10 hover:border-brand-red/30 transition-colors group">
-                            <Settings className="w-10 h-10 text-brand-red mb-6" />
+                        <div className="glass p-8 rounded-[2rem] border border-white/10 hover:border-brand-blue/30 transition-colors group">
+                            <Settings className="w-10 h-10 text-brand-blue mb-6" />
                             <h3 className="text-2xl font-bold text-white mb-4">Rotor Resurfacing & Replacement</h3>
                             <p className="text-slate-400 mb-6">Pulsation in the brake pedal implies warped rotors. We utilize on-car lathes to resurface rotors to exact factory specifications, or replace them entirely for maximum heat dissipation.</p>
                         </div>
