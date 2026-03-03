@@ -64,8 +64,8 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
                     className="mb-12 relative"
                 >
                     <img
-                        src="/nattireautologo.png"
-                        alt="National Tire & Auto"
+                        src="/brands/national_automotive_group_logo.png"
+                        alt="National Automotive Group"
                         className="h-20 w-auto object-contain relative z-10"
                     />
                     <motion.div
