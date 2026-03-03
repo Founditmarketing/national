@@ -62,6 +62,10 @@ import DeRidder from './pages/locations/DeRidder';
 import Oakdale from './pages/locations/Oakdale';
 import Many from './pages/locations/Many';
 
+import LLMStructuredData from './components/LLMStructuredData';
+import EmergencyAlignmentAd from './pages/campaigns/EmergencyAlignmentAd';
+import FleetMaintenanceAd from './pages/campaigns/FleetMaintenanceAd';
+
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -75,6 +79,7 @@ export default function App() {
               <LoadingScreen onComplete={() => setIsLoading(false)} />
             ) : (
               <>
+                <LLMStructuredData />
                 <Navbar />
                 <main>
                   <Routes>
@@ -133,6 +138,10 @@ export default function App() {
                     <Route path="/guides/the-ultimate-guide-to-adas-calibration" element={<AdasGuide />} />
                     <Route path="/guides/commercial-fleet-maintenance-checklist" element={<FleetGuide />} />
                     <Route path="/guides/understanding-road-force-balancing" element={<RoadForceGuide />} />
+
+                    {/* AdWords Keyword Match Pages */}
+                    <Route path="/campaigns/emergency-alignment" element={<EmergencyAlignmentAd />} />
+                    <Route path="/campaigns/fleet-maintenance-deals" element={<FleetMaintenanceAd />} />
                   </Routes>
                 </main>
                 <Footer />
