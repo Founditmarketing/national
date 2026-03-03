@@ -167,10 +167,11 @@ export default function Contact() {
                     onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                   >
                     <option value="">Select a service...</option>
+                    <option value="bundle">Multi-Service Bundle (Discounted)</option>
                     <option value="mechanical">Mechanical Repair / Oil Change</option>
                     <option value="tires">Tires & Alignment</option>
                     <option value="glass">Auto Glass / Windshield</option>
-                    <option value="commercial">DOT Inspection</option>
+                    <option value="commercial">DOT Inspection / Fleet Service</option>
                   </select>
                 </div>
               </div>
@@ -180,7 +181,7 @@ export default function Contact() {
                 whileTap={{ scale: 0.98 }}
                 className="w-full bg-brand-blue hover:bg-brand-blue-dark text-white font-bold py-5 rounded-[1.5rem] transition-all shadow-xl shadow-brand-blue/20 flex items-center justify-center gap-3 text-lg"
               >
-                Execute Transmission
+                Request Priority Quote
                 <Send className="w-5 h-5" />
               </motion.button>
 

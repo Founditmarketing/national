@@ -5,8 +5,8 @@ import { Clock, Wrench, ShieldCheck, ThumbsUp, Activity, Users } from 'lucide-re
 export default function WhyChooseUs() {
   const features = [
     {
-      title: 'Structural Efficiency',
-      description: 'Unified workflow eliminates redundant appointments by staging multiple services in a single visit.',
+      title: 'Multi-Service Discounts',
+      description: 'Get your tires, oil, and glass done in one visit. Bundle services and unlock exclusive pricing you won\'t find at single-service shops.',
       icon: <Activity className="w-6 h-6" />,
       color: 'text-blue-500',
       bg: 'bg-blue-500/10'

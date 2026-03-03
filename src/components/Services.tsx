@@ -35,18 +35,18 @@ export default function Services() {
       ]
     },
     {
-      category: 'Auto Glass & Tint',
-      subtitle: 'Fast Glass',
+      category: 'DOT & State Inspections',
+      subtitle: 'Complete Certification Hub',
       icon: <Target className="w-8 h-8" />,
       image: '/breaks.png',
-      description: 'Expert glass restoration and premium solar protection.',
+      description: 'The only local inspection station capable of diagnosing and fixing any failure on the spot.',
       gradient: 'from-emerald-500/10 to-transparent',
       items: [
-        'Windshield Repair & Replacement',
-        'Side & Back Glass Service',
-        'Full Window Tinting Services',
-        'Power Window Mechanics',
-        'Rock Chip Repair'
+        'Commercial DOT Inspections',
+        'Louisiana State Safety Stickers',
+        'Immediate Emissions Solutions',
+        'On-Site Compliance Repairs',
+        'Fleet Documentation Management'
       ]
     }
   ];

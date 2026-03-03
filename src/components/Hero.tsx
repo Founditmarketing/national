@@ -57,15 +57,15 @@ export default function Hero() {
               variants={itemVariants}
               className="text-[12.5vw] md:text-[9.5vw] lg:text-[7.5vw] font-display font-bold text-white tracking-tighter leading-[0.9] mb-8 uppercase"
             >
-              Mastery In <br />
-              <span className="text-brand-blue text-glow-red italic pr-2">Motion.</span>
+              Why Go <br />
+              <span className="text-brand-blue text-glow-red italic pr-2">Anywhere Else?</span>
             </motion.h1>
 
             <motion.p
               variants={itemVariants}
               className="text-xl md:text-2xl text-slate-400 mb-12 max-w-xl leading-relaxed font-medium"
             >
-              A synergy of three specialized giants. From precision engine work to crystal-clear windshields—National Tire & Auto defines the new standard in vehicle care.
+              The ultimate <strong>One-Stop Shop</strong> right here in Central Louisiana. From precision alignments and new tires, to expert engine repair and windshield calibration—we handle it all. Stop driving all over town.
             </motion.p>
 
             <motion.div
