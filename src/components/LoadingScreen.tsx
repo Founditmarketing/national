@@ -66,7 +66,7 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
                     <img
                         src="/brands/national_automotive_group_logo.png"
                         alt="National Automotive Group"
-                        className="h-20 w-auto object-contain relative z-10"
+                        className="h-28 md:h-36 w-auto max-w-[90vw] object-contain relative z-10"
                     />
                     <motion.div
                         animate={{ scale: [1, 1.2, 1], opacity: [0.5, 0.2, 0.5] }}
