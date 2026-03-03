@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { MessageSquare, X, Phone, ArrowRight, User } from 'lucide-react';
+import { useCallRouting } from '../hooks/useCallRouting';
 
 interface ChatStep {
     id: string;
@@ -11,6 +12,7 @@ interface ChatStep {
 export default function ContactWidget() {
     const [isOpen, setIsOpen] = useState(false);
     const [selectedFaq, setSelectedFaq] = useState<ChatStep | null>(null);
+    const { phoneNumber, phoneHref, deskLabel } = useCallRouting();
 
     const faqs: ChatStep[] = [
         {
@@ -61,11 +63,14 @@ export default function ContactWidget() {
                             </div>
 
                             <a
-                                href="tel:3184422003"
-                                className="flex items-center justify-center gap-3 w-full bg-white py-4 rounded-2xl text-brand-blue font-bold shadow-xl shadow-black/10 hover:scale-[1.02] active:scale-[0.98] transition-all"
+                                href={phoneHref}
+                                className="flex flex-col items-center justify-center gap-1 w-full bg-white py-3 rounded-2xl text-brand-blue font-bold shadow-xl shadow-black/10 hover:scale-[1.02] active:scale-[0.98] transition-all"
                             >
-                                <Phone className="w-5 h-5 fill-brand-blue text-brand-blue" />
-                                Call Now: (318) 442-2003
+                                <div className="flex items-center gap-2">
+                                    <Phone className="w-5 h-5 fill-brand-blue text-brand-blue" />
+                                    <span>{phoneNumber}</span>
+                                </div>
+                                <span className="text-[10px] uppercase tracking-widest text-slate-500">{deskLabel}</span>
                             </a>
                         </div>
 

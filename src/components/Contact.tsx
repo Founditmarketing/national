@@ -1,24 +1,10 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { Phone, MapPin, Clock, Send, Calendar, Car, Wrench, ShieldCheck } from 'lucide-react';
-import { useLocation } from 'react-router-dom';
+import { useCallRouting } from '../hooks/useCallRouting';
 
 export default function Contact() {
-  const location = useLocation();
-
-  let phoneNumber = "(318) 442-2003";
-  let phoneHref = "tel:3184422003";
-  let deskLabel = "Emergency Dispatch";
-
-  if (location.pathname.includes('/glass')) {
-    phoneNumber = "(318) 442-GLASS";
-    phoneHref = "tel:3184424527";
-    deskLabel = "Glass Desk";
-  } else if (location.pathname.includes('/tire') || location.pathname.includes('/wheel')) {
-    phoneNumber = "(318) 442-TIRE";
-    phoneHref = "tel:3184428473";
-    deskLabel = "Tire & Alignment Desk";
-  }
+  const { phoneNumber, phoneHref, deskLabel } = useCallRouting();
 
   const [formData, setFormData] = useState({
     firstName: '',
