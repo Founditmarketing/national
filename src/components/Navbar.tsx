@@ -35,9 +35,9 @@ export default function Navbar() {
                 >
                   <Link to="/" className="flex items-center gap-3 group">
                     <img
-                      src="/nattireautologo.png"
-                      alt="National Tire & Auto"
-                      className="h-10 md:h-12 w-auto object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.1)] transition-transform duration-500 group-hover:scale-105"
+                      src="/brands/national_automotive_group_logo.png"
+                      alt="National Automotive Group"
+                      className="h-10 md:h-16 w-auto object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.1)] transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="hidden sm:flex flex-col justify-center">
                       <span className="font-display font-bold text-xl tracking-tight block leading-none text-white uppercase group-hover:text-brand-blue transition-colors duration-300">NATIONAL</span>
