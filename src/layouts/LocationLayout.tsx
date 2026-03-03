@@ -8,9 +8,13 @@ interface LocationLayoutProps {
     city: string;
     heroImage: string;
     description: string;
+    landmarks?: {
+        name: string;
+        description: string;
+    }[];
 }
 
-export default function LocationLayout({ city, heroImage, description }: LocationLayoutProps) {
+export default function LocationLayout({ city, heroImage, description, landmarks }: LocationLayoutProps) {
     return (
         <div className="pt-24 min-h-screen">
             {/* Hyper-Local Hero */}
@@ -80,6 +84,35 @@ export default function LocationLayout({ city, heroImage, description }: Locatio
                     </div>
                 </div>
             </section>
+
+            {/* Local Landmarks Section */}
+            {landmarks && landmarks.length > 0 && (
+                <section className="py-24 bg-slate-900 border-t border-white/5 relative overflow-hidden">
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(220,38,38,0.03),transparent)] pointer-events-none" />
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                        <div className="mb-16 text-center">
+                            <h2 className="text-4xl md:text-5xl font-display font-bold text-white tracking-tight mb-6">
+                                Proudly Serving <span className="text-brand-blue">{city}'s</span> Landmarks.
+                            </h2>
+                            <p className="text-xl text-slate-400 max-w-2xl mx-auto font-medium">
+                                We're not just a repair shop; we're part of the local community. Here are some of the local landmarks we are proud to serve near.
+                            </p>
+                        </div>
+
+                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            {landmarks.map((landmark, index) => (
+                                <div key={index} className="glass-light p-8 rounded-[2rem] border border-white/5 hover:border-brand-blue/30 transition-all group">
+                                    <div className="w-12 h-12 rounded-xl bg-brand-blue/10 flex items-center justify-center border border-brand-blue/20 mb-6 group-hover:bg-brand-blue/20 transition-colors">
+                                        <MapPin className="w-6 h-6 text-brand-blue" />
+                                    </div>
+                                    <h3 className="text-xl font-bold text-white mb-3">{landmark.name}</h3>
+                                    <p className="text-slate-400 text-sm leading-relaxed">{landmark.description}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+            )}
 
             <Contact />
         </div>
