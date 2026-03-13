@@ -11,11 +11,17 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 mb-20">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-8">
-              <img
-                src="/nattireautologo.png"
-                alt="National Tire & Auto"
-                className="h-14 w-auto object-contain brightness-0 invert opacity-90"
-              />
+              <Link to="/" className="flex items-center gap-3 group">
+                <img
+                  src="/brands/national_automotive_group_logo.png"
+                  alt="National Automotive Group"
+                  className="h-10 md:h-16 w-auto object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.1)] transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="flex flex-col justify-center">
+                  <span className="font-display font-bold text-xl tracking-tight block leading-none text-white uppercase group-hover:text-brand-blue transition-colors duration-300">NATIONAL</span>
+                  <span className="text-[10px] text-slate-400 tracking-[0.2em] uppercase font-bold text-nowrap">Tire & Auto</span>
+                </div>
+              </Link>
             </div>
             <p className="text-slate-400 max-w-sm font-medium leading-relaxed text-lg mb-8">
               Central Louisiana's premier destination for tires, auto repair, glass, and fleet services. Precise engineering for every asset.
