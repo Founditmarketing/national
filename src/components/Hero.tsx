@@ -54,9 +54,10 @@ export default function Hero() {
 
             <motion.h1
               variants={itemVariants}
-              className="text-6xl sm:text-7xl md:text-8xl lg:text-[6.5rem] font-display font-bold text-white tracking-tighter leading-[1.1] mb-8 uppercase"
+              className="text-5xl sm:text-6xl lg:text-6xl xl:text-7xl font-display font-bold text-white tracking-tighter leading-[1.1] mb-6 uppercase"
             >
-              <span className="text-brand-blue text-glow-red italic pr-2">Dealerships?</span>
+              Dealerships? <br />
+              <span className="text-brand-blue text-glow-red italic pr-2">Overrated.</span>
             </motion.h1>
 
             <motion.p
