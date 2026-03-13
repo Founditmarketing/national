@@ -38,14 +38,14 @@ export default function ContactWidget() {
     ];
 
     return (
-        <div className="fixed bottom-6 right-6 z-[100] flex flex-col items-end">
+        <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-[100] flex flex-col items-end">
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
                         initial={{ opacity: 0, scale: 0.9, y: 20, transformOrigin: 'bottom right' }}
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         exit={{ opacity: 0, scale: 0.9, y: 20 }}
-                        className="mb-6 w-[350px] sm:w-[400px] glass rounded-[2.5rem] border border-white/10 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] overflow-hidden flex flex-col"
+                        className="mb-4 sm:mb-6 w-[calc(100vw-2rem)] sm:w-[400px] max-w-[400px] glass rounded-[2.5rem] border border-white/10 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] overflow-hidden flex flex-col max-h-[80vh]"
                     >
                         {/* Header */}
                         <div className="bg-brand-blue p-6 pb-8">
@@ -146,7 +146,7 @@ export default function ContactWidget() {
                 onClick={() => setIsOpen(!isOpen)}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className={`w-16 h-16 rounded-[1.5rem] flex items-center justify-center shadow-2xl transition-all duration-500 ${isOpen ? 'bg-slate-800 rotate-90 border border-white/10' : 'bg-brand-blue shadow-brand-blue/20 border border-brand-blue/20'
+                className={`w-14 h-14 sm:w-16 sm:h-16 rounded-full sm:rounded-[1.5rem] flex items-center justify-center shadow-2xl transition-all duration-500 ${isOpen ? 'bg-slate-800 rotate-90 border border-white/10' : 'bg-brand-blue shadow-brand-blue/20 border border-brand-blue/20'
                     }`}
             >
                 {isOpen ? (

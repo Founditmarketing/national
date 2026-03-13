@@ -19,8 +19,8 @@ export default function WhyChooseUs() {
       bg: 'bg-brand-blue/10'
     },
     {
-      title: 'Institutional Quality',
-      description: 'Comprehensive warranties and state-of-the-art diagnostics ensure long-term vehicle resilience.',
+      title: 'Built to Last',
+      description: 'Comprehensive warranties and state-of-the-art diagnostics ensure your vehicle is safe and reliable for the long haul.',
       icon: <ShieldCheck className="w-6 h-6" />,
       color: 'text-emerald-500',
       bg: 'bg-emerald-500/10'
@@ -55,7 +55,7 @@ export default function WhyChooseUs() {
               <span className="text-brand-blue">National Tire & Auto.</span>
             </h2>
             <p className="text-lg text-slate-400 mb-12 leading-relaxed font-medium">
-              We aren't just another repair shop. We are a high-performance ecosystem designed to scale with your automotive needs—from personal daily drivers to heavy commercial fleets.
+              We aren't just another repair shop. We're a family-owned team dedicated to keeping you and your family safe on the road. We treat every vehicle like our own, from daily drivers to work trucks.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-x-12 gap-y-10">

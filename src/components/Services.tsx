@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Disc, Settings, ShieldCheck, ArrowRight, Zap, Target } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Services() {
   const services = [
@@ -24,7 +25,7 @@ export default function Services() {
       subtitle: 'National Tire & Auto',
       icon: <Settings className="w-8 h-8" />,
       image: '/suspension.png',
-      description: 'Master-certified heavy repair and complex component replacements.',
+      description: 'Expert heavy repair and complex component replacements you can trust.',
       gradient: 'from-brand-blue/10 to-transparent',
       items: [
         'Engine Repair & Replacements',
@@ -36,7 +37,7 @@ export default function Services() {
     },
     {
       category: 'DOT & State Inspections',
-      subtitle: 'Complete Certification Hub',
+      subtitle: 'Complete Certification Center',
       icon: <Target className="w-8 h-8" />,
       image: '/breaks.png',
       description: 'The only local inspection station capable of diagnosing and fixing any failure on the spot.',
@@ -77,15 +78,7 @@ export default function Services() {
               <span className="text-slate-500">Every Vehicle Built.</span>
             </motion.h2>
           </div>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-            className="text-lg text-slate-400 max-w-md leading-relaxed"
-          >
-            From fleet-certified 18-wheeler solutions to high-tech ADAS glass calibration. We bring elite-level precision to Central Louisiana.
-          </motion.p>
+            From everyday driver maintenance to complex ADAS glass calibration, we bring expert, reliable care to Central Louisiana. No job is too big or too small.
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
@@ -126,13 +119,13 @@ export default function Services() {
                     </li>
                   ))}
                 </ul>
-                <motion.a
-                  href="#contact"
+                <Link
+                  to="/contact"
                   className="inline-flex items-center gap-2 text-sm font-bold text-white tracking-wider uppercase group/link"
                 >
                   Book Service
                   <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
-                </motion.a>
+                </Link>
               </div>
 
               {/* Decorative Mesh Background for Card */}

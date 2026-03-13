@@ -31,7 +31,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(220,38,38,0.1),transparent)]" />
         <div className="absolute inset-0 bg-slate-900/40 backdrop-blur-[2px]" />
         <img
-          src="/nattireautopic.png"
+          src="/national_hero_realistic.png"
           alt="National Tire & Auto Workshop"
           className="w-full h-full object-cover opacity-25 scale-105"
         />
@@ -49,23 +49,21 @@ export default function Hero() {
               variants={itemVariants}
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-light border border-white/10 text-brand-blue text-sm font-bold mb-8 shadow-2xl uppercase tracking-widest"
             >
-              <span className="flex h-2 w-2 rounded-full bg-brand-blue animate-pulse shadow-[0_0_10px_rgba(220,38,38,1)]"></span>
-              Central Louisiana's Premier Hub
+              Central Louisiana's Trusted Auto Shop
             </motion.div>
 
             <motion.h1
               variants={itemVariants}
               className="text-[12.5vw] md:text-[9.5vw] lg:text-[7.5vw] font-display font-bold text-white tracking-tighter leading-[0.9] mb-8 uppercase"
             >
-              Why Go <br />
-              <span className="text-brand-blue text-glow-red italic pr-2">Anywhere Else?</span>
+              <span className="text-brand-blue text-glow-red italic pr-2">Dealerships?</span>
             </motion.h1>
 
             <motion.p
               variants={itemVariants}
               className="text-xl md:text-2xl text-slate-400 mb-12 max-w-xl leading-relaxed font-medium"
             >
-              The ultimate <strong>One-Stop Shop</strong> right here in Central Louisiana. From precision alignments and new tires, to expert engine repair and windshield calibration—we handle it all. Stop driving all over town.
+              The ultimate <strong>One-Stop Shop</strong> right here in Central Louisiana. From precision alignments and new tires to expert engine repair and windshield calibration—we handle it all. Skip the dealership wait and get back on the road safely.
             </motion.p>
 
             <motion.div

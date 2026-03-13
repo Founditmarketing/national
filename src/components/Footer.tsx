@@ -31,7 +31,7 @@ export default function Footer() {
 
           <div>
             <h4 className="text-white font-display font-bold mb-8 uppercase tracking-widest text-xs flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full bg-brand-blue" /> Strategic Links
+              <div className="w-1.5 h-1.5 rounded-full bg-brand-blue" /> Quick Links
             </h4>
             <ul className="space-y-4 font-bold text-sm">
               <li><Link to="/" className="hover:text-brand-blue transition-colors">Home Terminal</Link></li>
@@ -63,7 +63,7 @@ export default function Footer() {
 
           <div>
             <h4 className="text-white font-display font-bold mb-8 uppercase tracking-widest text-xs flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full bg-brand-blue" /> Knowledge Base
+              <div className="w-1.5 h-1.5 rounded-full bg-brand-blue" /> Resources
             </h4>
             <ul className="space-y-4 font-bold text-sm">
               <li><Link to="/guides/the-ultimate-guide-to-adas-calibration" className="hover:text-white transition-colors flex items-center gap-2 group leading-snug"><ChevronRight className="w-3 h-3 text-brand-blue opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all shrink-0" /> ADAS Calibration Science</Link></li>
@@ -75,12 +75,12 @@ export default function Footer() {
         </div>
 
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
-          <p className="text-xs font-bold tracking-widest uppercase text-slate-600">
-            &copy; {new Date().getFullYear()} National Automotive Group. Institutional Resilience.
+          <p className="text-xs font-bold tracking-widest uppercase text-slate-600 text-center md:text-left">
+            &copy; {new Date().getFullYear()} National Tire & Auto. All rights reserved.
           </p>
-          <div className="flex gap-8 text-xs font-bold tracking-widest uppercase">
-            <a href="#" className="text-slate-600 hover:text-white transition-colors">Privacy Protocol</a>
-            <a href="#" className="text-slate-600 hover:text-white transition-colors">Terms of Operations</a>
+          <div className="flex flex-wrap justify-center gap-6 md:gap-8 text-xs font-bold tracking-widest uppercase">
+            <a href="#" className="text-slate-600 hover:text-white transition-colors">Privacy Policy</a>
+            <a href="#" className="text-slate-600 hover:text-white transition-colors">Terms of Service</a>
           </div>
         </div>
       </div>
