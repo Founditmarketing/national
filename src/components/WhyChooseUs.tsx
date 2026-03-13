@@ -94,7 +94,7 @@ export default function WhyChooseUs() {
             <div className="grid grid-cols-2 gap-6">
               <div className="space-y-6 pt-12">
                 <img
-                  src="/nattireautopic2.jpeg"
+                  src="/shop_satisfaction.png"
                   alt="National Tire & Auto Shop"
                   className="w-full h-80 object-cover rounded-[2.5rem] border border-white/10 shadow-2xl"
                 />
@@ -129,7 +129,7 @@ export default function WhyChooseUs() {
               </div>
               <div className="space-y-6">
                 <img
-                  src="/nattireautopic4.jpeg"
+                  src="/precision_mechanic.png"
                   alt="Precision Service"
                   className="w-full h-[400px] object-cover rounded-[2.5rem] border border-white/10 shadow-2xl"
                 />

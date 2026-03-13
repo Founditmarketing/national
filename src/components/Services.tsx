@@ -9,7 +9,7 @@ export default function Services() {
       category: 'Tire & Maintenance',
       subtitle: 'National Tire & Auto',
       icon: <Disc className="w-8 h-8" />,
-      image: '/tire1.png',
+      image: '/tire_maintenance.png',
       description: 'Retail & heavy-duty tire solutions paired with routine factory maintenance.',
       gradient: 'from-blue-500/10 to-transparent',
       items: [
@@ -24,7 +24,7 @@ export default function Services() {
       category: 'Major Mechanics',
       subtitle: 'National Tire & Auto',
       icon: <Settings className="w-8 h-8" />,
-      image: '/suspension.png',
+      image: '/major_mechanics.png',
       description: 'Expert heavy repair and complex component replacements you can trust.',
       gradient: 'from-brand-blue/10 to-transparent',
       items: [
@@ -39,7 +39,7 @@ export default function Services() {
       category: 'DOT & State Inspections',
       subtitle: 'Complete Certification Center',
       icon: <Target className="w-8 h-8" />,
-      image: '/breaks.png',
+      image: '/dot_inspection.png',
       description: 'The only local inspection station capable of diagnosing and fixing any failure on the spot.',
       gradient: 'from-emerald-500/10 to-transparent',
       items: [

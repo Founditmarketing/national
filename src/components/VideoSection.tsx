@@ -53,7 +53,7 @@ export default function VideoSection() {
               onClick={() => setIsVideoOpen(true)}
             >
               {/* Fallback image if video not loaded/provided */}
-              <div className="absolute inset-0 bg-slate-800 bg-cover bg-center opacity-60 group-hover:opacity-40 transition-opacity duration-500" style={{ backgroundImage: "url('/nattireautopic2.jpeg')" }} />
+              <div className="absolute inset-0 bg-slate-800 bg-cover bg-center opacity-60 group-hover:opacity-40 transition-opacity duration-500" style={{ backgroundImage: "url('/precision_mechanic.png')" }} />
               <div className="absolute inset-0 bg-brand-blue/20 mix-blend-overlay" />
               
               {/* Play Button Overlay */}

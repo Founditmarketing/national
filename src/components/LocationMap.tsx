@@ -33,7 +33,7 @@ export default function LocationMap() {
                            Pineville, LA 71360
                         </p>
                         <a 
-                           href="https://maps.google.com/?q=1400+Hwy+165+S,+Pineville,+LA+71360" 
+                           href="https://www.google.com/maps/dir/?api=1&destination=National+Tire+%26+Auto,+1400+US-165,+Pineville,+LA+71360" 
                            target="_blank" 
                            rel="noreferrer"
                            className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand-blue hover:text-white transition-colors"
