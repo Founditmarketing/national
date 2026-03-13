@@ -55,7 +55,7 @@ export default function LocationMap() {
              {/* Note: In a real app we'd use a legitimate Google Maps API key via @react-google-maps/api or iframe. 
                  Since we don't have one, we use a structured iframe embed pointing to the general area. */}
             <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1m3!1d3399.7047124316946!2d-92.42111518420959!3d31.311756081467554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x862f9ebfa6c2beaf%3A0xe4caeb0a57af3cc6!2sPineville%2C%20LA!5e0!3m2!1sen!2sus!4v1714000000000!5m2!1sen!2sus" 
+                src="https://maps.google.com/maps?q=1400+Hwy+165+S,+Pineville,+LA+71360&t=&z=14&ie=UTF8&iwloc=&output=embed"
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 

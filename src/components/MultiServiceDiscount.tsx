@@ -2,8 +2,10 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Tag, ArrowRight, ShieldCheck, Wrench, Settings } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useCallRouting } from '../hooks/useCallRouting';
 
 export default function MultiServiceDiscount() {
+    const { phoneHref } = useCallRouting();
     return (
         <section className="py-24 bg-brand-blue relative overflow-hidden">
             {/* Background Textures */}
@@ -38,13 +40,13 @@ export default function MultiServiceDiscount() {
                             </p>
 
                             <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-                                <Link
-                                    to="/contact"
+                                <a
+                                    href={phoneHref}
                                     className="group inline-flex items-center gap-3 bg-white text-brand-blue hover:bg-slate-100 px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-xl"
                                 >
                                     Get a Bundled Quote
                                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                                </Link>
+                                </a>
                             </motion.div>
                         </motion.div>
 
