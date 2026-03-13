@@ -25,7 +25,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-slate-900">
+    <section className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden bg-slate-900">
       {/* Background Layer */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(220,38,38,0.1),transparent)]" />
@@ -54,7 +54,7 @@ export default function Hero() {
 
             <motion.h1
               variants={itemVariants}
-              className="text-[12.5vw] md:text-[9.5vw] lg:text-[7.5vw] font-display font-bold text-white tracking-tighter leading-[0.9] mb-8 uppercase"
+              className="text-6xl sm:text-7xl md:text-8xl lg:text-[6.5rem] font-display font-bold text-white tracking-tighter leading-[1.1] mb-8 uppercase"
             >
               <span className="text-brand-blue text-glow-red italic pr-2">Dealerships?</span>
             </motion.h1>
