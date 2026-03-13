@@ -1,12 +1,13 @@
-import { OpenAI } from 'openai';
+import { GoogleGenAI } from '@google/genai';
 
 // Enable Edge Runtime for Vercel
 export const config = {
   runtime: 'edge',
 };
 
-// Initialize OpenAI directly (it will automatically use process.env.OPENAI_API_KEY)
-const openai = new OpenAI();
+// Initialize Gemini
+// Ensure you have GEMINI_API_KEY in your Vercel Environment Variables
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 const PRE_PROMPT = `
 You are the official Customer Service AI for "National Tire & Auto Hub" located in Central Louisiana (stores in Alexandria, Pineville, etc.). 
@@ -40,31 +41,33 @@ export default async function handler(req: Request) {
       return new Response('Bad Request: Invalid messages format', { status: 400 });
     }
 
-    // Format messages for OpenAI
-    const formattedMessages = [
-      { role: 'system', content: PRE_PROMPT },
-      ...messages.map((msg: any) => ({
-        role: msg.role === 'bot' ? 'assistant' : 'user',
-        content: msg.content,
-      }))
-    ];
+    // Format messages for Gemini Chat Session
+    const history = messages.slice(0, -1).map((msg: any) => ({
+      role: msg.role === 'bot' ? 'model' : 'user',
+      parts: [{ text: msg.content }]
+    }));
+    
+    const latestUserMessage = messages[messages.length - 1].content;
 
-    const response = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
-      messages: formattedMessages as any,
-      temperature: 0.7,
-      max_tokens: 150,
+    const response = await ai.models.generateContent({
+      model: 'gemini-2.5-flash',
+      contents: [
+        { role: 'user', parts: [{ text: PRE_PROMPT }] },
+        { role: 'model', parts: [{ text: "Understood. I will act as the National Tire & Auto Hub advisor." }] },
+        ...history,
+        { role: 'user', parts: [{ text: latestUserMessage }] }
+      ]
     });
 
     return new Response(JSON.stringify({
-      message: response.choices[0].message.content,
+      message: response.text,
     }), {
       status: 200,
       headers: { 'Content-Type': 'application/json' },
     });
 
   } catch (error: any) {
-    console.error('OpenAI Error:', error);
+    console.error('Gemini Error:', error);
     return new Response(JSON.stringify({ error: 'Failed to generate response' }), {
       status: 500,
       headers: { 'Content-Type': 'application/json' },
