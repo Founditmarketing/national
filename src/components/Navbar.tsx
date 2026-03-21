@@ -53,9 +53,9 @@ export default function Navbar() {
                       alt="National Automotive Group"
                       className="h-10 md:h-16 w-auto object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.1)] transition-transform duration-500 group-hover:scale-105"
                     />
-                    <div className="hidden sm:flex flex-col justify-center">
-                      <span className="font-display font-bold text-xl tracking-tight block leading-none text-white uppercase group-hover:text-brand-blue transition-colors duration-300">NATIONAL</span>
-                      <span className="text-[10px] text-slate-400 tracking-[0.2em] uppercase font-bold text-nowrap">Tire & Auto</span>
+                    <div className="flex flex-col justify-center">
+                      <span className="font-display font-bold text-lg md:text-xl tracking-tight block leading-none text-white uppercase group-hover:text-brand-blue transition-colors duration-300">NATIONAL</span>
+                      <span className="text-[9px] md:text-[10px] text-slate-400 tracking-[0.2em] uppercase font-bold text-nowrap">Tire & Auto</span>
                     </div>
                   </Link>
                 </motion.div>
