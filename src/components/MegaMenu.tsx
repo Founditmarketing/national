@@ -21,9 +21,6 @@ export default function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
     React.useEffect(() => {
         if (isOpen) {
             document.body.style.overflow = 'hidden';
-            setTimeout(() => {
-                document.getElementById('megamenu-search')?.focus();
-            }, 100);
         } else {
             document.body.style.overflow = '';
             setSearchQuery('');
@@ -124,10 +121,10 @@ export default function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                     {/* Subtle Background Accent */}
                     <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-blue/5 rounded-full blur-[150px] pointer-events-none -translate-y-1/2 translate-x-1/3" />
 
-                    <div className="min-h-screen max-w-[1600px] mx-auto px-6 py-8 md:py-24 relative z-10">
+                    <div className="min-h-screen max-w-[1600px] mx-auto px-6 py-4 md:py-24 relative z-10">
 
                         {/* Header / Close */}
-                        <div className="flex justify-between items-center mb-16 md:mb-24">
+                        <div className="flex justify-between items-center mb-8 md:mb-24">
                             <Link to="/" onClick={onClose} className="flex items-center gap-3 group">
                                 <img
                                     src="/brands/national_automotive_group_logo.png"
@@ -152,7 +149,7 @@ export default function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                         </div>
 
                         {/* Search Bar */}
-                        <div className="mb-12 relative group">
+                        <div className="mb-8 md:mb-12 relative group">
                             <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
                                 <Search className="h-5 w-5 text-slate-500 group-focus-within:text-brand-blue transition-colors" />
                             </div>
@@ -167,7 +164,7 @@ export default function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                         </div>
 
                         {/* Main Navigation Matrix */}
-                        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-12 md:gap-x-16 gap-y-16 mb-24">
+                        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8 md:gap-x-16 md:gap-y-16 mb-12 md:mb-24">
                             {filteredColumns.map((col, idx) => (
                                 <motion.div
                                     key={col.title}
@@ -175,16 +172,16 @@ export default function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.1 + idx * 0.05, duration: 0.6 }}
                                 >
-                                    <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start gap-4 mb-6 md:mb-8 text-center md:text-left">
+                                    <div className="flex items-start gap-4 mb-4 md:mb-8 text-left">
                                         <div className="p-3 bg-brand-blue/10 rounded-xl mt-1 shrink-0">
                                             <col.icon className="w-6 h-6 text-brand-blue" />
                                         </div>
                                         <div>
                                             <h3 className="text-xl font-display font-bold text-white tracking-tight leading-tight mb-2">{col.title}</h3>
-                                            <p className="text-sm font-medium text-slate-400 leading-relaxed pr-0 md:pr-4 max-w-[250px] md:max-w-none mx-auto md:mx-0">{col.description}</p>
+                                            <p className="text-sm font-medium text-slate-400 leading-relaxed pr-4">{col.description}</p>
                                         </div>
                                     </div>
-                                    <ul className="space-y-4 flex flex-col items-center md:items-start text-center md:text-left">
+                                    <ul className="space-y-4 flex flex-col items-start text-left">
                                         {col.links.map((link) => (
                                             <li key={link.name}>
                                                 {link.href.startsWith('http') ? (
@@ -224,13 +221,13 @@ export default function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.4, duration: 0.8 }}
-                            className="border-t border-white/10 pt-12 md:pt-16 grid lg:grid-cols-3 gap-12 text-center md:text-left"
+                            className="border-t border-white/10 pt-8 md:pt-16 grid lg:grid-cols-3 gap-8 md:gap-12 text-left"
                         >
-                            <div className="flex flex-col items-center md:items-start">
-                                <h4 className="text-white font-display font-bold mb-6 flex items-center justify-center md:justify-start gap-2">
+                            <div className="flex flex-col items-start">
+                                <h4 className="text-white font-display font-bold mb-4 md:mb-6 flex items-center justify-start gap-2">
                                     <MapPin className="w-4 h-4 text-brand-blue" /> Service Footprint
                                 </h4>
-                                <div className="flex flex-wrap justify-center md:justify-start gap-3">
+                                <div className="flex flex-wrap justify-start gap-3">
                                     {filteredLocations.map(loc => (
                                         <Link key={loc.name} to={loc.href} className="px-4 py-2 rounded-full glass border border-white/10 text-sm font-bold text-slate-300 hover:text-white hover:border-brand-blue/50 transition-colors">
                                             {loc.name}
@@ -239,11 +236,11 @@ export default function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                                 </div>
                             </div>
 
-                            <div className="lg:col-span-2 flex flex-col items-center md:items-start">
-                                <h4 className="text-white font-display font-bold mb-6 flex items-center justify-center md:justify-start gap-2">
+                            <div className="lg:col-span-2 flex flex-col items-start">
+                                <h4 className="text-white font-display font-bold mb-4 md:mb-6 flex items-center justify-start gap-2">
                                     <Compass className="w-4 h-4 text-brand-blue" /> Authority Guides
                                 </h4>
-                                <div className="flex flex-col items-center md:items-start gap-3 w-full">
+                                <div className="flex flex-col items-start gap-3 w-full">
                                     {filteredGuides.map(guide => (
                                         <Link key={guide.name} to={guide.href} className="text-slate-400 hover:text-white text-sm font-bold flex items-center justify-center md:justify-start gap-2 group max-w-max">
                                             <ArrowRight className="w-3 h-3 text-brand-blue opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all hidden md:block" />
