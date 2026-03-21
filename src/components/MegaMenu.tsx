@@ -35,53 +35,50 @@ export default function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
 
     const menuColumns = [
         {
-            title: 'Flagship Services',
+            title: 'Where to Find Us',
+            description: 'Our primary auto service centers & specialty hubs.',
+            icon: MapPin,
+            links: [
+                { name: 'Alexandria Hub', href: '/locations/alexandria', isHighlight: true },
+                { name: 'Pineville Hub', href: '/locations/pineville', isHighlight: true },
+                { name: 'Transmission Center', href: 'https://nattransmission.com/', isHighlight: true },
+                { name: 'Glass Calibration Center', href: '/services/glass-calibration' },
+            ]
+        },
+        {
+            title: 'Tires & Auto Service',
+            description: 'Core repairs and most common automotive needs.',
             icon: Activity,
             links: [
-                { name: 'Tires & Hunter Alignment', href: '/services/tires-alignment' },
-                { name: 'Advanced Diagnostics & Repair', href: '/services/advanced-auto-repair' },
-                { name: 'Glass & ADAS Calibration', href: '/services/glass-calibration' },
-                { name: 'View All Services', href: '/services', isHighlight: true }
+                { name: 'New Tires & Hunter Alignment', href: '/services/tires-alignment' },
+                { name: 'Brake Pads & Rotors', href: '/services/brake-repair-rotors' },
+                { name: 'A/C Repair & Recharge', href: '/services/ac-repair-recharge' },
+                { name: 'Check Engine Diagnostics', href: '/services/electrical-diagnostics' },
+                { name: 'Steering & Suspension', href: '/services/suspension-shocks-struts' }
             ]
         },
         {
-            title: 'Specific Repairs',
+            title: 'Maintenance & Specialty',
+            description: 'Preventative care & complex technical repairs.',
             icon: Wrench,
             links: [
-                { name: 'Transmission Remanufacturing', href: '/services/transmission-rebuild', isHighlight: true },
-                { name: 'Engine Repair & Rebuilds', href: '/services/engine-repair-rebuild' },
-                { name: 'Electrical & Diagnostics', href: '/services/electrical-diagnostics' },
-                { name: 'Brake Pads & Rotors', href: '/services/brake-repair-rotors' },
-                { name: 'A/C Evac & Recharge', href: '/services/ac-repair-recharge' },
-                { name: 'Check Engine & Sensors', href: '/services/check-engine-diagnostics' },
-                { name: 'Suspension & Shocks', href: '/services/suspension-shocks-struts' },
-                { name: 'European & Import Repair', href: '/services/european-import-repair' },
-                { name: 'Steering Rack & Pinion', href: '/services/steering-rack-pinion' },
-                { name: 'Exhaust & Catalytic', href: '/services/exhaust-muffler-repair' },
+                { name: 'Oil Changes & Preventative', href: '/services/oil-change-lube' },
+                { name: 'Factory Scheduled Maintenance', href: '/services/preventative-maintenance' },
+                { name: 'ADAS Glass Calibration', href: '/services/glass-calibration', isHighlight: true },
+                { name: 'Transmission Remanufacturing', href: 'https://nattransmission.com/', isHighlight: true },
+                { name: 'European & Import Repair', href: '/services/european-import-repair' }
             ]
         },
         {
-            title: 'Scheduled Maintenance',
+            title: 'Resources & Fleet',
+            description: 'Pricing guides, offers, and business solutions.',
             icon: Shield,
             links: [
-                { name: 'Synthetic Oil & Lube', href: '/services/oil-change-lube' },
-                { name: 'Preventative Maintenance', href: '/services/preventative-maintenance' },
-                { name: 'Wheel Alignment & Balance', href: '/services/wheel-alignment-balancing' },
-                { name: 'Battery & Alternator', href: '/services/battery-testing-replacement' },
-                { name: 'Transmission Fluid Flush', href: '/services/transmission-flush' },
-                { name: '30,000 Mile Service', href: '/maintenance/30k-mile-service' },
-                { name: '60,000 Mile Service', href: '/maintenance/60k-mile-service' },
-                { name: '90,000 Mile Service', href: '/maintenance/90k-mile-service' },
-            ]
-        },
-        {
-            title: 'National Infrastructure',
-            icon: Compass,
-            links: [
-                { name: 'Commercial & Heavy Duty Fleet', href: '/fleet' },
+                { name: 'Commercial Fleet Services', href: '/fleet', isHighlight: true },
+                { name: 'Transparent Pricing Plans', href: '/pricing', isHighlight: true },
+                { name: 'Special Offers & Bundles', href: '/specials' },
                 { name: 'The National Story', href: '/about' },
-                { name: 'Career Opportunities', href: '/careers' },
-                { name: 'Warranty & Operations FAQ', href: '/faq' }
+                { name: 'Warranties & FAQ', href: '/faq' }
             ]
         }
     ];
@@ -175,25 +172,43 @@ export default function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.1 + idx * 0.05, duration: 0.6 }}
                                 >
-                                    <div className="flex items-center gap-3 mb-6">
-                                        <div className="p-2 bg-brand-blue/10 rounded-lg">
-                                            <col.icon className="w-5 h-5 text-brand-blue" />
+                                    <div className="flex items-start gap-4 mb-8">
+                                        <div className="p-3 bg-brand-blue/10 rounded-xl mt-1 shrink-0">
+                                            <col.icon className="w-6 h-6 text-brand-blue" />
                                         </div>
-                                        <h3 className="text-xl font-display font-bold text-white tracking-tight">{col.title}</h3>
+                                        <div>
+                                            <h3 className="text-xl font-display font-bold text-white tracking-tight leading-tight mb-2">{col.title}</h3>
+                                            <p className="text-sm font-medium text-slate-400 leading-relaxed pr-4">{col.description}</p>
+                                        </div>
                                     </div>
                                     <ul className="space-y-4">
                                         {col.links.map((link) => (
                                             <li key={link.name}>
-                                                <Link
-                                                    to={link.href}
-                                                    className={`group flex items-center text-lg lg:text-[1.35rem] leading-snug font-bold ${link.isHighlight ? 'text-brand-blue' : 'text-slate-400 hover:text-white'
-                                                        } transition-colors`}
-                                                >
-                                                    <span className="relative">
-                                                        {link.name}
-                                                        <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-brand-blue scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
-                                                    </span>
-                                                </Link>
+                                                {link.href.startsWith('http') ? (
+                                                    <a
+                                                        href={link.href}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className={`group flex items-center text-lg lg:text-[1.35rem] leading-snug font-bold ${link.isHighlight ? 'text-brand-blue' : 'text-slate-400 hover:text-white'
+                                                            } transition-colors`}
+                                                    >
+                                                        <span className="relative">
+                                                            {link.name}
+                                                            <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-brand-blue scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+                                                        </span>
+                                                    </a>
+                                                ) : (
+                                                    <Link
+                                                        to={link.href}
+                                                        className={`group flex items-center text-lg lg:text-[1.35rem] leading-snug font-bold ${link.isHighlight ? 'text-brand-blue' : 'text-slate-400 hover:text-white'
+                                                            } transition-colors`}
+                                                    >
+                                                        <span className="relative">
+                                                            {link.name}
+                                                            <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-brand-blue scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+                                                        </span>
+                                                    </Link>
+                                                )}
                                             </li>
                                         ))}
                                     </ul>

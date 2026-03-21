@@ -98,7 +98,7 @@ export default function Hero() {
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-            className="hidden lg:block relative"
+            className="mt-12 lg:mt-0 relative"
           >
             <div className="glass p-8 rounded-[2.5rem] relative z-10 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] border border-white/10">
               <div className="grid grid-cols-2 gap-8">
@@ -118,16 +118,38 @@ export default function Hero() {
                 </div>
               </div>
 
-              <div className="mt-8 pt-8 border-t border-white/5 space-y-6">
-                <div className="flex items-center gap-4 group cursor-pointer">
-                  <div className="bg-white/5 p-3 rounded-xl group-hover:bg-brand-blue/10 transition-colors">
+              <div className="mt-8 pt-8 border-t border-white/5 space-y-4">
+                <h4 className="text-white font-bold text-xs uppercase tracking-widest mb-4">Our Primary Locations</h4>
+                
+                <Link to="/locations/alexandria" className="flex items-center gap-4 group cursor-pointer bg-slate-900/40 p-3 rounded-2xl hover:bg-slate-800/60 border border-white/5 hover:border-brand-blue/30 transition-all">
+                  <div className="bg-white/5 p-3 rounded-xl group-hover:bg-brand-blue/10 transition-colors shrink-0">
                     <MapPin className="w-5 h-5 text-slate-400 group-hover:text-brand-blue transition-colors" />
                   </div>
                   <div>
-                    <p className="text-white font-bold text-sm">Main Street Depot</p>
-                    <p className="text-slate-500 text-xs mt-0.5">Alexandria, Central LA</p>
+                    <p className="text-white font-bold text-sm group-hover:text-brand-blue transition-colors">Alexandria Hub</p>
+                    <p className="text-slate-500 text-xs mt-0.5">Full-Service Auto, Tires & Glass</p>
                   </div>
-                </div>
+                </Link>
+
+                <Link to="/locations/pineville" className="flex items-center gap-4 group cursor-pointer bg-slate-900/40 p-3 rounded-2xl hover:bg-slate-800/60 border border-white/5 hover:border-brand-blue/30 transition-all">
+                  <div className="bg-white/5 p-3 rounded-xl group-hover:bg-brand-blue/10 transition-colors shrink-0">
+                    <MapPin className="w-5 h-5 text-slate-400 group-hover:text-brand-blue transition-colors" />
+                  </div>
+                  <div>
+                    <p className="text-white font-bold text-sm group-hover:text-brand-blue transition-colors">Pineville Hub</p>
+                    <p className="text-slate-500 text-xs mt-0.5">Full-Service Auto, Tires & Glass</p>
+                  </div>
+                </Link>
+
+                <a href="https://nattransmission.com/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group cursor-pointer bg-slate-900/40 p-3 rounded-2xl hover:bg-slate-800/60 border border-white/5 hover:border-brand-blue/30 transition-all">
+                  <div className="bg-white/5 p-3 rounded-xl group-hover:bg-brand-blue/10 transition-colors shrink-0">
+                    <MapPin className="w-5 h-5 text-slate-400 group-hover:text-brand-blue transition-colors" />
+                  </div>
+                  <div>
+                    <p className="text-white font-bold text-sm group-hover:text-brand-blue transition-colors">Transmission Specialty Shop</p>
+                    <p className="text-slate-500 text-xs mt-0.5">Dedicated Transmission Center</p>
+                  </div>
+                </a>
               </div>
 
               {/* Tax Time Callout Inside Card */}

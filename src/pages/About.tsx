@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { History, Target, Users } from 'lucide-react';
 import Contact from '../components/Contact';
+import VideoSection from '../components/VideoSection';
 
 export default function About() {
     return (
@@ -60,6 +61,7 @@ export default function About() {
                 </div>
             </section>
 
+            <VideoSection />
             <Contact />
         </div>
     );

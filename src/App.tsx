@@ -18,6 +18,8 @@ import Careers from './pages/Careers';
 import FAQPage from './pages/FAQPage';
 import CommercialFleet from './pages/CommercialFleet';
 import Contact from './pages/Contact';
+import Pricing from './pages/Pricing';
+import Specials from './pages/Specials';
 
 // Phase 3 Locations & Guides
 import Alexandria from './pages/locations/Alexandria';
@@ -98,6 +100,8 @@ export default function App() {
                     <Route path="/faq" element={<FAQPage />} />
                     <Route path="/fleet" element={<CommercialFleet />} />
                     <Route path="/contact" element={<Contact />} />
+                    <Route path="/pricing" element={<Pricing />} />
+                    <Route path="/specials" element={<Specials />} />
 
                     {/* Phase 4 Content Avalanche Routes */}
                     <Route path="/services/brake-repair-rotors" element={<BrakeRepair />} />
