@@ -136,7 +136,7 @@ interface ReviewProps {
 
 const ReviewCard = React.forwardRef<HTMLDivElement, { review: ReviewProps }>(({ review }, ref) => {
   return (
-    <div ref={ref} className="w-[350px] md:w-[450px] shrink-0 group relative glass p-8 rounded-[2rem] border border-white/5 hover:border-brand-blue/30 transition-all duration-500 hover:shadow-2xl flex flex-col h-full bg-slate-900/50">
+    <div ref={ref} className="w-[350px] md:w-[450px] shrink-0 group relative bg-slate-800/95 backdrop-blur-xl p-8 rounded-[2rem] border border-white/10 hover:border-brand-blue/40 transition-all duration-500 hover:shadow-2xl flex flex-col h-full">
       <Quote className="absolute top-8 right-8 w-10 h-10 text-white/5 group-hover:text-brand-blue/10 transition-colors" />
 
       <div className="flex gap-1 mb-6">

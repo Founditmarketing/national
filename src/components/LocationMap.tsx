@@ -58,7 +58,7 @@ export default function LocationMap() {
                  <div 
                     key={loc.id}
                     onClick={() => setActiveLocation(loc)}
-                    className={`cursor-pointer group flex flex-col gap-3 p-5 rounded-2xl border transition-all ${activeLocation.id === loc.id ? 'bg-brand-blue/10 border-brand-blue/30 shadow-[0_0_20px_rgba(220,38,38,0.1)]' : 'glass-light border-white/5 bg-white/5 hover:border-brand-blue/20 hover:bg-white/10'}`}
+                    className={`cursor-pointer group flex flex-col gap-3 p-5 rounded-2xl border transition-all ${activeLocation.id === loc.id ? 'bg-brand-blue/10 border-brand-blue/40 shadow-[0_0_20px_rgba(220,38,38,0.1)]' : 'bg-slate-800/80 border-white/10 hover:border-brand-blue/30 hover:bg-slate-800'}`}
                  >
                     <div className="flex items-center gap-3">
                         <MapPin className={`w-5 h-5 shrink-0 ${activeLocation.id === loc.id ? 'text-brand-blue' : 'text-slate-400 group-hover:text-brand-blue transition-colors'}`} />

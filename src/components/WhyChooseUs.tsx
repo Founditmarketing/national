@@ -66,7 +66,7 @@ export default function WhyChooseUs() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="flex flex-col gap-4 group"
+                  className="flex flex-col gap-4 group bg-slate-800/80 md:bg-transparent p-6 md:p-0 rounded-3xl border border-white/10 md:border-transparent"
                 >
                   <div className={`w-12 h-12 ${feature.bg} rounded-2xl flex items-center justify-center border border-white/5 group-hover:scale-110 transition-transform duration-300`}>
                     <div className={feature.color}>
@@ -75,7 +75,7 @@ export default function WhyChooseUs() {
                   </div>
                   <div>
                     <h3 className="text-xl font-display font-bold text-white mb-2">{feature.title}</h3>
-                    <p className="text-slate-500 text-sm leading-relaxed font-bold">
+                    <p className="hidden md:block text-slate-500 text-sm leading-relaxed font-bold">
                       {feature.description}
                     </p>
                   </div>
@@ -98,7 +98,7 @@ export default function WhyChooseUs() {
                   alt="National Tire & Auto Shop"
                   className="w-full h-80 object-cover rounded-[2.5rem] border border-white/10 shadow-2xl"
                 />
-                <div className="glass p-6 rounded-[2rem] border border-white/10 relative overflow-hidden flex items-center gap-6 group">
+                <div className="bg-slate-900/90 backdrop-blur-xl p-6 rounded-[2rem] border border-white/20 relative overflow-hidden flex items-center gap-6 group">
                   <div className="absolute inset-0 bg-gradient-to-r from-brand-blue/0 via-brand-blue/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
                   <div className="relative w-16 h-16 flex-shrink-0">
                     <svg className="w-full h-full transform -rotate-90" viewBox="0 0 100 100">

@@ -113,7 +113,7 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
             className="mt-12 lg:mt-0 relative"
           >
-            <div className="glass p-8 rounded-[2.5rem] relative z-10 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] border border-white/10">
+            <div className="bg-slate-900/80 backdrop-blur-3xl p-8 rounded-[2.5rem] relative z-10 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.8)] border border-white/20">
               <div className="grid grid-cols-2 gap-8">
                 <div className="space-y-2">
                   <div className="text-brand-blue mb-2 bg-brand-blue/10 w-fit p-3 rounded-2xl">
@@ -131,7 +131,7 @@ export default function Hero() {
                 </div>
               </div>
 
-              <div className="mt-8 pt-8 border-t border-white/5 space-y-4">
+              <div className="mt-8 pt-8 border-t border-white/10 space-y-4 hidden lg:block">
                 <h4 className="text-white font-bold text-xs uppercase tracking-widest mb-4">Our Primary Locations</h4>
                 
                 <Link to="/locations/alexandria" className="flex items-center gap-4 group cursor-pointer bg-slate-900/40 p-3 rounded-2xl hover:bg-slate-800/60 border border-white/5 hover:border-brand-blue/30 transition-all">
