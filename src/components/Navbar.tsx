@@ -39,7 +39,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className={`relative overflow-hidden transition-all duration-500 ${scrolled ? 'glass shadow-2xl rounded-2xl border border-white/5' : 'bg-transparent'
             }`}>
-            <div className="flex justify-between items-center h-16 md:h-20 px-6">
+            <div className="flex justify-between items-center h-16 md:h-20 px-4 md:px-6">
 
               {/* Logo Section */}
               <div className="flex items-center">
@@ -93,7 +93,7 @@ export default function Navbar() {
                 >
                   <span className="text-sm font-bold tracking-widest uppercase hidden md:block group-hover:tracking-[0.3em] transition-all duration-300">Menu</span>
                   <div className="p-2 md:p-3 rounded-full glass-light border border-white/10 group-hover:border-brand-blue/30 transition-all">
-                    <Menu className="w-6 h-6" />
+                    <Menu className="w-5 h-5 md:w-6 md:h-6" />
                   </div>
                 </button>
 

@@ -119,7 +119,7 @@ export default function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                    className="fixed inset-0 z-[100001] bg-slate-950/95 backdrop-blur-3xl overflow-y-auto"
+                    className="fixed inset-0 z-[100001] bg-slate-950/95 backdrop-blur-3xl overflow-y-auto overflow-x-hidden"
                 >
                     {/* Subtle Background Accent */}
                     <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-blue/5 rounded-full blur-[150px] pointer-events-none -translate-y-1/2 translate-x-1/3" />
@@ -130,11 +130,14 @@ export default function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                         <div className="flex justify-between items-center mb-16 md:mb-24">
                             <Link to="/" onClick={onClose} className="flex items-center gap-3 group">
                                 <img
-                                    src="/nattireautologo.png"
-                                    alt="National Tire & Auto"
-                                    className="h-10 md:h-12 w-auto object-contain brightness-0 invert opacity-90 transition-transform duration-500 group-hover:scale-105"
+                                    src="/brands/national_automotive_group_logo.png"
+                                    alt="National Automotive Group"
+                                    className="h-10 md:h-12 w-auto object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.1)] transition-transform duration-500 group-hover:scale-105"
                                 />
-                                <span className="font-display font-bold text-xl tracking-tight text-white uppercase group-hover:text-brand-blue transition-colors hidden sm:block">Command Center</span>
+                                <div className="flex flex-col justify-center text-left">
+                                    <span className="font-display font-bold text-lg tracking-tight block leading-none text-white uppercase group-hover:text-brand-blue transition-colors duration-300">NATIONAL</span>
+                                    <span className="text-[9px] text-slate-400 tracking-[0.2em] uppercase font-bold text-nowrap">Tire & Auto</span>
+                                </div>
                             </Link>
 
                             <button
@@ -142,7 +145,7 @@ export default function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                                 className="group flex items-center gap-3 text-white hover:text-brand-blue transition-colors"
                             >
                                 <span className="text-sm font-bold tracking-widest uppercase hidden md:block">Close Menu</span>
-                                <div className="p-3 md:p-4 rounded-full glass-light border border-white/10 group-hover:border-brand-blue/30 transition-all">
+                                <div className="p-2 md:p-4 rounded-full glass-light border border-white/10 group-hover:border-brand-blue/30 transition-all">
                                     <X className="w-6 h-6 md:w-8 md:h-8" />
                                 </div>
                             </button>
