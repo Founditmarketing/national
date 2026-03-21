@@ -24,7 +24,7 @@ export default function Home() {
             <section className="py-20 bg-slate-950 border-t border-white/5 text-center">
                 <div className="max-w-4xl mx-auto px-4">
                     <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-6">Transparent Pricing for Every Budget</h2>
-                    <p className="text-slate-400 mb-8 text-lg">We believe in honest, upfront pricing without the surprises. Explore our clear service packages and commercial fleet options.</p>
+                    <p className="text-slate-400 mb-8 text-lg">No surprises. Explore our clear service packages and commercial fleet options.</p>
                     <Link to="/pricing" className="inline-flex items-center gap-2 bg-brand-blue hover:bg-brand-blue-dark shadow-lg shadow-brand-blue/20 text-white px-8 py-4 rounded-xl font-bold transition-all group">
                         <DollarSign className="w-5 h-5" />
                         View Our Pricing Plans

@@ -77,7 +77,7 @@ export default function Hero() {
               variants={itemVariants}
               className="text-xl md:text-2xl text-slate-400 mb-12 max-w-xl leading-relaxed font-medium"
             >
-              The ultimate <strong>One-Stop Shop</strong> right here in Central Louisiana. From precision alignments and new tires to expert engine repair and windshield calibration—we handle it all. Skip the dealership wait and get back on the road safely.
+              Central Louisiana's true <strong>One-Stop Shop</strong>. Tires, engine repair, glass, and alignments—we handle it all. Skip the dealership wait.
             </motion.p>
 
             <motion.div
@@ -140,7 +140,7 @@ export default function Hero() {
                   </div>
                   <div>
                     <p className="text-white font-bold text-sm group-hover:text-brand-blue transition-colors">Alexandria Hub</p>
-                    <p className="text-slate-500 text-xs mt-0.5">Full-Service Auto, Tires & Glass</p>
+                    <p className="text-slate-500 text-xs mt-0.5">Full-Service Auto</p>
                   </div>
                 </Link>
 
@@ -150,7 +150,7 @@ export default function Hero() {
                   </div>
                   <div>
                     <p className="text-white font-bold text-sm group-hover:text-brand-blue transition-colors">Pineville Hub</p>
-                    <p className="text-slate-500 text-xs mt-0.5">Full-Service Auto, Tires & Glass</p>
+                    <p className="text-slate-500 text-xs mt-0.5">Full-Service Auto</p>
                   </div>
                 </Link>
 
