@@ -104,7 +104,7 @@ export default function Testimonials() {
         {/* Row 1: Left to Right (Technically scrolling left, so visually right to left) */}
         <motion.div
           animate={{ x: ['0%', '-50%'] }}
-          transition={{ repeat: Infinity, ease: 'linear', duration: 80 }}
+          transition={{ repeat: Infinity, ease: 'linear', duration: 45 }}
           className="flex gap-6 w-max"
         >
           {row1.map((review, idx) => (
@@ -115,7 +115,7 @@ export default function Testimonials() {
         {/* Row 2: Right to Left (Technically scrolling right, so visually left to right) */}
         <motion.div
           animate={{ x: ['-50%', '0%'] }}
-          transition={{ repeat: Infinity, ease: 'linear', duration: 90 }}
+          transition={{ repeat: Infinity, ease: 'linear', duration: 55 }}
           className="flex gap-6 w-max"
         >
           {row2.map((review, idx) => (
