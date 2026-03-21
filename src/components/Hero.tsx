@@ -30,13 +30,23 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(220,38,38,0.1),transparent)]" />
         <div className="absolute inset-0 bg-slate-900/40 backdrop-blur-[2px]" />
+        {/* Mobile Background Video (9:16) */}
+        <video
+          src="/mobile_hero.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover opacity-40 scale-105 block md:hidden"
+        />
+        {/* Desktop Background Video (16:9) */}
         <video
           src="/hero_trial_1.mp4"
           autoPlay
           loop
           muted
           playsInline
-          className="w-full h-full object-cover opacity-40 scale-105"
+          className="w-full h-full object-cover opacity-40 scale-105 hidden md:block"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-slate-900 via-transparent to-slate-900" />
       </div>
