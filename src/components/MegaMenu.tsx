@@ -172,16 +172,16 @@ export default function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.1 + idx * 0.05, duration: 0.6 }}
                                 >
-                                    <div className="flex items-start gap-4 mb-8">
+                                    <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start gap-4 mb-6 md:mb-8 text-center md:text-left">
                                         <div className="p-3 bg-brand-blue/10 rounded-xl mt-1 shrink-0">
                                             <col.icon className="w-6 h-6 text-brand-blue" />
                                         </div>
                                         <div>
                                             <h3 className="text-xl font-display font-bold text-white tracking-tight leading-tight mb-2">{col.title}</h3>
-                                            <p className="text-sm font-medium text-slate-400 leading-relaxed pr-4">{col.description}</p>
+                                            <p className="text-sm font-medium text-slate-400 leading-relaxed pr-0 md:pr-4 max-w-[250px] md:max-w-none mx-auto md:mx-0">{col.description}</p>
                                         </div>
                                     </div>
-                                    <ul className="space-y-4">
+                                    <ul className="space-y-4 flex flex-col items-center md:items-start text-center md:text-left">
                                         {col.links.map((link) => (
                                             <li key={link.name}>
                                                 {link.href.startsWith('http') ? (
@@ -221,13 +221,13 @@ export default function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.4, duration: 0.8 }}
-                            className="border-t border-white/10 pt-16 grid lg:grid-cols-3 gap-12"
+                            className="border-t border-white/10 pt-12 md:pt-16 grid lg:grid-cols-3 gap-12 text-center md:text-left"
                         >
-                            <div>
-                                <h4 className="text-white font-display font-bold mb-6 flex items-center gap-2">
+                            <div className="flex flex-col items-center md:items-start">
+                                <h4 className="text-white font-display font-bold mb-6 flex items-center justify-center md:justify-start gap-2">
                                     <MapPin className="w-4 h-4 text-brand-blue" /> Service Footprint
                                 </h4>
-                                <div className="flex flex-wrap gap-3">
+                                <div className="flex flex-wrap justify-center md:justify-start gap-3">
                                     {filteredLocations.map(loc => (
                                         <Link key={loc.name} to={loc.href} className="px-4 py-2 rounded-full glass border border-white/10 text-sm font-bold text-slate-300 hover:text-white hover:border-brand-blue/50 transition-colors">
                                             {loc.name}
@@ -236,14 +236,14 @@ export default function MegaMenu({ isOpen, onClose }: MegaMenuProps) {
                                 </div>
                             </div>
 
-                            <div className="lg:col-span-2">
-                                <h4 className="text-white font-display font-bold mb-6 flex items-center gap-2">
+                            <div className="lg:col-span-2 flex flex-col items-center md:items-start">
+                                <h4 className="text-white font-display font-bold mb-6 flex items-center justify-center md:justify-start gap-2">
                                     <Compass className="w-4 h-4 text-brand-blue" /> Authority Guides
                                 </h4>
-                                <div className="flex flex-col gap-3">
+                                <div className="flex flex-col items-center md:items-start gap-3 w-full">
                                     {filteredGuides.map(guide => (
-                                        <Link key={guide.name} to={guide.href} className="text-slate-400 hover:text-white text-sm font-bold flex items-center gap-2 group">
-                                            <ArrowRight className="w-3 h-3 text-brand-blue opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all" />
+                                        <Link key={guide.name} to={guide.href} className="text-slate-400 hover:text-white text-sm font-bold flex items-center justify-center md:justify-start gap-2 group max-w-max">
+                                            <ArrowRight className="w-3 h-3 text-brand-blue opacity-0 -ml-5 group-hover:opacity-100 group-hover:ml-0 transition-all hidden md:block" />
                                             {guide.name}
                                         </Link>
                                     ))}
