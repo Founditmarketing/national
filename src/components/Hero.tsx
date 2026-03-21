@@ -30,10 +30,13 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(220,38,38,0.1),transparent)]" />
         <div className="absolute inset-0 bg-slate-900/40 backdrop-blur-[2px]" />
-        <img
-          src="/national_hero_realistic.png"
-          alt="National Tire & Auto Workshop"
-          className="w-full h-full object-cover opacity-25 scale-105"
+        <video
+          src="/hero_trial_1.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover opacity-40 scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-slate-900 via-transparent to-slate-900" />
       </div>
