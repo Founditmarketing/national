@@ -58,7 +58,7 @@ export default function WhyChooseUs() {
               We're a family-owned team dedicated to keeping you safe. We treat every vehicle like our own.
             </p>
 
-            <div className="grid sm:grid-cols-2 gap-x-12 gap-y-10">
+            <div className="flex overflow-x-auto snap-x snap-mandatory sm:grid sm:grid-cols-2 gap-4 sm:gap-x-12 sm:gap-y-10 pb-6 sm:pb-0 -mx-4 px-4 sm:mx-0 sm:px-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
               {features.map((feature, index) => (
                 <motion.div
                   key={index}
@@ -66,7 +66,7 @@ export default function WhyChooseUs() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="flex flex-col gap-4 group bg-slate-800/80 md:bg-transparent p-6 md:p-0 rounded-3xl border border-white/10 md:border-transparent"
+                  className="shrink-0 w-[85vw] sm:w-auto snap-center flex flex-col gap-4 group bg-slate-800/80 md:bg-transparent p-6 md:p-0 rounded-3xl border border-white/10 md:border-transparent"
                 >
                   <div className={`w-12 h-12 ${feature.bg} rounded-2xl flex items-center justify-center border border-white/5 group-hover:scale-110 transition-transform duration-300`}>
                     <div className={feature.color}>
@@ -91,8 +91,8 @@ export default function WhyChooseUs() {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="relative"
           >
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div className="space-y-6 pt-0 sm:pt-12">
+            <div className="flex sm:grid sm:grid-cols-2 gap-6 overflow-x-auto snap-x snap-mandatory -mx-4 px-4 sm:mx-0 sm:px-0 pb-6 sm:pb-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+              <div className="space-y-6 pt-0 sm:pt-12 shrink-0 w-[85vw] sm:w-auto snap-center">
                 <img
                   src="/national_modern_shop.png"
                   alt="National Tire & Auto Shop"
@@ -127,7 +127,7 @@ export default function WhyChooseUs() {
                   </div>
                 </div>
               </div>
-              <div className="space-y-6">
+              <div className="space-y-6 shrink-0 w-[85vw] sm:w-auto snap-center">
                 <img
                   src="/national_mechanic_working.png"
                   alt="Precision Service"
