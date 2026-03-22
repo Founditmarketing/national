@@ -58,7 +58,7 @@ export default function WhyChooseUs() {
               We're a family-owned team dedicated to keeping you safe. We treat every vehicle like our own.
             </p>
 
-            <div className="flex overflow-x-auto snap-x snap-mandatory sm:grid sm:grid-cols-2 gap-4 sm:gap-x-12 sm:gap-y-10 pb-6 sm:pb-0 -mx-4 px-4 sm:mx-0 sm:px-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+            <div className="grid grid-cols-2 sm:grid-cols-2 gap-3 sm:gap-x-12 sm:gap-y-10">
               {features.map((feature, index) => (
                 <motion.div
                   key={index}
@@ -66,16 +66,16 @@ export default function WhyChooseUs() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="shrink-0 w-[85vw] sm:w-auto snap-center flex flex-col gap-4 group bg-slate-800/80 md:bg-transparent p-6 md:p-0 rounded-3xl border border-white/10 md:border-transparent"
+                  className="flex flex-col items-center text-center md:items-start md:text-left gap-2 md:gap-4 group bg-slate-800/80 md:bg-transparent p-4 md:p-0 rounded-2xl md:rounded-3xl border border-white/10 md:border-transparent"
                 >
-                  <div className={`w-12 h-12 ${feature.bg} rounded-2xl flex items-center justify-center border border-white/5 group-hover:scale-110 transition-transform duration-300`}>
-                    <div className={feature.color}>
+                  <div className={`w-10 h-10 md:w-12 md:h-12 ${feature.bg} rounded-xl md:rounded-2xl flex items-center justify-center border border-white/5 group-hover:scale-110 transition-transform duration-300`}>
+                    <div className={feature.color + " scale-75 md:scale-100"}>
                       {feature.icon}
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-xl font-display font-bold text-white mb-2">{feature.title}</h3>
-                    <p className="hidden md:block text-slate-500 text-sm leading-relaxed font-bold">
+                    <h3 className="text-sm md:text-xl font-display font-bold text-white mb-0 md:mb-2 leading-tight">{feature.title}</h3>
+                    <p className="hidden md:block text-slate-500 text-sm leading-relaxed font-bold mt-2 md:mt-0">
                       {feature.description}
                     </p>
                   </div>
@@ -91,12 +91,12 @@ export default function WhyChooseUs() {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="relative"
           >
-            <div className="flex sm:grid sm:grid-cols-2 gap-6 overflow-x-auto snap-x snap-mandatory -mx-4 px-4 sm:mx-0 sm:px-0 pb-6 sm:pb-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
-              <div className="space-y-6 pt-0 sm:pt-12 shrink-0 w-[85vw] sm:w-auto snap-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div className="space-y-6 pt-0 sm:pt-12">
                 <img
                   src="/national_modern_shop.png"
                   alt="National Tire & Auto Shop"
-                  className="w-full h-80 object-cover rounded-[2.5rem] border border-white/10 shadow-2xl"
+                  className="w-full h-40 sm:h-80 object-cover rounded-2xl sm:rounded-[2.5rem] border border-white/10 shadow-2xl"
                 />
                 <div className="bg-slate-900/90 backdrop-blur-xl p-6 rounded-[2rem] border border-white/20 relative overflow-hidden flex items-center gap-6 group">
                   <div className="absolute inset-0 bg-gradient-to-r from-brand-blue/0 via-brand-blue/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
@@ -127,11 +127,11 @@ export default function WhyChooseUs() {
                   </div>
                 </div>
               </div>
-              <div className="space-y-6 shrink-0 w-[85vw] sm:w-auto snap-center">
+              <div className="space-y-6">
                 <img
                   src="/national_mechanic_working.png"
                   alt="Precision Service"
-                  className="w-full h-[400px] object-cover rounded-[2.5rem] border border-white/10 shadow-2xl"
+                  className="w-full h-40 sm:h-[400px] object-cover rounded-2xl sm:rounded-[2.5rem] border border-white/10 shadow-2xl"
                 />
                 <div className="bg-brand-blue p-6 rounded-[2rem] shadow-2xl shadow-brand-blue/20 relative overflow-hidden flex items-center gap-5 group">
                   <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.2),transparent)]" />
