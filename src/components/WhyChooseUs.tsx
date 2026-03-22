@@ -89,7 +89,7 @@ export default function WhyChooseUs() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="relative"
+            className="relative hidden sm:block"
           >
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div className="space-y-6 pt-0 sm:pt-12">
