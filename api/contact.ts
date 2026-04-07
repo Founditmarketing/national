@@ -155,7 +155,7 @@ export default async function handler(req: Request): Promise<Response> {
     `;
 
     const { data, error } = await resend.emails.send({
-      from: 'National Tire & Auto Hub <hello@nattireauto.com>',
+      from: 'National Tire and Auto Hub <hello@nattireauto.com>',
       to: ['nattransmission@gmail.com'],
       replyTo: email,
       subject,
