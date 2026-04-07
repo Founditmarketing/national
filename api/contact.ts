@@ -124,16 +124,8 @@ export default async function handler(req: Request): Promise<Response> {
                       ${isQuote ? quoteRows : contactRows}
                     </table>
 
-                    <!-- CTA -->
-                    <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:36px;">
-                      <tr>
-                        <td align="center">
-                          <a href="mailto:${email}" style="display:inline-block;background:#1d4ed8;color:#ffffff;text-decoration:none;padding:14px 32px;border-radius:14px;font-weight:800;font-size:14px;letter-spacing:0.5px;">
-                            Reply to Customer
-                          </a>
-                        </td>
-                      </tr>
-                    </table>
+                    <!-- Reply via your email client's Reply button — replyTo header is set -->
+
                   </td>
                 </tr>
 
