@@ -6,11 +6,11 @@ export function useCallRouting() {
 
     let phoneNumber = "(318) 442-2003";
     let phoneHref = "tel:3184422003";
-    let deskLabel = "Emergency Dispatch";
+    let deskLabel = "Main Line";
 
     if (path.includes('/glass')) {
         phoneNumber = "(318) 442-GLASS";
-        phoneHref = "tel:3184424527";
+        phoneHref = "tel:3184425277";
         deskLabel = "Fast Glass Desk";
     } else if (path.includes('/tire') || path.includes('/wheel') || path.includes('alignment') || path.includes('suspension')) {
         phoneNumber = "(318) 442-TIRE";

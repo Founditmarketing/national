@@ -141,7 +141,7 @@ export default async function handler(req: Request): Promise<Response> {
                 <tr>
                   <td style="padding:24px 40px;border-top:1px solid rgba(255,255,255,0.05);">
                     <p style="margin:0;color:#475569;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;text-align:center;">
-                      National Tire &amp; Auto Hub · 400 Hwy 165 South, Pineville, LA · (318) 427-0477
+                      National Tire &amp; Auto Hub · 400 Hwy 165 South, Pineville, LA · (318) 442-2003
                     </p>
                   </td>
                 </tr>

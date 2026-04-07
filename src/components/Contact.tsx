@@ -49,9 +49,17 @@ export default function Contact() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload),
     });
-    const data = await response.json();
-    if (!response.ok) throw new Error(data.error || 'Something went wrong. Please try again.');
-    return data;
+    if (!response.ok) {
+      let message = 'Something went wrong. Please try again.';
+      try {
+        const data = await response.json();
+        if (data.error) message = data.error;
+      } catch {
+        // Non-JSON response (e.g. HTML 404 page) — use generic message
+      }
+      throw new Error(message);
+    }
+    return response.json();
   };
 
   const handleContactSubmit = async (e: React.FormEvent) => {
