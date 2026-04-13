@@ -147,10 +147,8 @@ export default async function handler(req: Request): Promise<Response> {
     `;
 
     const { data, error } = await resend.emails.send({
-      // TESTING: Using Resend's shared domain until nattireauto.com is DNS-verified.
-      // Once verified, switch back to: hello@nattireauto.com
-      from: 'National Tire and Auto Hub <onboarding@resend.dev>',
-      to: ['Hr@nattireauto.com'],
+      from: 'National Tire and Auto Hub <hello@nattireauto.com>',
+      to: ['nattransmission@gmail.com'],
       replyTo: email,
       subject,
       html,
