@@ -157,11 +157,7 @@ export default async function handler(req: Request): Promise<Response> {
     if (error) {
       console.error('Resend error:', JSON.stringify(error));
       return new Response(
-        JSON.stringify({
-          error: 'Failed to send email. Please try again.',
-          // Expose Resend's actual error for debugging — remove before production
-          resendError: error,
-        }),
+        JSON.stringify({ error: 'Failed to send email. Please try again.' }),
         { status: 500, headers: { 'Content-Type': 'application/json' } }
       );
     }
