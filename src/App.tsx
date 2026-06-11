@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AnimatePresence } from 'motion/react';
+import { Analytics } from '@vercel/analytics/react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ContactWidget from './components/ContactWidget';
@@ -163,6 +164,7 @@ export default function App() {
               </>
             )}
           </AnimatePresence>
+          <Analytics />
         </div>
       </SmoothScroll>
     </Router>
