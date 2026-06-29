@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AnimatePresence } from 'motion/react';
+import { Helmet } from 'react-helmet-async';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ContactWidget from './components/ContactWidget';
@@ -81,6 +82,10 @@ export default function App() {
       <SmoothScroll>
         <div className="min-h-screen bg-slate-900 font-sans text-white selection:bg-brand-blue selection:text-white antialiased">
           <div className="bg-noise fixed inset-0 z-[99999] pointer-events-none mix-blend-overlay opacity-40"></div>
+          <Helmet>
+            <title>National Tire & Auto | Central Louisiana Auto Repair</title>
+            <meta name="description" content="Central Louisiana's premier destination for tires, auto repair, glass, and fleet services in Alexandria, Pineville, and surrounding areas." />
+          </Helmet>
           <AnimatePresence mode="wait">
             {isLoading ? (
               <LoadingScreen onComplete={() => setIsLoading(false)} />
