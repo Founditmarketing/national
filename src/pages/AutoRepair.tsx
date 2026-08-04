@@ -10,7 +10,7 @@ export default function AutoRepair() {
             <PageSEO
                 title="Advanced Auto Repair | ASE-Certified | National Tire & Auto"
                 description="ASE-certified master mechanics in Central Louisiana providing dealership-level diagnostics, engine overhauls, brake repair, A/C service, and electrical repair."
-                canonical="https://nattireauto.com/services/advanced-auto-repair"
+                canonical="https://www.nattireauto.com/services/advanced-auto-repair"
             />
             {/* Cinematic Hero */}
             <section className="relative py-32 bg-slate-900 overflow-hidden border-b border-white/5">

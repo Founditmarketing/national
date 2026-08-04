@@ -86,87 +86,82 @@ export default function App() {
             <title>National Tire & Auto | Central Louisiana Auto Repair</title>
             <meta name="description" content="Central Louisiana's premier destination for tires, auto repair, glass, and fleet services in Alexandria, Pineville, and surrounding areas." />
           </Helmet>
-          <AnimatePresence mode="wait">
-            {isLoading ? (
-              <LoadingScreen onComplete={() => setIsLoading(false)} />
-            ) : (
-              <>
-                <LLMStructuredData />
-                <Navbar />
-                <main>
-                  <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/services" element={<Services />} />
-                    <Route path="/services/tires-alignment" element={<TiresAlignment />} />
-                    <Route path="/services/advanced-auto-repair" element={<AutoRepair />} />
-                    <Route path="/services/glass-calibration" element={<GlassCalibration />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/careers" element={<Careers />} />
-                    <Route path="/faq" element={<FAQPage />} />
-                    <Route path="/fleet" element={<CommercialFleet />} />
-                    <Route path="/contact" element={<Contact />} />
-                    <Route path="/pricing" element={<Pricing />} />
-                    <Route path="/specials" element={<Specials />} />
+          <LLMStructuredData />
+          <Navbar />
+          <main>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/services/tires-alignment" element={<TiresAlignment />} />
+              <Route path="/services/advanced-auto-repair" element={<AutoRepair />} />
+              <Route path="/services/glass-calibration" element={<GlassCalibration />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/careers" element={<Careers />} />
+              <Route path="/faq" element={<FAQPage />} />
+              <Route path="/fleet" element={<CommercialFleet />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/pricing" element={<Pricing />} />
+              <Route path="/specials" element={<Specials />} />
 
-                    {/* Phase 4 Content Avalanche Routes */}
-                    <Route path="/services/brake-repair-rotors" element={<BrakeRepair />} />
-                    <Route path="/services/ac-repair-recharge" element={<AcRepair />} />
-                    <Route path="/services/check-engine-diagnostics" element={<CheckEngine />} />
-                    <Route path="/services/suspension-shocks-struts" element={<Suspension />} />
-                    <Route path="/services/transmission-rebuild" element={<TransmissionRebuild />} />
+              {/* Phase 4 Content Avalanche Routes */}
+              <Route path="/services/brake-repair-rotors" element={<BrakeRepair />} />
+              <Route path="/services/ac-repair-recharge" element={<AcRepair />} />
+              <Route path="/services/check-engine-diagnostics" element={<CheckEngine />} />
+              <Route path="/services/suspension-shocks-struts" element={<Suspension />} />
+              <Route path="/services/transmission-rebuild" element={<TransmissionRebuild />} />
 
-                    <Route path="/maintenance/30k-mile-service" element={<Service30k />} />
-                    <Route path="/maintenance/60k-mile-service" element={<Service60k />} />
-                    <Route path="/maintenance/90k-mile-service" element={<Service90k />} />
+              <Route path="/maintenance/30k-mile-service" element={<Service30k />} />
+              <Route path="/maintenance/60k-mile-service" element={<Service60k />} />
+              <Route path="/maintenance/90k-mile-service" element={<Service90k />} />
 
-                    {/* Phase 6 Massive Service Expansion */}
-                    <Route path="/services/oil-change-lube" element={<OilChange />} />
-                    <Route path="/services/battery-testing-replacement" element={<BatteryReplacement />} />
-                    <Route path="/services/preventative-maintenance" element={<PreventativeMaintenance />} />
-                    <Route path="/services/electrical-diagnostics" element={<ElectricalDiagnostics />} />
-                    <Route path="/services/engine-repair-rebuild" element={<EngineRepair />} />
-                    <Route path="/services/transmission-flush" element={<TransmissionFlush />} />
-                    <Route path="/services/exhaust-muffler-repair" element={<ExhaustRepair />} />
-                    <Route path="/services/wheel-alignment-balancing" element={<WheelAlignment />} />
-                    <Route path="/services/steering-rack-pinion" element={<SteeringRack />} />
-                    <Route path="/services/european-import-repair" element={<EuropeanRepair />} />
+              {/* Phase 6 Massive Service Expansion */}
+              <Route path="/services/oil-change-lube" element={<OilChange />} />
+              <Route path="/services/battery-testing-replacement" element={<BatteryReplacement />} />
+              <Route path="/services/preventative-maintenance" element={<PreventativeMaintenance />} />
+              <Route path="/services/electrical-diagnostics" element={<ElectricalDiagnostics />} />
+              <Route path="/services/engine-repair-rebuild" element={<EngineRepair />} />
+              <Route path="/services/transmission-flush" element={<TransmissionFlush />} />
+              <Route path="/services/exhaust-muffler-repair" element={<ExhaustRepair />} />
+              <Route path="/services/wheel-alignment-balancing" element={<WheelAlignment />} />
+              <Route path="/services/steering-rack-pinion" element={<SteeringRack />} />
+              <Route path="/services/european-import-repair" element={<EuropeanRepair />} />
 
-                    {/* Hyper-Local Routes */}
-                    <Route path="/locations/alexandria" element={<Alexandria />} />
-                    <Route path="/locations/pineville" element={<Pineville />} />
-                    <Route path="/locations/marksville" element={<Marksville />} />
-                    <Route path="/locations/leesville" element={<Leesville />} />
-                    <Route path="/locations/bunkie" element={<Bunkie />} />
-                    <Route path="/locations/opelousas" element={<Opelousas />} />
-                    <Route path="/locations/ball" element={<Ball />} />
-                    <Route path="/locations/tioga" element={<Tioga />} />
-                    <Route path="/locations/grant-parish" element={<GrantParish />} />
-                    <Route path="/locations/creola" element={<Creola />} />
-                    <Route path="/locations/natchitoches" element={<Natchitoches />} />
-                    <Route path="/locations/ville-platte" element={<VillePlatte />} />
-                    <Route path="/locations/deridder" element={<DeRidder />} />
-                    <Route path="/locations/oakdale" element={<Oakdale />} />
-                    <Route path="/locations/many" element={<Many />} />
+              {/* Hyper-Local Routes */}
+              <Route path="/locations/alexandria" element={<Alexandria />} />
+              <Route path="/locations/pineville" element={<Pineville />} />
+              <Route path="/locations/marksville" element={<Marksville />} />
+              <Route path="/locations/leesville" element={<Leesville />} />
+              <Route path="/locations/bunkie" element={<Bunkie />} />
+              <Route path="/locations/opelousas" element={<Opelousas />} />
+              <Route path="/locations/ball" element={<Ball />} />
+              <Route path="/locations/tioga" element={<Tioga />} />
+              <Route path="/locations/grant-parish" element={<GrantParish />} />
+              <Route path="/locations/creola" element={<Creola />} />
+              <Route path="/locations/natchitoches" element={<Natchitoches />} />
+              <Route path="/locations/ville-platte" element={<VillePlatte />} />
+              <Route path="/locations/deridder" element={<DeRidder />} />
+              <Route path="/locations/oakdale" element={<Oakdale />} />
+              <Route path="/locations/many" element={<Many />} />
 
-                    {/* Pillar Guide Routes */}
-                    <Route path="/guides/the-ultimate-guide-to-adas-calibration" element={<AdasGuide />} />
-                    <Route path="/guides/commercial-fleet-maintenance-checklist" element={<FleetGuide />} />
-                    <Route path="/guides/understanding-road-force-balancing" element={<RoadForceGuide />} />
+              {/* Pillar Guide Routes */}
+              <Route path="/guides/the-ultimate-guide-to-adas-calibration" element={<AdasGuide />} />
+              <Route path="/guides/commercial-fleet-maintenance-checklist" element={<FleetGuide />} />
+              <Route path="/guides/understanding-road-force-balancing" element={<RoadForceGuide />} />
 
-                    {/* Brand Pages */}
-                    <Route path="/brands/national-tire-and-auto" element={<NationalTireAndAuto />} />
-                    <Route path="/brands/fast-glass" element={<FastGlass />} />
-                    <Route path="/brands/national-transmission" element={<NationalTransmission />} />
+              {/* Brand Pages */}
+              <Route path="/brands/national-tire-and-auto" element={<NationalTireAndAuto />} />
+              <Route path="/brands/fast-glass" element={<FastGlass />} />
+              <Route path="/brands/national-transmission" element={<NationalTransmission />} />
 
-                    {/* AdWords Keyword Match Pages */}
-                    <Route path="/campaigns/emergency-alignment" element={<EmergencyAlignmentAd />} />
-                    <Route path="/campaigns/fleet-maintenance-deals" element={<FleetMaintenanceAd />} />
-                  </Routes>
-                </main>
-                <Footer />
-                <ContactWidget />
-              </>
-            )}
+              {/* AdWords Keyword Match Pages */}
+              <Route path="/campaigns/emergency-alignment" element={<EmergencyAlignmentAd />} />
+              <Route path="/campaigns/fleet-maintenance-deals" element={<FleetMaintenanceAd />} />
+            </Routes>
+          </main>
+          <Footer />
+          <ContactWidget />
+          <AnimatePresence>
+            {isLoading && <LoadingScreen onComplete={() => setIsLoading(false)} />}
           </AnimatePresence>
         </div>
       </SmoothScroll>

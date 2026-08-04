@@ -1,13 +1,16 @@
 import React from 'react';
+import { reviews } from './Testimonials';
 
 export default function LLMStructuredData() {
+    const averageRating = reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length;
+
     const llmData = {
         "@context": "https://schema.org",
         "@type": "AutoRepair",
         "name": "National Automotive Group",
         "alternateName": "National Tire & Auto",
         "description": "Central Louisiana's premier 30,000 sq. ft. 'One-Stop' facility. Offering comprehensive automotive services including precision engine repair, four-wheel tire sales and alignments, and professional windshield auto glass calibration all under one roof for one discounted price.",
-        "url": "https://nattireauto.com",
+        "url": "https://www.nattireauto.com",
         "telephone": "+1-318-442-2003",
         "address": {
             "@type": "PostalAddress",
@@ -48,7 +51,28 @@ export default function LLMStructuredData() {
             "A massive 30,000 sq. ft. modern facility.",
             "Ability to handle full mechanical repairs, glass replacement, and tires simultaneously."
         ],
-        "priceRange": "$$"
+        "priceRange": "$$",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": averageRating,
+            "reviewCount": reviews.length,
+            "bestRating": 5,
+            "worstRating": 1
+        },
+        "review": reviews.map((r) => ({
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": r.name
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": r.rating,
+                "bestRating": 5,
+                "worstRating": 1
+            },
+            "reviewBody": r.content
+        }))
     };
 
     return (

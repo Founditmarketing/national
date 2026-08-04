@@ -10,7 +10,7 @@ export default function GlassCalibration() {
             <PageSEO
                 title="Auto Glass & ADAS Calibration | National Tire & Auto"
                 description="OEM windshield replacement with millimeter-precise ADAS camera recalibration. Lane departure, AEB, and adaptive cruise accuracy restored."
-                canonical="https://nattireauto.com/services/glass-calibration"
+                canonical="https://www.nattireauto.com/services/glass-calibration"
             />
             {/* Cinematic Hero */}
             <section className="relative py-32 bg-slate-900 overflow-hidden border-b border-white/5">

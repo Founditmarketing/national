@@ -8,7 +8,7 @@ export default function AdasCalibrationGuide() {
             <PageSEO
                 title="ADAS Calibration Guide | National Tire & Auto"
                 description="Learn why windshield replacement requires ADAS recalibration, the difference between static and dynamic calibration, and what happens when it's skipped."
-                canonical="https://nattireauto.com/guides/the-ultimate-guide-to-adas-calibration"
+                canonical="https://www.nattireauto.com/guides/the-ultimate-guide-to-adas-calibration"
             />
             <GuideLayout
                 title="The Ultimate Guide to ADAS Calibration"

@@ -10,7 +10,10 @@ export default function FleetMaintenanceAd() {
             <PageSEO
                 title="Fleet Maintenance Service | National Tire & Auto"
                 description="Dedicated fleet pricing, priority bay routing, and DOT inspection authority for commercial fleets in Central Louisiana. Call for immediate dispatch."
-                canonical="https://nattireauto.com/campaigns/fleet-maintenance-deals"
+                canonical="https://www.nattireauto.com/campaigns/fleet-maintenance-deals"
+                // Campaign pages must stay out of search results: this meta noindex tag,
+                // the /campaigns/ disallow rule in public/robots.txt, and the omission of
+                // this URL from public/sitemap.xml together form the no-index safeguard.
                 noIndex={true}
             />
             <div className="max-w-4xl w-full">

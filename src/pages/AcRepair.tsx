@@ -10,7 +10,7 @@ export default function AcRepair() {
             <PageSEO
                 title="A/C Repair & Recharge | National Tire & Auto"
                 description="Louisiana heat demands top A/C performance. We vacuum, leak-test, and recharge your vehicle's A/C system using advanced refrigerant equipment."
-                canonical="https://nattireauto.com/services/ac-repair-recharge"
+                canonical="https://www.nattireauto.com/services/ac-repair-recharge"
             />
             {/* Cinematic Hero */}
             <section className="relative py-32 bg-slate-900 border-b border-white/5 overflow-hidden">

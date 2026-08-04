@@ -11,7 +11,7 @@ export default function PreventativeMaintenance() {
             <PageSEO
                 title="Preventative Maintenance | National Tire & Auto"
                 description="Digital multi-point inspections, fluid exchanges, and seasonal safety checks before failures develop. Keeping Central Louisiana vehicles running long-term."
-                canonical="https://nattireauto.com/services/preventative-maintenance"
+                canonical="https://www.nattireauto.com/services/preventative-maintenance"
             />
             {/* Hero */}
             <section className="relative py-32 bg-slate-900 border-b border-brand-blue/20 overflow-hidden">

@@ -10,7 +10,7 @@ export default function TiresAlignment() {
             <PageSEO
                 title="Tires & Wheel Alignment | National Tire & Auto"
                 description="Hunter Hawkeye Elite 4-wheel alignment and Road Force balancing. Michelin, Goodyear & BFGoodrich dealer. Maximize tire life and fuel economy."
-                canonical="https://nattireauto.com/services/tires-alignment"
+                canonical="https://www.nattireauto.com/services/tires-alignment"
             />
             {/* Cinematic Hero */}
             <section className="relative py-32 bg-slate-900 overflow-hidden border-b border-white/5">

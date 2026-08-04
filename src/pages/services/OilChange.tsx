@@ -11,7 +11,7 @@ export default function OilChange() {
             <PageSEO
                 title="Synthetic Oil Change & Lube | National Tire & Auto"
                 description="Full synthetic and high-mileage oil service using exact-weight viscosity blends. Oil, filter, and multi-point inspection serving Central Louisiana."
-                canonical="https://nattireauto.com/services/oil-change-lube"
+                canonical="https://www.nattireauto.com/services/oil-change-lube"
             />
             {/* Hero */}
             <section className="relative py-32 bg-slate-900 border-b border-brand-blue/20 overflow-hidden">

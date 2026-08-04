@@ -8,7 +8,7 @@ interface PageSEOProps {
   noIndex?: boolean;
 }
 
-const DEFAULT_IMAGE = 'https://nattireauto.com/brands/national_automotive_group_logo.png';
+const DEFAULT_IMAGE = 'https://www.nattireauto.com/brands/national_automotive_group_logo.png';
 
 export default function PageSEO({ title, description, canonical, ogImage, noIndex }: PageSEOProps) {
   return (

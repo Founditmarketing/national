@@ -1,5 +1,6 @@
 import React from 'react';
 import PageSEO from '../../components/PageSEO';
+import LocationServiceSchema from '../../components/LocationServiceSchema';
 import { motion } from 'motion/react';
 import { MapPin, ShieldCheck, Wrench, ChevronRight, Truck, Compass } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -11,8 +12,9 @@ export default function Leesville() {
             <PageSEO
                 title="Auto Repair near Leesville, LA | National Tire & Auto"
                 description="Serving Vernon Parish with heavy-duty auto repair for Fort Johnson (formerly Fort Polk) commuters, Hwy 171 haulers, and Toledo Bend towing setups."
-                canonical="https://nattireauto.com/locations/leesville"
+                canonical="https://www.nattireauto.com/locations/leesville"
             />
+            <LocationServiceSchema city="Leesville" />
             <section className="relative py-32 bg-slate-900 border-b border-white/5 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img

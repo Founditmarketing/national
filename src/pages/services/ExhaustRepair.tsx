@@ -11,7 +11,7 @@ export default function ExhaustRepair() {
             <PageSEO
                 title="Exhaust & Catalytic Converter Repair | National Tire & Auto"
                 description="Direct-fit CARB-compliant converters, O2 sensor calibration, and backpressure restoration to clear P0420 codes. Serving Central Louisiana."
-                canonical="https://nattireauto.com/services/exhaust-muffler-repair"
+                canonical="https://www.nattireauto.com/services/exhaust-muffler-repair"
             />
             {/* Hero */}
             <section className="relative py-32 bg-slate-900 border-b border-brand-blue/20 overflow-hidden">

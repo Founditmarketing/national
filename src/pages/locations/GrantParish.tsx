@@ -8,7 +8,7 @@ export default function GrantParish() {
             <PageSEO
                 title="Auto Repair in Grant Parish, LA | National Tire & Auto"
                 description="Serving all of Grant Parish with mobile tire dispatch, advanced auto mechanics, and fleet maintenance for rural and commercial drivers."
-                canonical="https://nattireauto.com/locations/grant-parish"
+                canonical="https://www.nattireauto.com/locations/grant-parish"
             />
             <LocationLayout
                 city="Grant Parish"

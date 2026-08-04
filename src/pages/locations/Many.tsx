@@ -1,5 +1,6 @@
 import React from 'react';
 import PageSEO from '../../components/PageSEO';
+import LocationServiceSchema from '../../components/LocationServiceSchema';
 import { motion } from 'motion/react';
 import { MapPin, ShieldCheck, Wrench, ChevronRight, Sailboat, Hammer } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -11,8 +12,9 @@ export default function Many() {
             <PageSEO
                 title="Auto Repair near Many, LA | National Tire & Auto"
                 description="Serving Sabine Parish with transmission rebuilds, brake service, and suspension repair for Hwy 171 commuters and Toledo Bend lake haulers."
-                canonical="https://nattireauto.com/locations/many"
+                canonical="https://www.nattireauto.com/locations/many"
             />
+            <LocationServiceSchema city="Many" />
             <section className="relative py-32 bg-slate-900 border-b border-white/5 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img

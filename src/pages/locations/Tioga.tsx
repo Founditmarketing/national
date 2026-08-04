@@ -8,7 +8,7 @@ export default function Tioga() {
             <PageSEO
                 title="Auto Repair near Tioga, LA | National Tire & Auto"
                 description="Providing Tioga residents with 3D laser alignments, tire installations, and DOT vehicle inspections near Camp Beauregard."
-                canonical="https://nattireauto.com/locations/tioga"
+                canonical="https://www.nattireauto.com/locations/tioga"
             />
             <LocationLayout
                 city="Tioga"

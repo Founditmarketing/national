@@ -9,7 +9,7 @@ export default function Pricing() {
             <PageSEO
                 title="Auto Repair Pricing | National Tire & Auto"
                 description="Transparent, upfront pricing for tires, alignments, brakes, A/C, diagnostics & more. No surprises — see our rates before we turn a wrench."
-                canonical="https://nattireauto.com/pricing"
+                canonical="https://www.nattireauto.com/pricing"
             />
             <PricingGrid />
             <Contact />

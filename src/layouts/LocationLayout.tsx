@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { MapPin, ShieldCheck, Wrench, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Contact from '../components/Contact';
+import LocationServiceSchema from '../components/LocationServiceSchema';
 
 interface LocationLayoutProps {
     city: string;
@@ -17,6 +18,7 @@ interface LocationLayoutProps {
 export default function LocationLayout({ city, heroImage, description, landmarks }: LocationLayoutProps) {
     return (
         <div className="pt-24 min-h-screen">
+            <LocationServiceSchema city={city} />
             {/* Hyper-Local Hero */}
             <section className="relative py-32 bg-slate-900 border-b border-brand-blue/20 overflow-hidden">
                 <div className="absolute inset-0 z-0">

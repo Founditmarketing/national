@@ -48,7 +48,7 @@ export default function LoadingScreen({ onComplete }: { onComplete: () => void }
             initial={{ opacity: 1 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="fixed inset-0 z-[1000] bg-slate-950 flex flex-col items-center justify-center overflow-hidden"
+            className="fixed inset-0 z-[999999] bg-slate-950 flex flex-col items-center justify-center overflow-hidden"
         >
             {/* Background Glow */}
             <div className="absolute inset-0 z-0">

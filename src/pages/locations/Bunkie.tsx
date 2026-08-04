@@ -1,5 +1,6 @@
 import React from 'react';
 import PageSEO from '../../components/PageSEO';
+import LocationServiceSchema from '../../components/LocationServiceSchema';
 import { motion } from 'motion/react';
 import { MapPin, ShieldCheck, Wrench, ChevronRight, Activity, Cpu } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -11,8 +12,9 @@ export default function Bunkie() {
             <PageSEO
                 title="Auto Repair near Bunkie, LA | National Tire & Auto"
                 description="Serving the Bunkie area with farm truck repair, front-end suspension service, and check engine diagnostics for Avoyelles Parish drivers."
-                canonical="https://nattireauto.com/locations/bunkie"
+                canonical="https://www.nattireauto.com/locations/bunkie"
             />
+            <LocationServiceSchema city="Bunkie" />
             <section className="relative py-32 bg-slate-900 border-b border-white/5 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img

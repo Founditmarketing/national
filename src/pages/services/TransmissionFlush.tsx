@@ -11,7 +11,7 @@ export default function TransmissionFlush() {
             <PageSEO
                 title="Transmission Fluid Flush | National Tire & Auto"
                 description="Complete pan extraction, torque converter evacuation, and CVT-specific NS-3/HCF-2 fluid service to prevent slipping gears in Central Louisiana."
-                canonical="https://nattireauto.com/services/transmission-flush"
+                canonical="https://www.nattireauto.com/services/transmission-flush"
             />
             {/* Hero */}
             <section className="relative py-32 bg-slate-900 border-b border-brand-blue/20 overflow-hidden">

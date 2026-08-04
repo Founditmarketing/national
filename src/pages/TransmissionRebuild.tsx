@@ -10,7 +10,7 @@ export default function TransmissionRebuild() {
             <PageSEO
                 title="Transmission Remanufacturing | National Tire & Auto"
                 description="Remanufactured — not just rebuilt. 100% friction disc & seal replacement, nationwide warranty, and a 1–3 day turnaround via National Transmission."
-                canonical="https://nattireauto.com/services/transmission-rebuild"
+                canonical="https://www.nattireauto.com/services/transmission-rebuild"
             />
             {/* Cinematic Hero */}
             <section className="relative py-32 bg-slate-900 overflow-hidden border-b border-white/5">

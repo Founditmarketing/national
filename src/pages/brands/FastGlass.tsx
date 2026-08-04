@@ -11,7 +11,7 @@ export default function FastGlass() {
             <PageSEO
                 title="Fast Glass | Windshield & Tinting | National Tire & Auto"
                 description="OEM windshield replacement with rapid-cure urethane, Opti-Aim ADAS recalibration, and ceramic solar-rejection window tinting at Fast Glass."
-                canonical="https://nattireauto.com/brands/fast-glass"
+                canonical="https://www.nattireauto.com/brands/fast-glass"
             />
             {/* Hero */}
             <section className="relative py-32 bg-slate-900 border-b border-brand-blue/20 overflow-hidden">

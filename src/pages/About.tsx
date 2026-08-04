@@ -11,7 +11,7 @@ export default function About() {
             <PageSEO
                 title="About National Tire & Auto | Central Louisiana"
                 description="Decades of automotive mastery in Central Louisiana. Learn how National Tire & Auto became the region's most trusted repair facility."
-                canonical="https://nattireauto.com/about"
+                canonical="https://www.nattireauto.com/about"
             />
             <section className="relative py-32 bg-slate-900 border-b border-white/10">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

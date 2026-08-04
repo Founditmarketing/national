@@ -8,7 +8,7 @@ export default function FleetMaintenanceGuide() {
             <PageSEO
                 title="Fleet Maintenance Checklist Guide | National Tire & Auto"
                 description="A commercial fleet manager's guide to fluid analytics, pre-trip inspections, and preventative maintenance schedules to eliminate costly downtime."
-                canonical="https://nattireauto.com/guides/commercial-fleet-maintenance-checklist"
+                canonical="https://www.nattireauto.com/guides/commercial-fleet-maintenance-checklist"
             />
             <GuideLayout
                 title="Commercial Fleet Maintenance Checklist"

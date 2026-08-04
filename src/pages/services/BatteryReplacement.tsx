@@ -11,7 +11,7 @@ export default function BatteryReplacement() {
             <PageSEO
                 title="Battery Testing & Replacement | National Tire & Auto"
                 description="Interstate Battery installation with BMS computer registration and full alternator/starter circuit testing. Serving Alexandria and Central Louisiana."
-                canonical="https://nattireauto.com/services/battery-testing-replacement"
+                canonical="https://www.nattireauto.com/services/battery-testing-replacement"
             />
             {/* Hero */}
             <section className="relative py-32 bg-slate-900 border-b border-brand-blue/20 overflow-hidden">

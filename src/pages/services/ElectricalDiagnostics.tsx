@@ -11,7 +11,7 @@ export default function ElectricalDiagnostics() {
             <PageSEO
                 title="Automotive Electrical Diagnostics | National Tire & Auto"
                 description="OEM scanner module programming, parasitic draw testing with thermal imaging, and wiring harness repair for Central Louisiana vehicles."
-                canonical="https://nattireauto.com/services/electrical-diagnostics"
+                canonical="https://www.nattireauto.com/services/electrical-diagnostics"
             />
             {/* Hero */}
             <section className="relative py-32 bg-slate-900 border-b border-brand-blue/20 overflow-hidden">

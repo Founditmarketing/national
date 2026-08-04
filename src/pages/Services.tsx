@@ -9,7 +9,7 @@ export default function Services() {
             <PageSEO
                 title="Auto Repair Services | National Tire & Auto"
                 description="Tires, alignments, brakes, A/C, glass calibration, engine repair & more. Central Louisiana's full-service automotive group under one roof."
-                canonical="https://nattireauto.com/services"
+                canonical="https://www.nattireauto.com/services"
             />
             <ServicesComponent />
             <Contact />

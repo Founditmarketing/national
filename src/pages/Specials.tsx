@@ -9,7 +9,7 @@ export default function Specials() {
             <PageSEO
                 title="Specials & Multi-Service Discounts | National Tire & Auto"
                 description="Save more when you bundle services. View current deals on tires, alignments, brakes & full-service packages at National Tire & Auto."
-                canonical="https://nattireauto.com/specials"
+                canonical="https://www.nattireauto.com/specials"
             />
             <MultiServiceDiscount />
             <Contact />

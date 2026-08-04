@@ -9,7 +9,7 @@ export default function CommercialFleet() {
             <PageSEO
                 title="Commercial Fleet Service | National Tire & Auto"
                 description="Keep your fleet moving. National Tire & Auto offers preventative maintenance, tires, brakes, and full-service repair for commercial fleets."
-                canonical="https://nattireauto.com/fleet"
+                canonical="https://www.nattireauto.com/fleet"
             />
             <Commercial />
             <Contact />

@@ -1,5 +1,6 @@
 import React from 'react';
 import PageSEO from '../../components/PageSEO';
+import LocationServiceSchema from '../../components/LocationServiceSchema';
 import { motion } from 'motion/react';
 import { MapPin, ShieldCheck, Wrench, ChevronRight, Trees, Activity } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -11,8 +12,9 @@ export default function Oakdale() {
             <PageSEO
                 title="Auto Repair near Oakdale, LA | National Tire & Auto"
                 description="Expert auto repair for Allen Parish on Hwy 165. Suspension upgrades, transmission rebuilds, and check engine diagnostics near Coushatta."
-                canonical="https://nattireauto.com/locations/oakdale"
+                canonical="https://www.nattireauto.com/locations/oakdale"
             />
+            <LocationServiceSchema city="Oakdale" />
             <section className="relative py-32 bg-slate-900 border-b border-white/5 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img

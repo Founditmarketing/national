@@ -11,7 +11,7 @@ export default function NationalTireAndAuto() {
             <PageSEO
                 title="National Tire & Auto | Central Louisiana's Auto Hub"
                 description="Central Louisiana's full-service tire and auto repair hub. Retail and commercial tires, factory maintenance, and master-level diagnostics under one roof."
-                canonical="https://nattireauto.com/brands/national-tire-and-auto"
+                canonical="https://www.nattireauto.com/brands/national-tire-and-auto"
             />
             {/* Hero */}
             <section className="relative py-32 bg-slate-900 border-b border-brand-blue/20 overflow-hidden">

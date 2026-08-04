@@ -8,7 +8,7 @@ export default function Service60k() {
             <PageSEO
                 title="60,000 Mile Service | National Tire & Auto"
                 description="Transmission fluid flush, coolant exchange, drive belt inspection, and spark plug replacement. Protecting Central Louisiana vehicles at the critical 60k interval."
-                canonical="https://nattireauto.com/maintenance/60k-mile-service"
+                canonical="https://www.nattireauto.com/maintenance/60k-mile-service"
             />
             <GuideLayout
                 title="60,000 Mile Factory Service"

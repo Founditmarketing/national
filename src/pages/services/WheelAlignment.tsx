@@ -11,7 +11,7 @@ export default function WheelAlignment() {
             <PageSEO
                 title="Wheel Alignment & Road Force Balance | National Tire & Auto"
                 description="Hunter 4-wheel optical alignment and 1,250 lb Road Force simulation to eliminate high-speed shimmy and uneven tire wear in Central Louisiana."
-                canonical="https://nattireauto.com/services/wheel-alignment-balancing"
+                canonical="https://www.nattireauto.com/services/wheel-alignment-balancing"
             />
             {/* Hero */}
             <section className="relative py-32 bg-slate-900 border-b border-brand-blue/20 overflow-hidden">

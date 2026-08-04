@@ -2,8 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Star, Quote, ShieldCheck } from 'lucide-react';
 
-export default function Testimonials() {
-  const reviews = [
+export const reviews = [
     {
       name: 'Stephen Peters',
       content: 'This business provides the customer service that all businesses could learn to provide. The staff at National Transmission went the extra mile to help coordinate the replacement and contacted the dealer... Thank you for excellent service.',
@@ -44,8 +43,9 @@ export default function Testimonials() {
       content: 'Reliable service, friendly team, and excellent prices! National Transmission is the best place for your auto repair needs!',
       rating: 5,
     }
-  ];
+];
 
+export default function Testimonials() {
   // We want two identical halves in the scroll container so translating -50% shifts exactly one full sequence perfectly
   // Just double the array instead of doing it 8 times to prevent DOM bloat and SEO spam penalties.
   const row1 = [...reviews, ...reviews]; // 16 items

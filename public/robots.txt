@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /campaigns/
+
+Sitemap: https://www.nattireauto.com/sitemap.xml

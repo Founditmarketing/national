@@ -8,7 +8,7 @@ export default function Ball() {
             <PageSEO
                 title="Auto Repair near Ball, LA | National Tire & Auto"
                 description="Serving Ball and the Hwy 165 corridor with expert tire service, precision alignments, and commercial fleet repair."
-                canonical="https://nattireauto.com/locations/ball"
+                canonical="https://www.nattireauto.com/locations/ball"
             />
             <LocationLayout
                 city="Ball"

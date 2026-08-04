@@ -1,5 +1,6 @@
 import React from 'react';
 import PageSEO from '../../components/PageSEO';
+import LocationServiceSchema from '../../components/LocationServiceSchema';
 import { motion } from 'motion/react';
 import { MapPin, ShieldCheck, Wrench, ChevronRight, Activity, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -11,8 +12,9 @@ export default function Marksville() {
             <PageSEO
                 title="Auto Repair near Marksville, LA | National Tire & Auto"
                 description="Expert auto service for Avoyelles Parish. Alignments, transmission rebuilds, and diagnostics for Hwy 1 commuters and Paragon Casino fleet drivers."
-                canonical="https://nattireauto.com/locations/marksville"
+                canonical="https://www.nattireauto.com/locations/marksville"
             />
+            <LocationServiceSchema city="Marksville" />
             <section className="relative py-32 bg-slate-900 border-b border-white/5 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img

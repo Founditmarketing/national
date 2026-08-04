@@ -1,5 +1,6 @@
 import React from 'react';
 import PageSEO from '../../components/PageSEO';
+import LocationServiceSchema from '../../components/LocationServiceSchema';
 import { motion } from 'motion/react';
 import { MapPin, ShieldCheck, Wrench, ChevronRight, Star, Clock, Target } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -11,8 +12,9 @@ export default function Pineville() {
             <PageSEO
                 title="Tires & Auto Repair in Pineville, LA | National Tire & Auto"
                 description="Alignments, brake repair, and transmission service near Louisiana Christian University on Hwy 165."
-                canonical="https://nattireauto.com/locations/pineville"
+                canonical="https://www.nattireauto.com/locations/pineville"
             />
+            <LocationServiceSchema city="Pineville" />
             {/* Hyper-Local Hero */}
             <section className="relative py-32 bg-slate-900 border-b border-white/5 overflow-hidden">
                 <div className="absolute inset-0 z-0">

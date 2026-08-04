@@ -10,7 +10,7 @@ export default function Suspension() {
             <PageSEO
                 title="Suspension, Shocks & Struts | National Tire & Auto"
                 description="Restore factory ride quality with OEM-grade strut assemblies, ball joints, tie rods & sway bar service. Complete undercarriage repair in Louisiana."
-                canonical="https://nattireauto.com/services/suspension-shocks-struts"
+                canonical="https://www.nattireauto.com/services/suspension-shocks-struts"
             />
             {/* Cinematic Hero */}
             <section className="relative py-32 bg-slate-900 border-b border-white/5 overflow-hidden">

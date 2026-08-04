@@ -9,7 +9,7 @@ export default function Contact() {
             <PageSEO
                 title="Contact Us & Schedule Service | National Tire & Auto"
                 description="Reach National Tire & Auto to schedule a repair, ask a question, or find one of our Central Louisiana locations. We respond fast."
-                canonical="https://nattireauto.com/contact"
+                canonical="https://www.nattireauto.com/contact"
             />
             <ContactComponent />
             <FAQ />

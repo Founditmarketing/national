@@ -8,7 +8,7 @@ export default function Service30k() {
             <PageSEO
                 title="30,000 Mile Service | National Tire & Auto"
                 description="Synthetic oil, air/cabin filters, brake fluid flush, and tire rotation. Magnuson-Moss warranty-compliant 30k service in Central Louisiana."
-                canonical="https://nattireauto.com/maintenance/30k-mile-service"
+                canonical="https://www.nattireauto.com/maintenance/30k-mile-service"
             />
             <GuideLayout
                 title="30,000 Mile Factory Service"

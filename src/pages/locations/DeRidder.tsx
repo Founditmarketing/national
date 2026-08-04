@@ -1,5 +1,6 @@
 import React from 'react';
 import PageSEO from '../../components/PageSEO';
+import LocationServiceSchema from '../../components/LocationServiceSchema';
 import { motion } from 'motion/react';
 import { MapPin, ShieldCheck, Wrench, ChevronRight, HardHat, Factory } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -11,8 +12,9 @@ export default function DeRidder() {
             <PageSEO
                 title="Auto Repair near DeRidder, LA | National Tire & Auto"
                 description="Serving Beauregard Parish with suspension repair, brake replacement, and engine diagnostics for Hwy 171/190 industrial commuters."
-                canonical="https://nattireauto.com/locations/deridder"
+                canonical="https://www.nattireauto.com/locations/deridder"
             />
+            <LocationServiceSchema city="DeRidder" />
             <section className="relative py-32 bg-slate-900 border-b border-white/5 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img

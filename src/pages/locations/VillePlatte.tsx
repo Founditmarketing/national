@@ -1,5 +1,6 @@
 import React from 'react';
 import PageSEO from '../../components/PageSEO';
+import LocationServiceSchema from '../../components/LocationServiceSchema';
 import { motion } from 'motion/react';
 import { MapPin, ShieldCheck, Wrench, ChevronRight, Trees, Waves } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -11,8 +12,9 @@ export default function VillePlatte() {
             <PageSEO
                 title="Auto Repair near Ville Platte, LA | National Tire & Auto"
                 description="Serving Evangeline Parish with transmission rebuilds, Hawkeye Elite alignments, and fleet service for Hwy 167 commuters and Chicot Park haulers."
-                canonical="https://nattireauto.com/locations/ville-platte"
+                canonical="https://www.nattireauto.com/locations/ville-platte"
             />
+            <LocationServiceSchema city="Ville Platte" />
             <section className="relative py-32 bg-slate-900 border-b border-white/5 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img

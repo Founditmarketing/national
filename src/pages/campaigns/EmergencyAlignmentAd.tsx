@@ -10,7 +10,10 @@ export default function EmergencyAlignmentAd() {
             <PageSEO
                 title="Emergency Alignment Service | National Tire & Auto"
                 description="Walk-in wheel alignment and tire service at National Tire & Auto in Pineville. No appointment necessary — rapid-dispatch tire bays ready now."
-                canonical="https://nattireauto.com/campaigns/emergency-alignment"
+                canonical="https://www.nattireauto.com/campaigns/emergency-alignment"
+                // Campaign pages must stay out of search results: this meta noindex tag,
+                // the /campaigns/ disallow rule in public/robots.txt, and the omission of
+                // this URL from public/sitemap.xml together form the no-index safeguard.
                 noIndex={true}
             />
             <div className="max-w-4xl w-full">

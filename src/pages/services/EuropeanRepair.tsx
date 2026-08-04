@@ -11,7 +11,7 @@ export default function EuropeanRepair() {
             <PageSEO
                 title="European & Import Auto Repair | National Tire & Auto"
                 description="Dealership-level proprietary diagnostics for BMW, Mercedes-Benz, Audi, Volkswagen, and Land Rover using exact Pentosin and Liqui Moly fluid specifications in Central Louisiana."
-                canonical="https://nattireauto.com/services/european-import-repair"
+                canonical="https://www.nattireauto.com/services/european-import-repair"
             />
             {/* Hero */}
             <section className="relative py-32 bg-slate-900 border-b border-brand-blue/20 overflow-hidden">

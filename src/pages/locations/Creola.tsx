@@ -8,7 +8,7 @@ export default function Creola() {
             <PageSEO
                 title="Auto Repair near Creola, LA | National Tire & Auto"
                 description="Precision alignments, diagnostic testing, and windshield calibration for Creola residents along the I-49 corridor."
-                canonical="https://nattireauto.com/locations/creola"
+                canonical="https://www.nattireauto.com/locations/creola"
             />
             <LocationLayout
                 city="Creola"

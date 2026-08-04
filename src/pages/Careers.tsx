@@ -10,7 +10,7 @@ export default function Careers() {
             <PageSEO
                 title="Automotive Careers | Join National Tire & Auto"
                 description="We're hiring ASE-certified technicians and service advisors. Competitive pay, elite tooling, and real career growth in Central Louisiana."
-                canonical="https://nattireauto.com/careers"
+                canonical="https://www.nattireauto.com/careers"
             />
             <section className="relative py-32 bg-slate-900 border-b border-brand-blue/20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

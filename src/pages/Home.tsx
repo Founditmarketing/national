@@ -14,7 +14,7 @@ export default function Home() {
             <PageSEO
                 title="Tires, Auto Repair & Glass in Central Louisiana | National Tire & Auto"
                 description="Central Louisiana's premier 30,000 sq. ft. auto facility. Expert tires, alignments, auto repair, glass, and fleet services in Pineville & Alexandria, LA."
-                canonical="https://nattireauto.com/"
+                canonical="https://www.nattireauto.com/"
             />
             <Hero />
             <Brands />

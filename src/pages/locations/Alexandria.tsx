@@ -1,5 +1,6 @@
 import React from 'react';
 import PageSEO from '../../components/PageSEO';
+import LocationServiceSchema from '../../components/LocationServiceSchema';
 import { motion } from 'motion/react';
 import { MapPin, ShieldCheck, Wrench, ChevronRight, Star, Clock, AlertTriangle } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -11,8 +12,9 @@ export default function Alexandria() {
             <PageSEO
                 title="Auto Repair & Tires in Alexandria, LA | National Tire & Auto"
                 description="Alexandria's trusted source for auto repair, wheel alignments, AC service, and brake repair. Minutes from MacArthur Drive and Rapides Regional."
-                canonical="https://nattireauto.com/locations/alexandria"
+                canonical="https://www.nattireauto.com/locations/alexandria"
             />
+            <LocationServiceSchema city="Alexandria" />
             {/* Hyper-Local Hero */}
             <section className="relative py-32 bg-slate-900 border-b border-white/5 overflow-hidden">
                 <div className="absolute inset-0 z-0">

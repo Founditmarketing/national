@@ -10,7 +10,7 @@ export default function BrakeRepair() {
             <PageSEO
                 title="Brake Repair & Rotor Machining | National Tire & Auto"
                 description="OEM-grade ceramic pads, precision rotor resurfacing & ABS diagnostics. Don't compromise on stopping power — book brake service today."
-                canonical="https://nattireauto.com/services/brake-repair-rotors"
+                canonical="https://www.nattireauto.com/services/brake-repair-rotors"
             />
             {/* Cinematic Hero */}
             <section className="relative py-32 bg-slate-900 border-b border-white/5 overflow-hidden">

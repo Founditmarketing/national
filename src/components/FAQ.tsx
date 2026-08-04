@@ -2,30 +2,30 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ChevronDown, HelpCircle } from 'lucide-react';
 
-export default function FAQ() {
-  const faqs = [
-    {
-      question: 'Do you offer mobile services for regular passenger cars?',
-      answer: 'Currently, our heavy-duty mobile unit is optimized exclusively for commercial fleet recovery and big truck tire emergencies. All retail automotive interventions are executed at our centralized Pineville HQ.',
-    },
-    {
-      question: 'Is it possible to synchronize glass, tires, and mechanical repair?',
-      answer: 'This is our operational excellence. National Tire & Auto and Fast Glass are integrated within the same master facility, allowing us to choreograph multiple service layers simultaneously.',
-    },
-    {
-      question: 'What is the protocol if a vehicle fails DOT inspection?',
-      answer: 'We are an authorized remediation center. If a fleet asset fails inspection, our technicians provide immediate on-site repair capabilities to ensure rapid recertification and minimal downtime.',
-    },
-    {
-      question: 'Does the group provide corporate fleet financing?',
-      answer: 'We offer specialized institutional financing for mission-critical repairs and high-volume tire acquisition. Our service advisors can initialize a credit line for your organization upon request.',
-    },
-    {
-      question: 'How do I initialize a master fleet account?',
-      answer: 'Institutional activation is streamlined. Secure your account via our digital terminal (contact form), or initiate a consultation via our emergency dispatch line at (318) 442-2003.',
-    }
-  ];
+export const faqs = [
+  {
+    question: 'Do you offer mobile services for regular passenger cars?',
+    answer: 'Currently, our heavy-duty mobile unit is optimized exclusively for commercial fleet recovery and big truck tire emergencies. All retail automotive interventions are executed at our centralized Pineville HQ.',
+  },
+  {
+    question: 'Is it possible to synchronize glass, tires, and mechanical repair?',
+    answer: 'This is our operational excellence. National Tire & Auto and Fast Glass are integrated within the same master facility, allowing us to choreograph multiple service layers simultaneously.',
+  },
+  {
+    question: 'What is the protocol if a vehicle fails DOT inspection?',
+    answer: 'We are an authorized remediation center. If a fleet asset fails inspection, our technicians provide immediate on-site repair capabilities to ensure rapid recertification and minimal downtime.',
+  },
+  {
+    question: 'Does the group provide corporate fleet financing?',
+    answer: 'We offer specialized institutional financing for mission-critical repairs and high-volume tire acquisition. Our service advisors can initialize a credit line for your organization upon request.',
+  },
+  {
+    question: 'How do I initialize a master fleet account?',
+    answer: 'Institutional activation is streamlined. Secure your account via our digital terminal (contact form), or initiate a consultation via our emergency dispatch line at (318) 442-2003.',
+  }
+];
 
+export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (

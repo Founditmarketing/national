@@ -8,7 +8,7 @@
           "value": "nationaltireandauto.com"
         }
       ],
-      "destination": "https://nattireauto.com/$1",
+      "destination": "https://www.nattireauto.com/$1",
       "permanent": true
     }
   ],
@@ -16,6 +16,10 @@
     {
       "source": "/sitemap.xml",
       "destination": "/sitemap.xml"
+    },
+    {
+      "source": "/robots.txt",
+      "destination": "/robots.txt"
     },
     {
       "source": "/api/:path*",

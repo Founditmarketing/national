@@ -11,7 +11,7 @@ export default function EngineRepair() {
             <PageSEO
                 title="Engine Repair & Rebuild | National Tire & Auto"
                 description="Timing chain replacement, multi-layer steel head gaskets, and complete remanufactured engine swaps by ASE-certified mechanics in Central Louisiana."
-                canonical="https://nattireauto.com/services/engine-repair-rebuild"
+                canonical="https://www.nattireauto.com/services/engine-repair-rebuild"
             />
             {/* Hero */}
             <section className="relative py-32 bg-slate-900 border-b border-brand-blue/20 overflow-hidden">

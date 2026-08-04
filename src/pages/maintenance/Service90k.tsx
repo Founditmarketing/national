@@ -8,7 +8,7 @@ export default function Service90k() {
             <PageSEO
                 title="90,000 Mile Service | National Tire & Auto"
                 description="Timing belt & water pump replacement, differential service, fuel injector decarbonization, and full suspension sweep for the next 100k miles."
-                canonical="https://nattireauto.com/maintenance/90k-mile-service"
+                canonical="https://www.nattireauto.com/maintenance/90k-mile-service"
             />
             <GuideLayout
                 title="90,000 Mile Factory Service"

@@ -11,7 +11,7 @@ export default function NationalTransmission() {
             <PageSEO
                 title="National Transmission | National Tire & Auto"
                 description="Central Louisiana's drivetrain authority. Complete transmission rebuilds, torque converter diagnostics, fluid flush, and clutch repair by specialists."
-                canonical="https://nattireauto.com/brands/national-transmission"
+                canonical="https://www.nattireauto.com/brands/national-transmission"
             />
             {/* Hero */}
             <section className="relative py-32 bg-slate-900 border-b border-brand-blue/20 overflow-hidden">

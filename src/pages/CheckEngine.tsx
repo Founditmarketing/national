@@ -10,7 +10,7 @@ export default function CheckEngine() {
             <PageSEO
                 title="Check Engine Light Diagnostics | National Tire & Auto"
                 description="We don't just clear codes — we isolate the exact fault using OBD-II scan tools, CAN-bus analysis, and oscilloscope electrical testing."
-                canonical="https://nattireauto.com/services/check-engine-diagnostics"
+                canonical="https://www.nattireauto.com/services/check-engine-diagnostics"
             />
             {/* Cinematic Hero */}
             <section className="relative py-32 bg-slate-900 border-b border-white/5 overflow-hidden">

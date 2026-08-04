@@ -1,5 +1,6 @@
 import React from 'react';
 import PageSEO from '../../components/PageSEO';
+import LocationServiceSchema from '../../components/LocationServiceSchema';
 import { motion } from 'motion/react';
 import { MapPin, ShieldCheck, Wrench, ChevronRight, GraduationCap, PartyPopper } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -11,8 +12,9 @@ export default function Natchitoches() {
             <PageSEO
                 title="Auto Repair near Natchitoches, LA | National Tire & Auto"
                 description="Dealership-level diagnostics, alignments, and AC repair for Natchitoches Parish. Serving NSU students and Hwy 1 North commuters."
-                canonical="https://nattireauto.com/locations/natchitoches"
+                canonical="https://www.nattireauto.com/locations/natchitoches"
             />
+            <LocationServiceSchema city="Natchitoches" />
             <section className="relative py-32 bg-slate-900 border-b border-white/5 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img

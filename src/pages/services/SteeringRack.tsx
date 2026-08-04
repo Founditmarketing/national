@@ -11,7 +11,7 @@ export default function SteeringRack() {
             <PageSEO
                 title="Steering Rack & Pinion Repair | National Tire & Auto"
                 description="Hydraulic and EPS rack replacement, power steering pump repair, and fluid flush to restore tight, responsive steering in Central Louisiana."
-                canonical="https://nattireauto.com/services/steering-rack-pinion"
+                canonical="https://www.nattireauto.com/services/steering-rack-pinion"
             />
             {/* Hero */}
             <section className="relative py-32 bg-slate-900 border-b border-brand-blue/20 overflow-hidden">

@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { HelpCircle, RefreshCcw, Shield } from 'lucide-react';
 import Contact from '../components/Contact';
 import FAQ from '../components/FAQ';
+import FAQSchema from '../components/FAQSchema';
 import PageSEO from '../components/PageSEO';
 
 export default function FAQPage() {
@@ -11,8 +12,9 @@ export default function FAQPage() {
             <PageSEO
                 title="Frequently Asked Questions | National Tire & Auto"
                 description="Answers about our 12-month/12,000-mile warranty, insurance fleet processing, and how our repair process works — serving Alexandria, Pineville, and Central Louisiana."
-                canonical="https://nattireauto.com/faq"
+                canonical="https://www.nattireauto.com/faq"
             />
+            <FAQSchema />
             <section className="relative py-24 bg-slate-900 border-b border-brand-blue/20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <motion.div

@@ -1,5 +1,6 @@
 import React from 'react';
 import PageSEO from '../../components/PageSEO';
+import LocationServiceSchema from '../../components/LocationServiceSchema';
 import { motion } from 'motion/react';
 import { MapPin, ShieldCheck, Wrench, ChevronRight, Activity, Thermometer } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -11,8 +12,9 @@ export default function Opelousas() {
             <PageSEO
                 title="Auto Repair near Opelousas, LA | National Tire & Auto"
                 description="Serving St. Landry Parish with precision alignments, transmission rebuilds, and AC repair for I-49 and Hwy 190 commuters."
-                canonical="https://nattireauto.com/locations/opelousas"
+                canonical="https://www.nattireauto.com/locations/opelousas"
             />
+            <LocationServiceSchema city="Opelousas" />
             <section className="relative py-32 bg-slate-900 border-b border-white/5 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img

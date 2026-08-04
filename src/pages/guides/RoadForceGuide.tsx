@@ -8,7 +8,7 @@ export default function RoadForceGuide() {
             <PageSEO
                 title="Road Force Balancing Guide | National Tire & Auto"
                 description="Learn how Hunter Road Force Elite detects radial force variation, why standard spin balancing misses it, and how force matching creates a vibration-free ride."
-                canonical="https://nattireauto.com/guides/understanding-road-force-balancing"
+                canonical="https://www.nattireauto.com/guides/understanding-road-force-balancing"
             />
             <GuideLayout
                 title="Understanding Road Force Balancing"
